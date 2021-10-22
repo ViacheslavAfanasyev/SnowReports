@@ -1,0 +1,12 @@
+D:\Projects\SnowReports\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+D:\Projects\SnowReports\DataAccess\bin\Debug\net6.0\DataAccess.dll
+D:\Projects\SnowReports\DataAccess\bin\Debug\net6.0\ref\DataAccess.dll
+D:\Projects\SnowReports\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+D:\Projects\SnowReports\DataAccess\obj\Debug\net6.0\DataAccess.GlobalUsings.g.cs
+D:\Projects\SnowReports\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\SnowReports\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+D:\Projects\SnowReports\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+D:\Projects\SnowReports\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\Projects\SnowReports\DataAccess\obj\Debug\net6.0\DataAccess.dll
+D:\Projects\SnowReports\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+D:\Projects\SnowReports\DataAccess\obj\Debug\net6.0\DataAccess.pdb

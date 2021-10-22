@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "8951cc65-bfb5-440e-b681-80b5c12a3fe6": {
+      "ProjectGuid": "8951cc65-bfb5-440e-b681-80b5c12a3fe6",
+      "DisplayName": "SnowReports",
+      "ColorIndex": 0
+    },
+    "5054de46-e745-450c-9a1b-4ab20cf9909b": {
+      "ProjectGuid": "5054de46-e745-450c-9a1b-4ab20cf9909b",
+      "DisplayName": "DataAccess",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
