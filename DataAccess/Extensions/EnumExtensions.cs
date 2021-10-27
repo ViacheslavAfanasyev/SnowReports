@@ -21,6 +21,7 @@ namespace DataAccess.Extensions
             var values = Enum.GetValues(source);
             foreach (var value in values)
             {
+                if (value.ToString()!= "DefaultValue")
                 results.Add((int)value, GetAttributeValueOrName(value, source));
             }
 

@@ -35,14 +35,33 @@ namespace DataAccess.Repository
             this.disposed = true;
         }
 
-        public IEnumerable<CaseStateChange> GetAllCaseStateChanges(DateTime startDate, DateTime endDate)
+        private List<UniqueCase> GetAllCaseStateChanges(DateTime startDate, DateTime endDate, int correctionDeltaHours)
         {
-            return this.DbContext.CaseStateChanges.Where(c => c.StartDate >= startDate && c.StartDate <= endDate);
+            startDate = startDate.AddHours(-correctionDeltaHours);
+
+            var uniqueCases = new List<UniqueCase>();
+            foreach (var item in this.DbContext.CaseStateChanges.Where(c => c.StartDate >= startDate && c.StartDate <= endDate))
+            {
+                var uniqueCase = uniqueCases.FirstOrDefault(u => u.Id == item.CaseId);
+                if (uniqueCase == null)
+                {
+                    uniqueCase = new UniqueCase(item.CaseId);
+                    uniqueCases.Add(uniqueCase);
+                }
+
+                uniqueCase.States.Add(new CaseStateChange(item.State, item.StateChangeDate));
+
+            }
+
+            return uniqueCases;
         }
 
-        public IEnumerable<CaseStateChange> GetAllCaseStateChanges(DateTime startDate, DateTime endDate, TicketState ticketState)
+
+        public List<UniqueCase> GetAllCaseStateChanges(DateTime startDate, DateTime endDate)
         {
-            return this.DbContext.CaseStateChanges.Where(c => c.StartDate >= startDate && c.StartDate <= endDate && c.State == ticketState.ToString());
+            var results = this.GetAllCaseStateChanges(startDate, endDate, 40);
+
+            return results;
         }
     }
 }

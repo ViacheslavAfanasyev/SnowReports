@@ -3,7 +3,7 @@ import { ResponsiveContainer, AreaChart, XAxis, YAxis, Area, Tooltip, CartesianG
 import {format, parseISO} from 'date-fns'
 import TicketStates from "./TicketState/TicketStates";
 
-const url = '/api/snowreports/GetRangedDate?startDate=2021-05-08&endDate=2021-09-29&state=3';
+const url = '/api/snowreports/GetRangedDate?startDate=2021-05-12&endDate=2021-05-29&state=3';
 let loadedNoResults = "No Results"
 let IsColorInitialized = false;
 
@@ -80,9 +80,10 @@ const SnowReports = () => {
                 })}
 
 
-                <XAxis dataKey="date" axisLine={false} tickLine={false} interval={0} tickFormatter={(dateTime)=>
+                <XAxis dataKey="date" axisLine={false} tickLine={false} interval={100} tickFormatter={(dateTime)=>
                 {
                     const date = parseISO(dateTime);
+                    return  date;
                     const repeatedDate = Math.round(dataArr.length/15)
 
                     if (repeatedDate>30)

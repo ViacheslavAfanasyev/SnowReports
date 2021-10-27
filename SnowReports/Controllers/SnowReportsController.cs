@@ -28,11 +28,53 @@ namespace SnowReports.Controllers
         }
 
         [HttpGet("GetRangedDate")]
-        public List<DailyData> GetRangedDate(DateTime startDate, DateTime endDate, TicketState state)
+        public List<HourData> GetRangedDate(DateTime startDate, DateTime endDate, TicketState state)
         {
-            var chagnes = this.SnowRepository.GetAllCaseStateChanges(startDate, endDate, state);
+            var chagnes = this.SnowRepository.GetAllCaseStateChanges(startDate, endDate);
+            var hourData = new List<HourData>();
 
-            return GenerateFakeDate(startDate, endDate, state);
+            for(DateTime i = startDate; i<=endDate;i=i.AddHours(1))
+            {
+
+                var hourTicketStates = new Dictionary<TicketState, int>();
+                hourTicketStates.Add(TicketState.New, 0);
+                hourTicketStates.Add(TicketState.In_Progress, 0);
+                hourTicketStates.Add(TicketState.Awaiting_Customer, 0);
+                hourTicketStates.Add(TicketState.Awaiting_Problem, 0);
+                hourTicketStates.Add(TicketState.Awaiting_Change, 0);
+
+                foreach (var item in chagnes)
+                {
+                    var ticketState = item.GetStateForDateTime(i);
+
+
+                    switch (ticketState)
+                    {
+                        case TicketState.New:
+                            hourTicketStates[TicketState.New] += 1;break;
+                        case TicketState.In_Progress:
+                            hourTicketStates[TicketState.In_Progress] += 1; break;
+                        case TicketState.Awaiting_Customer:
+                            hourTicketStates[TicketState.Awaiting_Customer] += 1; break;
+                        case TicketState.Awaiting_Problem:
+                            hourTicketStates[TicketState.Awaiting_Problem] += 1; break;
+                        case TicketState.Awaiting_Change:
+                            hourTicketStates[TicketState.Awaiting_Change] += 1; break;
+                        case TicketState.DefaultValue:
+                            break;
+                    }
+
+                }
+
+                hourData.Add(new HourData(i, hourTicketStates));
+
+
+
+            }
+
+
+            return hourData;
+            //return GenerateFakeDate(startDate, endDate, state);
         }
 
         List<DailyData> GenerateFakeDate(DateTime startDate, DateTime endDate, TicketState state)

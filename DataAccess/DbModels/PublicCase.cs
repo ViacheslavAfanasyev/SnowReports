@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 #nullable disable
 
-namespace DataAccess.Models
+namespace DataAccess.DbModels
 {
     [Table("PublicCases")]
     [Keyless]

@@ -9,8 +9,7 @@ namespace DataAccess.Repository
 {
     public interface ISnowReportsRepository : IDisposable
     {
-        IEnumerable<CaseStateChange> GetAllCaseStateChanges(DateTime startDate, DateTime endDate);
-        IEnumerable<CaseStateChange> GetAllCaseStateChanges(DateTime startDate, DateTime endDate, TicketState ticketState);
-       
+        public List<UniqueCase> GetAllCaseStateChanges(DateTime startDate, DateTime endDate);
+
     }
 }

@@ -13,6 +13,8 @@ namespace DataAccess.Models
         [Display(Name = "Awaiting Problem")]
         Awaiting_Problem,
         [Display(Name = "Awaiting Change")]
-        Awaiting_Change
+        Awaiting_Change,
+        
+        DefaultValue
     }
 }
