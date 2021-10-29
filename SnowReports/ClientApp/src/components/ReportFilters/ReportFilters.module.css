@@ -1,0 +1,12 @@
+.ReportFiltersList {
+    list-style-type: none;
+}
+
+.ReportFiltersList li{
+    display: inline-block;
+}
+
+.Right
+{
+    float: right;
+}

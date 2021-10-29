@@ -15,7 +15,7 @@ namespace DataAccess.Models
             object stateEnteredResult = null;
             Enum.TryParse(typeof(TicketState), stateEntered.Replace(' ','_'), out stateEnteredResult);
             this.EnteredDate = entereddate;
-            this.StateEntered = (TicketState)stateEnteredResult;
+            this.StateEntered = stateEnteredResult!=null ? (TicketState)stateEnteredResult: TicketState.DefaultValue;
         }
         public TicketState StateEntered { get; set; }
         public DateTime EnteredDate { get; set; }

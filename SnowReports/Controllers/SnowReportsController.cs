@@ -28,8 +28,11 @@ namespace SnowReports.Controllers
         }
 
         [HttpGet("GetRangedDate")]
+        [HttpPost("GetRangedDate")]
         public List<HourData> GetRangedDate(DateTime startDate, DateTime endDate, TicketState state)
         {
+            //var body = await this.Request.Body.ReadAsync
+
             var chagnes = this.SnowRepository.GetAllCaseStateChanges(startDate, endDate);
             var hourData = new List<HourData>();
 

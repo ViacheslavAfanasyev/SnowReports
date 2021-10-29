@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
-import StateCheckbox from "./StateCheckbox";
-
+import TicketStateCheckbox from "./TicketStateCheckbox";
+import styles from './TicketStatesList.module.css'
 const url = '/api/data/States';
 
 
 
-const TicketStates = ({Charts, SetCharts}) => {
-
-    //const [ticketStates, setTicketStates] = useState([]);
+const TicketStatesList = ({Charts, SetCharts}) => {
 
     useEffect(()=> {
         async function populateStatesDropDown() {
@@ -27,11 +25,11 @@ const TicketStates = ({Charts, SetCharts}) => {
     },[]);
 
     return (
-        <ul>
-            {Charts.map(elem => <li><StateCheckbox CheckboxOnChange={(e)=>{let shallowArr = [...Charts]; shallowArr[elem.name].checked =  e.target.checked; SetCharts(shallowArr);             console.log(Charts)}} value={elem.name} label={elem.label} checked={elem.checked} /></li>)}
+        <ul className={styles.TicketStatesList} >
+            {Charts.map(elem => <li><TicketStateCheckbox CheckboxOnChange={(e)=>{let shallowArr = [...Charts]; shallowArr[elem.name].checked =  e.target.checked; SetCharts(shallowArr);             console.log(Charts)}} value={elem.name} label={elem.label} checked={elem.checked} /></li>)}
         </ul>
     );
 };
 
 
-export default TicketStates;
+export default TicketStatesList;

@@ -10,6 +10,11 @@
       "ProjectGuid": "5054de46-e745-450c-9a1b-4ab20cf9909b",
       "DisplayName": "DataAccess",
       "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 2

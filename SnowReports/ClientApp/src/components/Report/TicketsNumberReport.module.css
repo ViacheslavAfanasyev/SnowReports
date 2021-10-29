@@ -1,0 +1,14 @@
+Report a{
+    background-color: #A239CA;
+    color: white !important;
+}
+
+Report
+{
+    color:white;
+    color:#A239CA;
+    background:#0E0B16;
+    font-size: 14px;
+    margin: 0;
+    padding: 1rem;
+}

@@ -14,7 +14,7 @@ namespace DataAccess.Models
         Awaiting_Problem,
         [Display(Name = "Awaiting Change")]
         Awaiting_Change,
-        
+
         DefaultValue
     }
 }

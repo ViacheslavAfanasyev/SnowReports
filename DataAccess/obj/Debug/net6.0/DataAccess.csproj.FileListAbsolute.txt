@@ -10,3 +10,4 @@ D:\Projects\SnowReports\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompil
 D:\Projects\SnowReports\DataAccess\obj\Debug\net6.0\DataAccess.dll
 D:\Projects\SnowReports\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
 D:\Projects\SnowReports\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+D:\Projects\SnowReports\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
