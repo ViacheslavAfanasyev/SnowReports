@@ -1,0 +1,1 @@
+($env:REACT_APP_SNOW_HOST = "http://localhost:5757") -and (serve build -p 5008)

@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataAccess.DbModels
 {
-    [Table("PublicCases")]
+    [Table("Public_Cases")]
     [Keyless]
     public partial class Case
     {
@@ -138,62 +138,109 @@ namespace DataAccess.DbModels
             SurveyRootCauseCode = "z";
         }
         public string Id { get; set; }
+        [Column("Id_Sys")]
         public string IdSys { get; set; }
+        [Column("Id_Old")]
         public string IdOld { get; set; }
         public string State { get; set; }
         public string Stage { get; set; }
+        [Column("Short_Description")]
         public string ShortDescription { get; set; }
+        [Column("Investigation_Scope")]
         public string InvestigationScope { get; set; }
         public string Priority { get; set; }
+        [Column("Assigned_To")]
         public string AssignedTo { get; set; }
+        [Column("Assignment_Group")]
         public string AssignmentGroup { get; set; }
+        [Column("Assignment_Group_V2")]
         public string AssignmentGroupV2 { get; set; }
+        [Column("Assignment_Group_V3")]
         public string AssignmentGroupV3 { get; set; }
+        [Column("Assignment_Group_V4")]
         public string AssignmentGroupV4 { get; set; }
+        [Column("Assignment_Group_Initial")]
         public string AssignmentGroupInitial { get; set; }
+        [Column("Assignment_Group_Region")]
         public string AssignmentGroupRegion { get; set; }
+        [Column("Assignment_Group_Resolution_Owner")]
         public string AssignmentGroupResolutionOwner { get; set; }
+        [Column("Assignment_Group_Triage_Owner")]
         public string AssignmentGroupTriageOwner { get; set; }
+        [Column("Support_Level")]
         public string SupportLevel { get; set; }
+        [Column("Affected_Software")]
         public string AffectedSoftware { get; set; }
         public string Product { get; set; }
+        [Column("Product_Version")]
         public string ProductVersion { get; set; }
+        [Column("Product_V2")]
         public string ProductV2 { get; set; }
+        [Column("Product_V3")]
         public string ProductV3 { get; set; }
+        [Column("Product_V4")]
         public string ProductV4 { get; set; }
         public string Module { get; set; }
+        [Column("Module_Version")]
         public string ModuleVersion { get; set; }
+        [Column("Sc_Follow_The_Sun")]
         public string ScFollowTheSun { get; set; }
+        [Column("Escalation_State")]
         public string EscalationState { get; set; }
+        [Column("Escalated_By")]
         public string EscalatedBy { get; set; }
+        [Column("Total_Time_Worked")]
         public decimal? TotalTimeWorked { get; set; }
+        [Column("Total_Time_Worked_Bucket")]
         public string TotalTimeWorkedBucket { get; set; }
         public string Type { get; set; }
+        [Column("Affected_Env_Type")]
         public string AffectedEnvType { get; set; }
+        [Column("Affected_Env_Impact")]
         public string AffectedEnvImpact { get; set; }
+        [Column("Affected_Env_Url")]
         public string AffectedEnvUrl { get; set; }
         public string Categories { get; set; }
+        [Column("Web_Server")]
         public string WebServer { get; set; }
+        [Column("Infrastructure_Type")]
         public string InfrastructureType { get; set; }
         public string Browser { get; set; }
         public string Language { get; set; }
+        [Column("Root_Cause")]
         public string RootCause { get; set; }
+        [Column("Resolved_By")]
         public string ResolvedBy { get; set; }
+        [Column("Queue_Weight")]
         public string QueueWeight { get; set; }
+        [Column("Resolution_Time_Days")]
         public decimal? ResolutionTimeDays { get; set; }
+        [Column("Resolution_Time_Bucket")]
         public string ResolutionTimeBucket { get; set; }
+        [Column("Hide_From_Customer")]
         public string HideFromCustomer { get; set; }
         public string Contact { get; set; }
+        [Column("ContactEmployerType")]
         public string ContactEmployerType { get; set; }
+        [Column("ContactEmployerType_V2")]
         public string ContactEmployerTypeV2 { get; set; }
+        [Column("ContactEmployerType_V3")]
         public string ContactEmployerTypeV3 { get; set; }
+        [Column("Contact_Office")]
         public string ContactOffice { get; set; }
+        [Column("Preferred_Timezone")]
         public string PreferredTimezone { get; set; }
+        [Column("Partner_Name")]
         public string PartnerName { get; set; }
+        [Column("Partner_Country")]
         public string PartnerCountry { get; set; }
+        [Column("Partner_Timezone")]
         public string PartnerTimezone { get; set; }
+        [Column("Partner_Owner")]
         public string PartnerOwner { get; set; }
+        [Column("Partner_Csm")]
         public string PartnerCsm { get; set; }
+        [Column("Partner_Sf_Id")]
         public string PartnerSfId { get; set; }
         public string CustomerName { get; set; }
         public string CustomerCountry { get; set; }

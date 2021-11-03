@@ -11,7 +11,7 @@
     "SnowReports": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "http://localhost:5297",
+      "applicationUrl": "http://localhost:5100",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy"

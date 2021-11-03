@@ -1,6 +1,7 @@
 import React from 'react';
 import { ResponsiveContainer, AreaChart, XAxis, YAxis, Area, Tooltip, CartesianGrid } from 'recharts';
 import {format, parseISO} from 'date-fns'
+import styles from './TicketsNumberChart.module.css'
 
 let IsColorInitialized = false;
 
@@ -47,34 +48,42 @@ const TicketsNumberChart = ({Source, Charts, SetCharts}) => {
                 })}
 
 
-                <XAxis dataKey="date" axisLine={false} tickLine={false} interval={300} tickFormatter={(dateTime)=>
+                <XAxis dataKey="date" axisLine={false} tickLine={false} interval={Math.round(Source.length/10)}  tickFormatter={(dateTime)=>
                 {
-                    if (dateTime==0)
+                    if (dateTime==0 || dateTime == 'auto')
                     {
                         return "";
                     }
+                    console.log("DATETIME "+dateTime)
                     const date = parseISO(dateTime);
                     return format(date, "MMM dd");
 
-                    const repeatedDate = Math.round(Source.length/15)
-                    if (repeatedDate>30)
-                    {
-                        if (date.getDate()===1)
-                        {
-                            return format(date, "MMM, d");
-                        }
-                    }else if (date.getDate() % repeatedDate === 0) {
-                        return format(date, "MMM, d");
-                    }
-                    return "";
                 }} />
                 <YAxis  axisLine={false} tickLine={false} tickCount={10}  />
-                <Tooltip />
+                <Tooltip content={GetTooltip} />
                 <CartesianGrid opacity={0.1} vertical={false} />
             </AreaChart>
 
         </ResponsiveContainer>
     );
 };
+
+function GetTooltip({active, payload, label})
+{
+if (active)
+{
+    if (label!='0' && payload!=null)
+    {
+        return <div className={styles.ToolTipLabel}>
+            <h4 className={styles.ToolTipTitle}>{format(parseISO(label),"PPp")}</h4>
+            {[payload.map(s=> <p className={styles.ToolTipChartInfo} style={{ color: s.color }} >{s.name.slice(6).replace('_',' ')} {s.value}</p>)]}
+
+
+        </div>
+    }
+
+}
+return "";
+}
 
 export default TicketsNumberChart;

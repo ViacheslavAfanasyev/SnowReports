@@ -9,6 +9,11 @@ const context =  [
 ];
 
 module.exports = function(app) {
+
+
+
+  //let target = process.env.REACT_APP_SNOW_HOST;
+  //let target1 = 'http://localhost:9999';
   const appProxy = createProxyMiddleware(context, {
     target: target,
     secure: false

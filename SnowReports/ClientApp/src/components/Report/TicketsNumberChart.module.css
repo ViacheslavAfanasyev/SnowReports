@@ -1,0 +1,17 @@
+.ToolTipLabel
+{
+    background: rgba(250, 250, 250, 0.1);
+    border-radius: 15px;
+    padding:  3px 5px 0px 5px;
+}
+
+.ToolTipTitle
+{
+color:white;
+}
+
+.ToolTipChartInfo
+{
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}

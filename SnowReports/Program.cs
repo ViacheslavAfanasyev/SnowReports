@@ -2,7 +2,38 @@ using DataAccess.DataAccess;
 using DataAccess.Repository;
 using Microsoft.EntityFrameworkCore;
 
+
 var builder = WebApplication.CreateBuilder(args);
+
+string CorsPolicy = "Cors_Policy";
+
+
+
+if (!builder.Environment.IsDevelopment())
+{
+    var allowedOriginsObj = builder.Configuration.GetValue(typeof(String), "HostName");
+    if (allowedOriginsObj != null)
+    {
+        builder.WebHost.UseUrls((string)allowedOriginsObj);
+    }
+
+
+    builder.Services.AddCors(options =>
+    {
+        var allowedOriginsObj = builder.Configuration.GetValue(typeof(String), "AllowedOrigins");
+
+        if (allowedOriginsObj == null || (string)allowedOriginsObj==null)
+        {
+            allowedOriginsObj = "*";
+        }
+
+        options.AddPolicy(name: CorsPolicy,
+                          builder =>
+                          {
+                              builder.WithOrigins(((string)allowedOriginsObj).Split(';'));
+                          });
+    });
+}
 
 // Add services to the container.
 
@@ -16,12 +47,17 @@ builder.Services.AddDbContext<CasesContext>((options) =>
 
 builder.Services.AddScoped<ISnowReportsRepository, SnowReportsRepository>();
 
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
+    app.UseCors(CorsPolicy);
 }
+
+
 
 app.UseStaticFiles();
 app.UseRouting();

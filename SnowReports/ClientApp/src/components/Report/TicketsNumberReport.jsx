@@ -6,35 +6,49 @@ import TicketsNumberChart from "./TicketsNumberChart";
 import ReportFilters from "../ReportFilters/ReportFilters";
 import styles from './TicketsNumberReport.module.css'
 
-//const apiUrl = '/api/snowreports/GetRangedDate?startDate=2021-04-12&endDate=2021-11-29&state=3';
+
 let loadedNoResults = "No Results"
 
 
 
 const TicketsNumberReport = () => {
 
-
     const [dataArr, setDataArr] = useState([]);
     const [charts, setCharts] = useState([]);
 
-    let endDate = new Date();
-    endDate.setDate(endDate.getDate() + 7)
+    //
+    const weekAgo = new Date()
+    weekAgo.setDate(weekAgo.getDate()-7)
 
-    const [requestParameters, setRequestParameters] = useState(
-        {startDate:new Date().toJSON().slice(0,10),
-                 endDate:endDate.toJSON().slice(0,10),
-                 state:'3'
-        });
-    const queryString = new URLSearchParams(requestParameters).toString();
+    //Url parameters
+    const [assignmentGroup, SetAssignmentGroup] = useState("0")
+    const [dateRange, SetDateRange] = useState({startDate:weekAgo, endDate : new Date()})
 
-    const apiUrl = "/api/snowreports/GetRangedDate?"+queryString;
+    const [currentTimeZoneOffsetInHours , setCurrentTimeZoneOffsetInHours ] = useState(-new Date().getTimezoneOffset()/60);
 
+    console.log("REACT_APP_SNOW_HOST"+process.env.REACT_APP_SNOW_HOST)
+
+
+
+    //const [requestParameters, setRequestParameters] = useState(
+    //    {startDate:new Date().toJSON().slice(0,10),
+      //           endDate:endDate.toJSON().slice(0,10),
+     //            assigmentGroup:'PSS_North_America_Escalation'
+     //   });
+    //const queryString = new URLSearchParams(requestParameters).toString();
+
+    //const apiUrl = "/api/snowreports/GetRangedDate?"+queryString;
+
+
+
+    const apiUrl = process.env.REACT_APP_SNOW_HOST+"/api/snowreports/GetRangedDate?startDate="+dateRange.startDate.toJSON().slice(0,10)+"&EndDate="+dateRange.endDate.toJSON().slice(0,10)+"&assigmentGroup="+assignmentGroup
+        +"&timeZoneOffsetInHours="+currentTimeZoneOffsetInHours;
 
 
     async function ExportData()
     {
 
-        const response = await fetch(apiUrl, { method: 'POST', body: JSON.stringify(requestParameters)}).then((r)=>{
+        const response = await fetch(apiUrl).then((r)=>{
             if (!r.ok)
             {
                 loadedNoResults = "ERROR";
@@ -44,6 +58,7 @@ const TicketsNumberReport = () => {
 
         if (response.ok)
         {
+            console.log("request - "+apiUrl);
             setDataArr(await response.json());
         }
         //setLoaded(true);
@@ -51,11 +66,11 @@ const TicketsNumberReport = () => {
 
     useEffect(()=>{
         ExportData();
-        }, [requestParameters])
+        }, [dateRange,assignmentGroup])
 
     return(
     <div className={styles.Report}>
-        <ReportFilters SetRequestParameters={setRequestParameters} RequestParameters={requestParameters} Charts={charts} SetCharts={setCharts}  />
+        <ReportFilters SetDateRange={SetDateRange} DateRange={dateRange} SetAssignmentGroup={SetAssignmentGroup} Charts={charts} SetCharts={setCharts}  />
         <TicketsNumberChart Source={dataArr} Charts={charts} SetCharts={setCharts}/>
     </div>
     );

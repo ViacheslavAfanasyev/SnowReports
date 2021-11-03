@@ -14,5 +14,11 @@ namespace SnowReports.Controllers
         {
             return typeof(TicketState).ToDictionary();
         }
+
+        [HttpGet("AssignmentGroups")]
+        public Dictionary<int, string> AssignmentGroups()
+        {
+            return typeof(AssignmentGroup).ToDictionary();
+        }
     }
 }

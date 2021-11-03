@@ -9,7 +9,7 @@ namespace DataAccess.Repository
 {
     public interface ISnowReportsRepository : IDisposable
     {
-        public List<UniqueCase> GetAllCaseStateChanges(DateTime startDate, DateTime endDate);
+        public List<UniqueCase> GetAllCaseStateChanges(DateTime startDate, DateTime endDate, AssignmentGroup assignmentGroup, int correctionDeltaHours);
 
     }
 }

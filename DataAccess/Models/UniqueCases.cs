@@ -18,6 +18,11 @@ namespace DataAccess.Models
 
         public TicketState GetStateForDateTime(DateTime time)
         {
+            if (time>DateTime.UtcNow)
+            {
+                return TicketState.DefaultValue;
+            }
+
             var ll = this.States.Where(t => t.EnteredDate <= time);
             var caseStateChange = this.States.Where(t => t.EnteredDate <= time).Max();
 

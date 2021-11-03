@@ -11,3 +11,8 @@
 .TicketStatesList li{
     margin-right: 10px;
 }
+
+.TicketStatesList li label
+{
+    color: white;
+}

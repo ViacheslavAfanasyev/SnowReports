@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import TicketStateCheckbox from "./TicketStateCheckbox";
 import styles from './TicketStatesList.module.css'
-const url = '/api/data/States';
+const url = process.env.REACT_APP_SNOW_HOST+'/api/data/States';
 
 
 
 const TicketStatesList = ({Charts, SetCharts}) => {
+
 
     useEffect(()=> {
         async function populateStatesDropDown() {

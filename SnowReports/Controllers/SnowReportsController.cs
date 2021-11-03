@@ -28,12 +28,11 @@ namespace SnowReports.Controllers
         }
 
         [HttpGet("GetRangedDate")]
-        [HttpPost("GetRangedDate")]
-        public List<HourData> GetRangedDate(DateTime startDate, DateTime endDate, TicketState state)
+        public List<HourData> GetRangedDate(DateTime startDate, DateTime endDate, AssignmentGroup assigmentGroup, int timeZoneOffsetInHours = 0)
         {
-            //var body = await this.Request.Body.ReadAsync
+            int deltaHours = 200;
 
-            var chagnes = this.SnowRepository.GetAllCaseStateChanges(startDate, endDate);
+            var chagnes = this.SnowRepository.GetAllCaseStateChanges(startDate, endDate, assigmentGroup, deltaHours);
             var hourData = new List<HourData>();
 
             for(DateTime i = startDate; i<=endDate;i=i.AddHours(1))
@@ -69,7 +68,7 @@ namespace SnowReports.Controllers
 
                 }
 
-                hourData.Add(new HourData(i, hourTicketStates));
+                hourData.Add(new HourData(i.AddHours(timeZoneOffsetInHours), hourTicketStates));
 
 
 
