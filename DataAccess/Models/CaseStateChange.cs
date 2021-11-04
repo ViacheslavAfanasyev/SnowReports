@@ -10,14 +10,10 @@ namespace DataAccess.Models
     {
         public CaseStateChange(string stateEntered, DateTime entereddate)
         {
-            //this.Id = id;
-
-            object stateEnteredResult = null;
-            Enum.TryParse(typeof(TicketState), stateEntered.Replace(' ','_'), out stateEnteredResult);
             this.EnteredDate = entereddate;
-            this.StateEntered = stateEnteredResult!=null ? (TicketState)stateEnteredResult: TicketState.DefaultValue;
+            this.StateEntered = stateEntered;
         }
-        public TicketState StateEntered { get; set; }
+        public string StateEntered { get; set; }
         public DateTime EnteredDate { get; set; }
 
         public int CompareTo(object? obj)

@@ -43,6 +43,7 @@ const TicketsNumberChart = ({Source, Charts, SetCharts}) => {
 
 
                 {Charts.map((chart) => {
+                    console.log("Chart - "+chart.checked+" "+chart.label);
                     InitializeChartColors(Charts);
                     return <Area dataKey={"value."+chart.label}  width="100%" type="monotone" stroke={chart.color} fill="url(#bluegradient)" strokeWidth="3px" hide={!chart.checked} />
                 })}
@@ -54,7 +55,7 @@ const TicketsNumberChart = ({Source, Charts, SetCharts}) => {
                     {
                         return "";
                     }
-                    console.log("DATETIME "+dateTime)
+
                     const date = parseISO(dateTime);
                     return format(date, "MMM dd");
 

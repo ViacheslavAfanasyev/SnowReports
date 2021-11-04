@@ -35,15 +35,16 @@ namespace DataAccess.Repository
             this.disposed = true;
         }
 
-        private List<UniqueCase> GetUniqueCase(DateTime startDate, DateTime endDate, AssignmentGroup assignmentGroup, int correctionDeltaHours)
+        private List<UniqueCase> GetUniqueCase(DateTime startDate, DateTime endDate, string assignmentGroup, int correctionDeltaHours)
         {
-            
+
+            var handledAssigmentGroups = GetTechSupportAssignmentGroups(String.Empty, true);
 
             startDate = startDate.AddHours(-correctionDeltaHours);
 
             var query = from c in this.DbContext.CaseStateChanges
                         where c.StartDate >= startDate && c.StartDate <= endDate
-                        join ci in this.DbContext.Cases on c.CaseId equals ci.Id
+                        join ci in this.DbContext.Cases on c.CaseId equals ci.Id where handledAssigmentGroups.Contains(ci.AssignmentGroup)
                         select new
                         {
                             CaseId = c.CaseId,
@@ -62,15 +63,20 @@ namespace DataAccess.Repository
                 var uniqueCase = uniqueCases.FirstOrDefault(u => u.Id == item.CaseId);
                 if (uniqueCase == null)
                 {
-                    object aG = null;
-                    Enum.TryParse(typeof(AssignmentGroup), item.AssignmentGroup.Replace(' ', '_'), out aG);
+                    //object aG = null;
+                    //Enum.TryParse(typeof(AssignmentGroup), item.AssignmentGroup.Replace(' ', '_'), out aG);
+                    
 
-                    if (assignmentGroup != AssignmentGroup.Any)
+                    if (!assignmentGroup.Contains("All of"))
                     {
-                        if (aG == null || aG != null && (AssignmentGroup)aG != assignmentGroup)
+                        if (item.AssignmentGroup == null || item.AssignmentGroup != null && item.AssignmentGroup != assignmentGroup)
                         {
                             continue;
                         }
+                    }
+                    else if(item.AssignmentGroup == null || !handledAssigmentGroups.Contains(item.AssignmentGroup))
+                    {
+                        continue;
                     }
 
                     uniqueCase = new UniqueCase(item.CaseId);
@@ -111,11 +117,59 @@ namespace DataAccess.Repository
         }
 
 
-        public List<UniqueCase> GetAllCaseStateChanges(DateTime startDate, DateTime endDate, AssignmentGroup assignmentGroup, int correctionDeltaHours)
+        public List<UniqueCase> GetAllCaseStateChanges(DateTime startDate, DateTime endDate, string assignmentGroup, int correctionDeltaHours)
         {
             var results = this.GetUniqueCase(startDate, endDate, assignmentGroup, correctionDeltaHours);
 
             return results;
+        }
+
+        public IEnumerable<string> GetCaseStates()
+        {
+            if (SnowCache.States.Count!=0)
+            {
+                return SnowCache.States;
+            }
+            return SnowCache.States = this.DbContext.CaseStateChanges.Select(s => s.State).Distinct().ToList();
+        }
+
+        public IEnumerable<string> GetTechSupportAssignmentGroups(string filterValue, bool includeAccumulatedGroup)
+        {
+            if (SnowCache.AssigmentGroups.Count != 0)
+            {
+                if (includeAccumulatedGroup)
+                {
+                    return SnowCache.AccumulatedAssigmentGroups;
+                }
+                return SnowCache.AssigmentGroups;
+            }
+            else
+            {
+                List<string> results = new List<string>();
+
+                if (string.IsNullOrEmpty(filterValue))
+                {
+                    results.AddRange(this.DbContext.Cases.Select(s => s.AssignmentGroup).Distinct());
+                }
+                else
+                {
+                    results.AddRange(this.DbContext.Cases.Where(c => c.AssignmentGroupV3 == filterValue).Select(s => s.AssignmentGroup).Distinct());
+                }
+                SnowCache.AssigmentGroups = results;
+
+                var accumulatedResults = new List<string>();
+                accumulatedResults.Add($"All of {filterValue}");
+                accumulatedResults.AddRange(SnowCache.AssigmentGroups);
+
+                SnowCache.AccumulatedAssigmentGroups = accumulatedResults;
+            }
+
+            if (includeAccumulatedGroup)
+            {
+                 return SnowCache.AccumulatedAssigmentGroups;
+            }
+            return SnowCache.AssigmentGroups;
+
         }
     }
 }

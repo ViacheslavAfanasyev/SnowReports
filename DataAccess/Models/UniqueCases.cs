@@ -16,21 +16,38 @@ namespace DataAccess.Models
         public string Id { get; set; }
         public List<CaseStateChange> States { get; set; }
 
-        public TicketState GetStateForDateTime(DateTime time)
+        //public TicketState GetStateForDateTime(DateTime time)
+        //{
+        //    if (time>DateTime.UtcNow)
+        //    {
+        //        return TicketState.DefaultValue;
+        //    }
+
+        //    var ll = this.States.Where(t => t.EnteredDate <= time);
+        //    var caseStateChange = this.States.Where(t => t.EnteredDate <= time).Max();
+
+        //    if (caseStateChange!=null)
+        //    {
+        //        return caseStateChange.StateEntered;
+        //    }
+        //    return TicketState.DefaultValue;
+        //}
+
+        public string GetStateForDateTime(DateTime time)
         {
-            if (time>DateTime.UtcNow)
+            if (time > DateTime.UtcNow)
             {
-                return TicketState.DefaultValue;
+                return "N/A";
             }
 
             var ll = this.States.Where(t => t.EnteredDate <= time);
             var caseStateChange = this.States.Where(t => t.EnteredDate <= time).Max();
 
-            if (caseStateChange!=null)
+            if (caseStateChange != null)
             {
                 return caseStateChange.StateEntered;
             }
-            return TicketState.DefaultValue;
+            return "N/A";
         }
 
 

@@ -21,7 +21,6 @@ const TicketsNumberReport = () => {
     weekAgo.setDate(weekAgo.getDate()-7)
 
     //Url parameters
-    const [assignmentGroup, SetAssignmentGroup] = useState("0")
     const [dateRange, SetDateRange] = useState({startDate:weekAgo, endDate : new Date()})
 
     const [currentTimeZoneOffsetInHours , setCurrentTimeZoneOffsetInHours ] = useState(-new Date().getTimezoneOffset()/60);
@@ -41,7 +40,7 @@ const TicketsNumberReport = () => {
 
 
 
-    const apiUrl = process.env.REACT_APP_SNOW_HOST+"/api/snowreports/GetRangedDate?startDate="+dateRange.startDate.toJSON().slice(0,10)+"&EndDate="+dateRange.endDate.toJSON().slice(0,10)+"&assigmentGroup="+assignmentGroup
+    const apiUrl = process.env.REACT_APP_SNOW_HOST+"/api/snowreports/GetRangedDate?startDate="+dateRange.startDate.toJSON().slice(0,10)+"&EndDate="+dateRange.endDate.toJSON().slice(0,10)+"&assigmentGroup="+"All of"
         +"&timeZoneOffsetInHours="+currentTimeZoneOffsetInHours;
 
 
@@ -66,11 +65,11 @@ const TicketsNumberReport = () => {
 
     useEffect(()=>{
         ExportData();
-        }, [dateRange,assignmentGroup])
+        }, [dateRange])
 
     return(
     <div className={styles.Report}>
-        <ReportFilters SetDateRange={SetDateRange} DateRange={dateRange} SetAssignmentGroup={SetAssignmentGroup} Charts={charts} SetCharts={setCharts}  />
+        <ReportFilters SetDateRange={SetDateRange} DateRange={dateRange} Charts={charts} SetCharts={setCharts}  />
         <TicketsNumberChart Source={dataArr} Charts={charts} SetCharts={setCharts}/>
     </div>
     );
