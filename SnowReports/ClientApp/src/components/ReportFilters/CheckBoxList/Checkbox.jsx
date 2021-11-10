@@ -1,20 +1,20 @@
 import React from 'react';
 
-const TicketStateCheckbox = ({CheckboxOnChange, ...props}) => {
+const Checkbox = ({CheckboxOnChange, ...props}) => {
 
     return (
         <div>
             <input id={`state-checkbox-${props.value}`} type="checkbox"
                    value={props.value}
-                   name={props.label}
+                   name={props.value}
                    checked={props.checked}
                    onChange={CheckboxOnChange}/>
 
-            <label for={`state-checkbox-${props.value}`} className='noselect'>{props.label.replace("_", " ")}</label>
+            <label htmlFor={`state-checkbox-${props.value}`} className='noselect'>{props.value}</label>
 
 
         </div>
     );
 };
 
-export default TicketStateCheckbox;
+export default Checkbox;

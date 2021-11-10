@@ -263,21 +263,26 @@ namespace DataAccess.DbModels
         public int? MetricRelationsJiraCount { get; set; }
         public int? MetricRelationsDevopsCount { get; set; }
         public int? MetricRelationsChildCount { get; set; }
+        [Column("Date_Created")]
         public DateTime DateCreated { get; set; }
         public int? DateCreatedDay { get; set; }
         public int? DateCreatedWeek { get; set; }
         public int? DateCreatedMonth { get; set; }
         public int? DateCreatedQuarter { get; set; }
+        [Column("Date_Updated")]
         public DateTime DateUpdated { get; set; }
         public int? DateUpdatedDay { get; set; }
         public int? DateUpdatedWeek { get; set; }
         public int? DateUpdatedMonth { get; set; }
         public int? DateUpdatedQuarter { get; set; }
+
+        [Column("Date_Resolved")]
         public DateTime DateResolved { get; set; }
         public int? DateResolvedDay { get; set; }
         public int? DateResolvedWeek { get; set; }
         public int? DateResolvedMonth { get; set; }
         public int? DateResolvedQuarter { get; set; }
+        [Column("Date_Closed")]
         public DateTime DateClosed { get; set; }
         public int? DateClosedDay { get; set; }
         public int? DateClosedWeek { get; set; }

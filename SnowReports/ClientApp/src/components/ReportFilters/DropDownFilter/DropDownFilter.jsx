@@ -4,12 +4,23 @@ import DropDownElement from "./DropDownElement";
 
 const DropDownFilter = ({setSelectedValue, source, name}) => {
 
-    const [selectedValue, setselectedValue] = useState(source[0]);
+    const [value, setValue] = useState(source[0]);
+
+    useEffect(()=>{
+
+        console.log("useEffect of DropDownFilter"+value)
+        if (source!=undefined && source[0]!=undefined)
+        {
+            console.log("useEffect of DropDownFilter SET"+value)
+            setSelectedValue(source[0])
+        }
+
+    },[source])
 
     function SelectionChange(e)
     {
         setSelectedValue(e.target.value);
-        setselectedValue(e.target.value);
+        setValue(e.target.value);
     }
 
     if (source==null || source == undefined)
@@ -24,11 +35,9 @@ const DropDownFilter = ({setSelectedValue, source, name}) => {
         return  <div></div>
     }
 
-    console.log(source.length)
-
     return (
-        <select id={name} onChange={SelectionChange} value={selectedValue}  >
-            {source.map(v=> <DropDownElement value={v} />)}
+        <select id={name} onChange={SelectionChange} value={value}  >
+            {source.map((elem,index)=> <DropDownElement key={index} value={elem} />)}
         </select>
     );
 };

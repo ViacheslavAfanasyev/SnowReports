@@ -1,35 +1,18 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { ResponsiveContainer, AreaChart, XAxis, YAxis, Area, Tooltip, CartesianGrid } from 'recharts';
 import {format, parseISO} from 'date-fns'
 import styles from './TicketsNumberChart.module.css'
+import {ReportFiltersContext} from "../../context/ReportFiltersContext";
 
-let IsColorInitialized = false;
+const colorList = [  'Plum', 'YellowGreen','Gold', 'DeepPink', 'PowderBlue',  'Violet', 'PapayaWhip']
 
+const TicketsNumberChart = () => {
 
-
-let randomColor = () =>  "#"+Math.floor(Math.random()*16777215).toString(16);
-
-
-const TicketsNumberChart = ({Source, Charts, SetCharts}) => {
-
-    function InitializeChartColors()
-    {
-
-        if (!IsColorInitialized)
-        {
-            console.log("InitializeChartColors");
-
-            const initializedChart = [];
-            Charts.forEach(chart => initializedChart.push({...chart,color : randomColor()}));
-            console.log(initializedChart);
-            SetCharts(initializedChart);
-            IsColorInitialized = true;
-        }
-    }
+    const {chartData, chartLines}= useContext(ReportFiltersContext)
 
     return (
         <ResponsiveContainer width="100%" height={400}>
-            <AreaChart data={Source} width="100%">
+            <AreaChart data={chartData} width="100%">
                 <defs>
                     <linearGradient id="bluegradient" x1="0" y1="0" x2="0" y2="1" >
                         <stop offset="0%" stopColor="#2451B7" stopOpacity={0.4} />
@@ -42,14 +25,12 @@ const TicketsNumberChart = ({Source, Charts, SetCharts}) => {
                 </defs>
 
 
-                {Charts.map((chart) => {
-                    console.log("Chart - "+chart.checked+" "+chart.label);
-                    InitializeChartColors(Charts);
-                    return <Area dataKey={"value."+chart.label}  width="100%" type="monotone" stroke={chart.color} fill="url(#bluegradient)" strokeWidth="3px" hide={!chart.checked} />
+                {chartLines.map((line, index) => {
+                    return <Area key={index} dataKey={"value."+line.value}  width="100%" type="monotone" stroke={colorList[(index%colorList.length)]} fill="url(#bluegradient)" strokeWidth="3px" hide={!line.checked} />
                 })}
 
 
-                <XAxis dataKey="date" axisLine={false} tickLine={false} interval={Math.round(Source.length/10)}  tickFormatter={(dateTime)=>
+                <XAxis dataKey="date" axisLine={false} tickLine={false} interval={Math.round(chartData.length/10)}  tickFormatter={(dateTime)=>
                 {
                     if (dateTime==0 || dateTime == 'auto')
                     {
@@ -77,12 +58,9 @@ if (active)
     {
         return <div className={styles.ToolTipLabel}>
             <h4 className={styles.ToolTipTitle}>{format(parseISO(label),"PPp")}</h4>
-            {[payload.map(s=> <p className={styles.ToolTipChartInfo} style={{ color: s.color }} >{s.name.slice(6).replace('_',' ')} {s.value}</p>)]}
-
-
+            {[payload.map((s, index)=> <p key={index} className={styles.ToolTipChartInfo} style={{ color: s.color }} >{s.name.slice(6).replace('_',' ')} {s.value}</p>)]}
         </div>
     }
-
 }
 return "";
 }

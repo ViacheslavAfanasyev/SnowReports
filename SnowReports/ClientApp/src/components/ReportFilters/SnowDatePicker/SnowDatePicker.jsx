@@ -1,39 +1,40 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css';
 import styles from './SnowDatePicker.module.css'
 
-const SnowDatePicker = ({SetDateRange, DateRange}) => {
+const SnowDatePicker = ({setDate}) => {
 
-    const [sDate, setStartDate] = useState(DateRange.startDate);
-    const [eDate, setEndDate] = useState(DateRange.endDate);
+    //Set initial values
+    const weekAgo = new Date()
+    weekAgo.setDate(weekAgo.getDate()-7)
+    const [dateRange, SetDateRange] = useState({startDate:weekAgo, endDate : new Date()})
+
+    useEffect(()=>{
+        setDate({startDate:weekAgo, endDate : new Date()})
+    },[])
+
 
     const onChange = dates => {
         const [start, end] = dates;
+        SetDateRange({startDate:start, endDate:end})
 
         if (start!=null && end!=null)
         {
-            SetDateRange({startDate:start, endDate:end})
+            setDate({startDate:start, endDate:end})
         }
-
-        setStartDate(start);
-        setEndDate(end);
     }
 
     let displayFormat = 'yyyy-MM-dd';
     return (
         <div>
             <DatePicker
-                //id={startDateId}
-                selected={sDate}
+                selected={dateRange.startDate}
                 selectsRange
-                startDate={sDate}
-                endDate={eDate}
-                //placeholderText={placeholder}
+                startDate={dateRange.startDate}
+                endDate={dateRange.endDate}
                 dateFormat={displayFormat}
                 onChange={onChange}
-                //locale={selectLocale(locale)}
-                //customInput={<CustomInput />}
             />
         </div>
     );
