@@ -9,7 +9,6 @@ export const useFetchJson = (url, jsonHandler) =>{
     const fetching = async() =>
     {
         try{
-            console.log("useFetchingV2 for "+url);
             setIsLoading(true);
             const response = await fetch(url);
             const json = await response.json();
@@ -37,4 +36,40 @@ export const useFetchJson = (url, jsonHandler) =>{
     useEffect(()=>fetching(),[]);
 
     return [results, setResults,isLoading, error];
+}
+
+export const useJsonFetching = (callback, jsonHandler) =>
+{
+
+    const [fetching,isLoading,error] = useFetching(callback)
+
+    const jsonFetching = async ()=>{
+        const results = await fetching().then(r => jsonHandler(r));
+    }
+
+    return [jsonFetching,isLoading,error]
+}
+
+
+export const useFetching = (callback) =>
+{
+    const [isLoading, setIsLoading] = useState(false);
+    const [error, setError] = useState('');
+
+    const fetching = async () =>
+    {
+        try {
+            setIsLoading(true);
+            await callback();
+        }
+        catch (e) {
+            setError(e.message);
+        }
+        finally {
+            setIsLoading(false);
+        }
+
+    }
+
+    return [fetching,isLoading,error]
 }

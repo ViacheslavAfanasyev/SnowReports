@@ -4,7 +4,9 @@ import DropDownElement from "./DropDownElement";
 
 const DropDownFilter = ({setSelectedValue, source, name}) => {
 
-    const [value, setValue] = useState(source[0]);
+    console.log("DropDownFilter "+name +" f "+source)
+    //source[0]
+    const [value, setValue] = useState();
 
     useEffect(()=>{
 
@@ -12,13 +14,15 @@ const DropDownFilter = ({setSelectedValue, source, name}) => {
         if (source!=undefined && source[0]!=undefined)
         {
             console.log("useEffect of DropDownFilter SET"+value)
-            setSelectedValue(source[0])
+
+            source[0].value!=undefined? setSelectedValue(source[0].value): setSelectedValue(source[0])
         }
 
     },[source])
 
     function SelectionChange(e)
     {
+        console.log("SET SELECTED VALUE "+ e.target.value);
         setSelectedValue(e.target.value);
         setValue(e.target.value);
     }

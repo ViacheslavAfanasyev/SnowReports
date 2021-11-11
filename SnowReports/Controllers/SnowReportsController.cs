@@ -98,7 +98,10 @@ namespace SnowReports.Controllers
         [HttpGet("GetRangedDate")]
         public List<HourData> GetRangedDate(DateTime startDate, DateTime endDate, string assigmentGroup, int timeZoneOffsetInHours = 0)
         {
-            int deltaHours = 200;
+            startDate = startDate.AddHours(-timeZoneOffsetInHours);
+            endDate = endDate.AddHours(-timeZoneOffsetInHours);
+
+            int deltaHours = 300;
 
 
             var chagnes = this.SnowRepository.GetAllCaseStateChanges(startDate, endDate, assigmentGroup, deltaHours);

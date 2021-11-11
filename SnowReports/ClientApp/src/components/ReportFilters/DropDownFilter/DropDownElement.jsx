@@ -3,7 +3,9 @@ import React from 'react';
 const DropDownElement = ({value}) => {
 
     return (
-        <option value={value} >{value}</option>
+        (value.value!=undefined && value.name!=undefined)
+            ? <option value={value.value} >{value.name}</option>
+            : <option value={value} >{value}</option>
     );
 };
 

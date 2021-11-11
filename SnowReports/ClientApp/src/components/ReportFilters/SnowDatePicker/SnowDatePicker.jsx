@@ -5,14 +5,30 @@ import styles from './SnowDatePicker.module.css'
 
 const SnowDatePicker = ({setDate}) => {
 
-    //Set initial values
-    const weekAgo = new Date()
-    weekAgo.setDate(weekAgo.getDate()-7)
-    const [dateRange, SetDateRange] = useState({startDate:weekAgo, endDate : new Date()})
+    const savedDateRange = localStorage.getItem("dateRange")
+    let [deafultStart, defaultEnd] = [];
+
+    if (savedDateRange==undefined)
+    {
+        //Set initial values
+        deafultStart = new Date()
+        defaultEnd = new Date()
+        defaultEnd.setDate(defaultEnd.getDate()-7)
+    }
+    else
+    {
+        const [from, to] = savedDateRange.split(',');
+        deafultStart = new Date(from);
+        defaultEnd = new Date(to);
+    }
+
+    const [dateRange, SetDateRange] = useState({startDate:deafultStart, endDate : defaultEnd})
 
     useEffect(()=>{
-        setDate({startDate:weekAgo, endDate : new Date()})
+        setDate({startDate:deafultStart, endDate : defaultEnd})
     },[])
+
+
 
 
     const onChange = dates => {
@@ -22,8 +38,10 @@ const SnowDatePicker = ({setDate}) => {
         if (start!=null && end!=null)
         {
             setDate({startDate:start, endDate:end})
+            localStorage.setItem("dateRange",dates);
         }
     }
+
 
     let displayFormat = 'yyyy-MM-dd';
     return (

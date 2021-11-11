@@ -1,32 +1,21 @@
 import React, { useState, useEffect } from "react";
 import Checkbox from "./Checkbox";
 import styles from './CheckboxesList.module.css'
-/*
-const url = process.env.REACT_APP_SNOW_HOST+'/api/SnowReports/States';
-*/
 
-
-
-//const CheckboxesList = ({Charts, SetCharts}) => {
 const CheckboxesList = ({setSelectedValue, source, name}) => {
 
-/*
-    useEffect(()=> {
-        async function populateStatesDropDown() {
-            const response = await fetch(url);
-            const data = await response.json();
+    const storageName = name+"_list";
+    let selectedCheckboxes = localStorage.getItem(storageName);
 
-            const resultArr = [];
-            Object.keys(data).forEach(key => resultArr.push({name: key, label: data[key], checked: false}))
-            resultArr[0].checked = true;
-            resultArr[1].checked = true;
+    if (selectedCheckboxes==undefined)
+    {
 
-            SetCharts(resultArr);
-        };
+    }
+    else
+    {
 
-        populateStatesDropDown();
-    },[]);
-*/
+    }
+
     if (source==null || source == undefined)
     {
         console.log("CheckboxesList component | source variable is null or undefined");

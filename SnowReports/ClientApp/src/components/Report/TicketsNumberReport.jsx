@@ -3,6 +3,8 @@ import {ReportFiltersContext} from '../../context/ReportFiltersContext'
 import TicketsNumberChart from "./TicketsNumberChart";
 import ReportFilters from "../ReportFilters/ReportFilters";
 import styles from './TicketsNumberReport.module.css'
+import {useFetching} from "../../hooks/useFetch";
+import SnowServices from "../../services/SnowServices";
 
 const reportApiUrl = process.env.REACT_APP_SNOW_HOST+"/api/snowreports/GetRangedDate";
 
@@ -10,68 +12,20 @@ const TicketsNumberReport = () => {
 
     const [chartData, setChartData] = useState([]);
     const [chartLines, setChartLines] = useState([]);
-    const [requestUrl, setRequestUrl] = useState("");
+    const [queryString, setQueryString] = useState("");
 
-    const [loadingStatus, setLoadingStatus] = useState(false)
-    const [loadedTime, setLoadedTime] = useState("")
-    const [error, setError] = useState("")
+    const [fetchData,isLoading,error] = useFetching(async () => {
+        const data = await SnowServices.GetTicketsReportData(queryString);
+        setChartData(data);
+    })
 
-    const setQueryString = (queryStringParameters) =>
-    {
-        setRequestUrl(reportApiUrl+queryStringParameters)
-    }
-
-    const exportData = async() =>
-    {
-        console.log("Get -> "+requestUrl);
-        const urlSearchParams = new URLSearchParams(requestUrl);
-        const params = Object.fromEntries(urlSearchParams.entries());
-        for(let p in params)
-        {
-            if (urlSearchParams.get(p)=="")
-            {
-                return ;
-            }
-        }
-
-        setLoadingStatus(true);
-        setError("");
-
-        //Measure time
-        let startTime = new Date();
-
-        setChartData([]);
-        const response = await fetch(requestUrl).then((r)=>{
-            if (!r.ok)
-            {
-                setError(r.statusText+" Error loading data for "+requestUrl);
-            }
-            return r;
-        })
-
-        if (response.ok)
-        {
-            setChartData(await response.json());
-
-            //Measure time
-            let endTime = new Date();
-            let timeDiff = endTime - startTime;
-            timeDiff /= 1000;
-            setLoadedTime("Loaded for "+timeDiff+" seconds | "+requestUrl)
-            //End measuring time
-        }
-
-        setLoadingStatus(false);
-    }
-
-    useEffect(()=>{
-        exportData();
-        }, [requestUrl])
+    useEffect(fetchData, [queryString])
 
     return(
         <ReportFiltersContext.Provider value={{chartData, chartLines, setChartLines, setQueryString}}>
 
-            {loadingStatus==true?<div className="alert alert-primary">Loading...</div>: error.length>0 ? <div className="alert alert-danger">{error}</div> : <div className="alert alert-success">{loadedTime}</div>}
+            {error!=''?<div className="alert alert-danger">{error}</div>:<div></div>}
+            {isLoading?<div className="alert alert-primary">Loading...</div>:<div className="alert alert-success">Loaded</div>}
 
             <div className={styles.Report}>
                 <ReportFilters />
