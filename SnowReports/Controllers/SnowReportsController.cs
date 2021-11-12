@@ -43,6 +43,12 @@ namespace SnowReports.Controllers
 
         }
 
+        [HttpGet("TicketsLevels")]
+        public IEnumerable<string> TicketsLevels()
+        {
+            return this.Config.GetValue<string>("TicketsLevels").Split(',');
+        }
+
         //[HttpGet("GetRangedDate1")]
         //public List<HourData> GetRangedDate1(DateTime startDate, DateTime endDate, AssignmentGroup assigmentGroup, int timeZoneOffsetInHours = 0)
         //{
@@ -96,15 +102,15 @@ namespace SnowReports.Controllers
         //}
 
         [HttpGet("GetRangedDate")]
-        public List<HourData> GetRangedDate(DateTime startDate, DateTime endDate, string assigmentGroup, int timeZoneOffsetInHours = 0)
+        public List<HourData> GetRangedDate(DateTime startDate, DateTime endDate, string assigmentGroup, string ticketsLevel, int timeZoneOffsetInHours = 0)
         {
             startDate = startDate.AddHours(-timeZoneOffsetInHours);
-            endDate = endDate.AddHours(-timeZoneOffsetInHours);
+            endDate = endDate.AddHours(23).AddHours(-timeZoneOffsetInHours);
 
             int deltaHours = 300;
 
 
-            var chagnes = this.SnowRepository.GetAllCaseStateChanges(startDate, endDate, assigmentGroup, deltaHours);
+            var chagnes = this.SnowRepository.GetAllCaseStateChanges(startDate, endDate, assigmentGroup, ticketsLevel, deltaHours);
             var hourData = new List<HourData>();
 
             for (DateTime i = startDate; i <= endDate; i = i.AddHours(1))

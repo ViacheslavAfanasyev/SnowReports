@@ -6,8 +6,6 @@ import styles from './TicketsNumberReport.module.css'
 import {useFetching} from "../../hooks/useFetch";
 import SnowServices from "../../services/SnowServices";
 
-const reportApiUrl = process.env.REACT_APP_SNOW_HOST+"/api/snowreports/GetRangedDate";
-
 const TicketsNumberReport = () => {
 
     const [chartData, setChartData] = useState([]);

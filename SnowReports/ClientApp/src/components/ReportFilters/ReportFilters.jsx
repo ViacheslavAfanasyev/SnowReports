@@ -23,6 +23,7 @@ const ticketStateUrl = process.env.REACT_APP_SNOW_HOST+'/api/SnowReports/States'
 
 const ReportFilters = () => {
 
+    const reportFiltersName = "_byState"
     //Restore ReportFiltersContext
     const {setChartLines, setQueryString}= useContext(ReportFiltersContext)
 
@@ -30,6 +31,7 @@ const ReportFilters = () => {
     const [assignmentGroupsList, setAssignmentGroupsList ] = useState([])
     const [statesList, setStatesList] = useState([])
     const [timezonesList, setTimezonesList] = useState([])
+    const [ticketsLevelsList, setTicketsLevelsList] = useState([])
 
         //Define fetching functions to get the data
     const [fetchAssigmentGroups,assigmentGroupsIsLoading,assigmentGroupsError] = useFetching(async ()=>{
@@ -42,30 +44,39 @@ const ReportFilters = () => {
         setStatesList(data);
     })
 
-    Extensions.GetTimeZones();
+    const [fetchTicketsLevels,ticketLevelsIsLoading,ticketLevelsError] = useFetching(async ()=>{
+        const data = await SnowServices.GetTicketsLevels(false);
+        setTicketsLevelsList(data);
+    })
+
     //Create dynamic query string
-    const [queryString, setDate, setAssignmentGroup, setTimeZoneOffsetInHours]= useDynamicQueryString();
+    const [queryString, setDate, setAssignmentGroup,setTicketsLevel, setTimeZoneOffsetInHours]= useDynamicQueryString();
 
     //Define execution of the functions
     useEffect(()=>{
         fetchAssigmentGroups();
         fetchTicketStates();
         setTimezonesList(Extensions.GetTimeZones());
+        fetchTicketsLevels();
     },[]);
     useEffect(()=>setQueryString(queryString), [queryString]);
     useEffect(()=>setChartLines(statesList),[statesList])
 
+    //chartData, setChartData
 
     return (
          <ul className={styles.ReportFiltersList} >
           <li>
-                <CheckboxesList setSelectedValue={setStatesList} source={statesList} name={"States"} />
+                <CheckboxesList setSelectedValue={setStatesList} source={statesList} name={"States"+reportFiltersName} />
             </li>
             <li>
-                <DropDownFilter setSelectedValue={setAssignmentGroup} source={assignmentGroupsList} name={"AssigmentGroups"} />
+                <DropDownFilter setSelectedValue={setAssignmentGroup} source={assignmentGroupsList} name={"AssigmentGroups"+reportFiltersName} />
             </li>
              <li>
-                 <DropDownFilter setSelectedValue={setTimeZoneOffsetInHours} source={timezonesList} name={"TimeZone"} />
+                 <DropDownFilter setSelectedValue={setTimeZoneOffsetInHours} source={timezonesList} name={"TimeZone"+reportFiltersName} />
+             </li>
+             <li>
+                 <DropDownFilter setSelectedValue={setTicketsLevel} source={ticketsLevelsList} name={"Levels"+reportFiltersName} />
              </li>
 
             <li className={styles.Right}>

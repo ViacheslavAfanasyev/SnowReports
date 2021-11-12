@@ -2,12 +2,12 @@ import React, {useState, useEffect} from 'react';
 
 export const useDynamicQueryString = () =>{
 
-    console.log("Query string -  SET INITIALE USE STATE");
     const [urlParameters, setUrlParameters] = useState(
         {
             startDate:"",//weekAgo.toJSON().slice(0,10),
             endDate:"",//new Date().toJSON().slice(0,10),
             assigmentGroup:"",
+            ticketsLevel:"",
             timeZoneOffsetInHours:0
         });
 
@@ -26,23 +26,26 @@ export const useDynamicQueryString = () =>{
 
     function setDate(value)
     {
-        let parameters = {...urlParameters, startDate : value.startDate.toJSON().slice(0,10), endDate : value.endDate.toJSON().slice(0,10) };
+        //console.log("SET DATE - "+value.startDate.toLocaleString().slice(0,10) + " "+value.startDate.toLocaleDateString().slice(0,10));
+        let parameters = {...urlParameters, startDate : value.startDate.toLocaleDateString().slice(0,10), endDate : value.endDate.toLocaleDateString().slice(0,10) };
         setUrlParameters(parameters);
+    }
 
-        console.log("Query string - "+value.startDate.toJSON().slice(0,10) + " "+ value.endDate.toJSON().slice(0,10));
+    function setTicketsLevel(value)
+    {
+        let parameters = {...urlParameters, ticketsLevel : value};
+        setUrlParameters(parameters);
     }
 
     const [queryString, setQueryString] = useState("");
 
     useEffect(()=>{
-        console.log("Query string - "+urlParameters);
-
         setQueryString("?"+new URLSearchParams(urlParameters).toString())
 
     },[urlParameters]);
 
 
-    return [queryString, setDate, setAssignmentGroup, setTimeZoneOffsetInHours];
+    return [queryString, setDate, setAssignmentGroup,setTicketsLevel, setTimeZoneOffsetInHours];
 
 }
 

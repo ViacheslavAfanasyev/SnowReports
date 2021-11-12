@@ -4,27 +4,32 @@ import DropDownElement from "./DropDownElement";
 
 const DropDownFilter = ({setSelectedValue, source, name}) => {
 
-    console.log("DropDownFilter "+name +" f "+source)
-    //source[0]
+    const storageKey = name+"_dropDownFilter";
     const [value, setValue] = useState();
 
-    useEffect(()=>{
+    let storageValue = localStorage.getItem(storageKey);
 
-        console.log("useEffect of DropDownFilter"+value)
+    useEffect(()=>{
+        if (storageValue!=undefined)
+        {
+            setSelectedValue(storageValue);
+            setValue(storageValue);
+        }
+        else
         if (source!=undefined && source[0]!=undefined)
         {
-            console.log("useEffect of DropDownFilter SET"+value)
-
-            source[0].value!=undefined? setSelectedValue(source[0].value): setSelectedValue(source[0])
+            const val = source[0].value!=undefined?source[0].value:source[0];
+            setSelectedValue(val);
+            setValue(val);
         }
 
     },[source])
 
     function SelectionChange(e)
     {
-        console.log("SET SELECTED VALUE "+ e.target.value);
         setSelectedValue(e.target.value);
         setValue(e.target.value);
+        localStorage.setItem(storageKey, e.target.value);
     }
 
     if (source==null || source == undefined)

@@ -15,7 +15,7 @@ namespace DataAccess.Models
         }
         public string StateEntered { get; set; }
         public DateTime EnteredDate { get; set; }
-
+        
         public int CompareTo(object? obj)
         {
             if (obj==null)

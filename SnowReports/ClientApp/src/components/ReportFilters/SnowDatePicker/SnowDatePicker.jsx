@@ -13,7 +13,7 @@ const SnowDatePicker = ({setDate}) => {
         //Set initial values
         deafultStart = new Date()
         defaultEnd = new Date()
-        defaultEnd.setDate(defaultEnd.getDate()-7)
+        deafultStart.setDate(deafultStart.getDate()-7)
     }
     else
     {
@@ -37,22 +37,27 @@ const SnowDatePicker = ({setDate}) => {
 
         if (start!=null && end!=null)
         {
+
             setDate({startDate:start, endDate:end})
             localStorage.setItem("dateRange",dates);
         }
     }
 
 
+
     let displayFormat = 'yyyy-MM-dd';
     return (
         <div>
             <DatePicker
+                closeOnScroll={true}
                 selected={dateRange.startDate}
                 selectsRange
                 startDate={dateRange.startDate}
                 endDate={dateRange.endDate}
                 dateFormat={displayFormat}
                 onChange={onChange}
+                maxDate={new Date()}
+                //withPortal
             />
         </div>
     );

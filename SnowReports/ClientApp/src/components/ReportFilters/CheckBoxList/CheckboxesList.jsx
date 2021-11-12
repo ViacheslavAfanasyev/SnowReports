@@ -4,17 +4,25 @@ import styles from './CheckboxesList.module.css'
 
 const CheckboxesList = ({setSelectedValue, source, name}) => {
 
-    const storageName = name+"_list";
-    let selectedCheckboxes = localStorage.getItem(storageName);
-
-    if (selectedCheckboxes==undefined)
+    const storageName = name+"_checkboxesList";
+    const storageV = localStorage.getItem(storageName);
+    let selectedCheckboxes = [];
+    if (storageV!=undefined)
     {
-
+        selectedCheckboxes = storageV.split(',');
     }
-    else
-    {
 
-    }
+    useEffect(()=>{
+        if (source!=undefined && source.length>0 && selectedCheckboxes.length>0)
+        {
+            let shallowArr = [...source];
+            shallowArr.forEach((v,i)=>{
+                shallowArr[i].checked = selectedCheckboxes[i].toLowerCase() == "true"
+            })
+            setSelectedValue(shallowArr);
+        }
+    },[source.length])
+
 
     if (source==null || source == undefined)
     {
@@ -28,20 +36,26 @@ const CheckboxesList = ({setSelectedValue, source, name}) => {
         return  <div></div>
     }
 
+    function OnChange(e)
+    {
+
+    }
+
         return (
         <ul id={name} className={styles.TicketStatesList} >
-            {source.map((elem, index) => <li key={index}><Checkbox CheckboxOnChange={(e)=>{let shallowArr = [...source]; shallowArr[elem.key].checked = e.target.checked;
+            {source.map((elem, index) => <li key={index}><Checkbox CheckboxOnChange={(e)=>
+            {let shallowArr = [...source]; shallowArr[elem.key].checked = e.target.checked;
+
+            let storageValue = [];
+            shallowArr.map((v,i)=>storageValue.push(v.checked));
+            localStorage.setItem(storageName, storageValue);
+
             setSelectedValue(shallowArr);
-            console.log(shallowArr);
-          }} key={elem.key} value={elem.value} label={elem.value} checked={elem.checked} /></li>)}
+          }}
+            key={elem.key} value={elem.value} label={elem.value}
+            checked={elem.checked} /></li>)}
         </ul>
     );
-
-/*    return (
-        <ul className={styles.CheckBoxList} >
-            {Charts.map(elem => <li><Checkbox CheckboxOnChange={(e)=>{let shallowArr = [...Charts]; shallowArr[elem.name].checked =  e.target.checked; SetCharts(shallowArr);             console.log(Charts)}} value={elem.name} label={elem.label} checked={elem.checked} /></li>)}
-        </ul>
-    );*/
 };
 
 

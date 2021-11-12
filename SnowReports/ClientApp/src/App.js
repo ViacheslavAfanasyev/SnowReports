@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router';
 import { Layout } from './components/Layout';
-import styles from './App.module.css'
+import styles from './App.css'
 
 import TicketsNumberReport from "./components/Report/TicketsNumberReport";
 
@@ -10,9 +10,6 @@ export default class App extends Component {
   static displayName = App.name;
 
   render () {
-
-
-
       return (
       <Layout>
         <Route exact path='/' component={TicketsNumberReport} />

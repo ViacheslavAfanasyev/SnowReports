@@ -35,43 +35,28 @@ namespace DataAccess.Repository
             this.disposed = true;
         }
 
-        private List<UniqueCase> GetUniqueCase(DateTime startDate, DateTime endDate, string assignmentGroup, int correctionDeltaHours)
+        private List<UniqueCase> GetUniqueCase(DateTime startDate, DateTime endDate, string assignmentGroup, string ticketsLevel, int correctionDeltaHours)
         {
 
-            //if (false)
-            //{
-            //    var handledAssigmentGroups = GetTechSupportAssignmentGroups(String.Empty, true);
-
-            //    startDate = startDate.AddHours(-correctionDeltaHours);
-
-            //    var query = from c in this.DbContext.CaseStateChanges
-            //                where c.StartDate >= startDate && c.StartDate <= endDate
-            //                join ci in this.DbContext.Cases on c.CaseId equals ci.Id
-            //                where handledAssigmentGroups.Contains(ci.AssignmentGroup)
-            //                select new
-            //                {
-            //                    CaseId = c.CaseId,
-            //                    State = c.State,
-            //                    StateChangeDate = c.StateChangeDate,
-            //                    AssignmentGroup = ci.AssignmentGroup,
-            //                    CreatedDate = ci.DateCreated,
-            //                    ClosedDate = ci.DateClosed
-            //                };
-
-            //}
-
-
+            if (ticketsLevel==null || ticketsLevel.ToLowerInvariant()=="all")
+            {
+                ticketsLevel = string.Empty;
+            }
 
 
             var handledAssigmentGroups = GetTechSupportAssignmentGroups(String.Empty, true);
 
+
             startDate = startDate.AddHours(-correctionDeltaHours);
 
+            bool includeState = false;
+            
             var query = from c in this.DbContext.Cases
-                         where (c.DateClosed >= startDate || c.DateClosed == UniqueCase.DefaultCaseDateTime)
-                         && c.DateCreated <= endDate
-                         && handledAssigmentGroups.Contains(c.AssignmentGroup)
-                         join csc in this.DbContext.CaseStateChanges on c.Id equals csc.CaseId
+                        where (c.DateClosed >= startDate || c.DateClosed == UniqueCase.DefaultCaseDateTime)
+                        && c.DateCreated <= endDate
+                        && handledAssigmentGroups.Contains(c.AssignmentGroup)
+                        join csc in this.DbContext.CaseStateChanges on c.Id equals csc.CaseId
+                        where csc.SupportLevel.Contains(ticketsLevel)
                          select new
                          {
                              CaseId = csc.CaseId,
@@ -79,28 +64,14 @@ namespace DataAccess.Repository
                              StateChangeDate = csc.StateChangeDate,
                              AssignmentGroup = c.AssignmentGroup,
                              CreatedDate = c.DateCreated,
-                             ClosedDate = c.DateClosed
+                             ClosedDate = c.DateClosed,
+                             //Level = csc.SupportLevel
                          };
-
-            //var query1 = from c in this.DbContext.CaseStateChanges
-            //            where c.StartDate >= startDate && c.StartDate <= endDate
-            //            join ci in this.DbContext.Cases on c.CaseId equals ci.Id
-            //            where handledAssigmentGroups.Contains(ci.AssignmentGroup)
-            //            select new
-            //            {
-            //                CaseId = c.CaseId,
-            //                State = c.State,
-            //                StateChangeDate = c.StateChangeDate,
-            //                AssignmentGroup = ci.AssignmentGroup,
-            //                CreatedDate = ci.DateCreated,
-            //                ClosedDate = ci.DateClosed
-            //            };
-
-
-
 
 
             var uniqueCases = new List<UniqueCase>();
+
+            var cxsmksadcms = query.Count();
 
             //Microsoft.Data.SqlClient.SqlException
             foreach (var item in query)
@@ -108,10 +79,6 @@ namespace DataAccess.Repository
                 var uniqueCase = uniqueCases.FirstOrDefault(u => u.Id == item.CaseId);
                 if (uniqueCase == null)
                 {
-                    //object aG = null;
-                    //Enum.TryParse(typeof(AssignmentGroup), item.AssignmentGroup.Replace(' ', '_'), out aG);
-                    
-
                     if (!assignmentGroup.Contains("All of"))
                     {
                         if (item.AssignmentGroup == null || item.AssignmentGroup != null && item.AssignmentGroup != assignmentGroup)
@@ -162,9 +129,9 @@ namespace DataAccess.Repository
         }
 
 
-        public List<UniqueCase> GetAllCaseStateChanges(DateTime startDate, DateTime endDate, string assignmentGroup, int correctionDeltaHours)
+        public List<UniqueCase> GetAllCaseStateChanges(DateTime startDate, DateTime endDate, string assignmentGroup, string ticketsLevel, int correctionDeltaHours)
         {
-            var results = this.GetUniqueCase(startDate, endDate, assignmentGroup, correctionDeltaHours);
+            var results = this.GetUniqueCase(startDate, endDate, assignmentGroup, ticketsLevel, correctionDeltaHours);
 
             return results;
         }
@@ -175,7 +142,7 @@ namespace DataAccess.Repository
             {
                 return SnowCache.States;
             }
-            return SnowCache.States = this.DbContext.CaseStateChanges.Select(s => s.State).Distinct().ToList();
+            return SnowCache.States = this.DbContext.CaseStateChanges.Select(s => s.State).Distinct().Where(s => !string.IsNullOrEmpty(s)).ToList();
         }
 
         public IEnumerable<string> GetTechSupportAssignmentGroups(string filterValue, bool includeAccumulatedGroup)

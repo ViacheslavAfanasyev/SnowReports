@@ -15,12 +15,12 @@ export const useFetchJson = (url, jsonHandler) =>{
 
             if (jsonHandler==undefined)
             {
-                console.log("useFetchingV2 jsonHandler undefined")
+                //console.log("useFetchingV2 jsonHandler undefined")
                 setResults(json);
             }
             else
             {
-                console.log("useFetchingV2 jsonHandler NOT undefined")
+                //console.log("useFetchingV2 jsonHandler NOT undefined")
                 const result = await jsonHandler(json);
                 setResults(result);
             }

@@ -2,6 +2,7 @@ const aryIannaTimeZones = [
 
         'Europe/Kiev',
         'Pacific/Easter',
+        'UTC',
     ];
 
 

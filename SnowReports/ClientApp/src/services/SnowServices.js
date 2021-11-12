@@ -3,6 +3,7 @@ import axios from "axios";
 const ticketsReportData = process.env.REACT_APP_SNOW_HOST+"/api/snowreports/GetRangedDate";
 const assignmentGroupsUrl = process.env.REACT_APP_SNOW_HOST+'/api/snowreports/AccumulatedAssignmentGroups';
 const ticketStatesUrl = process.env.REACT_APP_SNOW_HOST+'/api/SnowReports/States';
+const ticketsLevelsUrl = process.env.REACT_APP_SNOW_HOST+'/api/SnowReports/TicketsLevels';
 
 export default class SnowServices{
 
@@ -25,6 +26,11 @@ export default class SnowServices{
     static async GetTicketStates(addCheckedParameter=false)
     {
         return await SnowServices.GetData(ticketStatesUrl, addCheckedParameter)
+    }
+
+    static async GetTicketsLevels(addCheckedParameter=false)
+    {
+        return await SnowServices.GetData(ticketsLevelsUrl,addCheckedParameter)
     }
 
     static async GetData(url, addCheckedParameter=false)
