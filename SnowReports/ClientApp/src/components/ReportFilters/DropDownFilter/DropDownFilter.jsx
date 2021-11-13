@@ -34,13 +34,13 @@ const DropDownFilter = ({setSelectedValue, source, name}) => {
 
     if (source==null || source == undefined)
     {
-        console.log("DropDownFilter component | source variable is null or undefined");
+        console.log("DropDownFilter component | source variable is null or undefined | "+name);
         return <div></div>
     }
 
     if (!Array.isArray(source))
     {
-        console.log("DropDownFilter component | source is not an array");
+        console.log("DropDownFilter component | source is not an array | "+name + " "+source);
         return  <div></div>
     }
 

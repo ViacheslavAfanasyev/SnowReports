@@ -35,19 +35,19 @@ namespace DataAccess.Repository
             this.disposed = true;
         }
 
-        private List<UniqueCase> GetUniqueCase(DateTime startDate, DateTime endDate, string assignmentGroup, string ticketsLevel, int correctionDeltaHours)
+        private List<UniqueCase> GetUniqueCase(DateTime startDate, DateTime endDate, string assignmentGroup, int correctionDeltaHours)
         {
 
-            if (ticketsLevel==null || ticketsLevel.ToLowerInvariant()=="all")
-            {
-                ticketsLevel = string.Empty;
-            }
+            //if (ticketsLevel==null || ticketsLevel.ToLowerInvariant()=="all")
+            //{
+            //    ticketsLevel = string.Empty;
+            //}
 
 
             var handledAssigmentGroups = GetTechSupportAssignmentGroups(String.Empty, true);
 
 
-            startDate = startDate.AddHours(-correctionDeltaHours);
+            //startDate = startDate.AddHours(-correctionDeltaHours);
 
             bool includeState = false;
             
@@ -56,7 +56,7 @@ namespace DataAccess.Repository
                         && c.DateCreated <= endDate
                         && handledAssigmentGroups.Contains(c.AssignmentGroup)
                         join csc in this.DbContext.CaseStateChanges on c.Id equals csc.CaseId
-                        where csc.SupportLevel.Contains(ticketsLevel)
+                        //where csc.SupportLevel.Contains(ticketsLevel)
                          select new
                          {
                              CaseId = csc.CaseId,
@@ -65,7 +65,7 @@ namespace DataAccess.Repository
                              AssignmentGroup = c.AssignmentGroup,
                              CreatedDate = c.DateCreated,
                              ClosedDate = c.DateClosed,
-                             //Level = csc.SupportLevel
+                             Level = csc.SupportLevel.Trim()
                          };
 
 
@@ -95,7 +95,7 @@ namespace DataAccess.Repository
                     uniqueCases.Add(uniqueCase);
                 }
 
-                uniqueCase.States.Add(new CaseStateChange(item.State, item.StateChangeDate));
+                uniqueCase.States.Add(new CaseStateChange(item.State, item.StateChangeDate, item.Level));
 
             }
 
@@ -129,9 +129,9 @@ namespace DataAccess.Repository
         }
 
 
-        public List<UniqueCase> GetAllCaseStateChanges(DateTime startDate, DateTime endDate, string assignmentGroup, string ticketsLevel, int correctionDeltaHours)
+        public List<UniqueCase> GetAllCaseStateChanges(DateTime startDate, DateTime endDate, string assignmentGroup, int correctionDeltaHours)
         {
-            var results = this.GetUniqueCase(startDate, endDate, assignmentGroup, ticketsLevel, correctionDeltaHours);
+            var results = this.GetUniqueCase(startDate, endDate, assignmentGroup, correctionDeltaHours);
 
             return results;
         }

@@ -57,7 +57,7 @@ if (active)
     if (label!='0' && payload!=null)
     {
         return <div className={styles.ToolTipLabel}>
-            <h4 className={styles.ToolTipTitle}>{format(parseISO(label),"PPp")}</h4>
+            <h4 className={styles.ToolTipTitle}>{format(parseISO(label),"ccc, d MMM, k:mm a")}</h4>
             {[payload.map((s, index)=> <p key={index} className={styles.ToolTipChartInfo} style={{ color: s.color }} >{s.name.slice(6).replace('_',' ')} {s.value}</p>)]}
         </div>
     }

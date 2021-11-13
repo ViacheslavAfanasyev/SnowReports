@@ -8,13 +8,24 @@ namespace DataAccess.Models
 {
     public class CaseStateChange : IComparable
     {
-        public CaseStateChange(string stateEntered, DateTime entereddate)
+        public CaseStateChange(string stateEntered, DateTime entereddate, string level)
         {
             this.EnteredDate = entereddate;
             this.StateEntered = stateEntered;
+
+            if (level=="1")
+            {
+                this.Level = TicketLevels.L1;
+            }
+            else if (level=="2")
+            {
+                this.Level = TicketLevels.L2;
+            }
         }
         public string StateEntered { get; set; }
         public DateTime EnteredDate { get; set; }
+
+        public TicketLevels Level { get; set; }
         
         public int CompareTo(object? obj)
         {

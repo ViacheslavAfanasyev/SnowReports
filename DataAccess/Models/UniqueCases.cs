@@ -15,42 +15,88 @@ namespace DataAccess.Models
             this.CreatedDate = createdDate;
             this.ClosedDate = closedDate;
             this.States = new List<CaseStateChange>();
+            this.LevelChangeTimeCalculated = false;
+            this.HasLevelBeenChanged = false;
+            this.HasL1States = false;
+            this.HasL2States = false;
         }
         public string Id { get; set; }
         public DateTime CreatedDate { get; private set; }
         public DateTime ClosedDate { get; private set; }
         public List<CaseStateChange> States { get; private set; }
 
-        //public TicketState GetStateForDateTime(DateTime time)
+        public bool LevelChangeTimeCalculated { get; private set; }
+        public bool HasLevelBeenChanged { get; private set; }
+
+        public bool HasL1States { get; private set; }
+        public bool HasL2States { get; private set; }
+
+        public DateTime LevelChangeTime { get; private set; }
+
+        //public string GetStateForDateTime(DateTime time)
         //{
-        //    if (time>DateTime.UtcNow)
+        //    if (time > DateTime.UtcNow)
         //    {
-        //        return TicketState.DefaultValue;
+        //        return "N/A";
         //    }
 
         //    var ll = this.States.Where(t => t.EnteredDate <= time);
         //    var caseStateChange = this.States.Where(t => t.EnteredDate <= time).Max();
 
-        //    if (caseStateChange!=null)
+        //    if (caseStateChange != null)
         //    {
+        //        if (this.ClosedDate != UniqueCase.DefaultCaseDateTime && this.ClosedDate<time)
+        //        {
+        //            return "N/A";//Closed
+        //        }
         //        return caseStateChange.StateEntered;
         //    }
-        //    return TicketState.DefaultValue;
+        //    return "N/A";
         //}
 
-        public string GetStateForDateTime(DateTime time)
+
+        public string GetStateForDateTime(DateTime time, TicketLevels ticketsLevel)
         {
-            if (time > DateTime.UtcNow)
+            if (!this.LevelChangeTimeCalculated)
+            {
+                CalculateLevelChangeTimeCalculated();
+            }
+
+            if (ticketsLevel==TicketLevels.L1&& !this.HasL1States)
             {
                 return "N/A";
             }
 
-            var ll = this.States.Where(t => t.EnteredDate <= time);
-            var caseStateChange = this.States.Where(t => t.EnteredDate <= time).Max();
+            if (ticketsLevel == TicketLevels.L2 && !this.HasL2States)
+            {
+                return "N/A";
+            }
+
+            if (ticketsLevel == TicketLevels.L1 && this.HasLevelBeenChanged && this.LevelChangeTime < time)
+            {
+                return "N/A";
+            }
+
+            if (ticketsLevel == TicketLevels.L2 && this.HasLevelBeenChanged && this.LevelChangeTime > time)
+            {
+                return "N/A";
+            }
+
+            CaseStateChange caseStateChange = null;
+
+            if (ticketsLevel==TicketLevels.All)
+            {
+                caseStateChange = this.States.Where(t => t.EnteredDate <= time).Max();
+            }
+            else
+            {
+                caseStateChange = this.States.Where(t => t.EnteredDate <= time && t.Level == ticketsLevel).Max();
+            }
+
 
             if (caseStateChange != null)
             {
-                if (this.ClosedDate != UniqueCase.DefaultCaseDateTime && this.ClosedDate<time)
+                if (this.ClosedDate != UniqueCase.DefaultCaseDateTime && this.ClosedDate < time)
                 {
                     return "N/A";//Closed
                 }
@@ -59,6 +105,41 @@ namespace DataAccess.Models
             return "N/A";
         }
 
+        public void CalculateLevelChangeTimeCalculated()
+        {
+           this.LevelChangeTimeCalculated = true;
+           var maxL1 = this.States.Where(s => s.Level == TicketLevels.L1).Max();
+           var minL2 = this.States.Where(s => s.Level == TicketLevels.L2).Min();
 
+
+            if (maxL1 !=null && minL2 != null)
+            {
+                this.HasL1States = true;
+                this.HasL2States = true;
+                this.HasLevelBeenChanged = true;
+                if (minL2.EnteredDate.Subtract(maxL1.EnteredDate) > TimeSpan.FromHours(1))
+                {
+                    this.LevelChangeTime = maxL1.EnteredDate.AddHours(1);
+
+                }
+                else
+                {
+                    this.LevelChangeTime = maxL1.EnteredDate.AddMinutes(minL2.EnteredDate.Subtract(maxL1.EnteredDate).Minutes / 2);
+                }
+
+                this.States.Add(new CaseStateChange("In Progress", this.LevelChangeTime, "2"));
+            }
+            else
+            {
+                if (maxL1!=null)
+                {
+                    this.HasL1States = true;
+                }
+                if (minL2!=null)
+                {
+                    this.HasL2States=true;
+                }
+            }
+        }
     }
 }

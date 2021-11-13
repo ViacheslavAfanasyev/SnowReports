@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SnowReports.Models;
 using System.Linq;
+using DataAccess.Extensions;
 
 namespace SnowReports.Controllers
 {
@@ -46,7 +47,8 @@ namespace SnowReports.Controllers
         [HttpGet("TicketsLevels")]
         public IEnumerable<string> TicketsLevels()
         {
-            return this.Config.GetValue<string>("TicketsLevels").Split(',');
+            return typeof(TicketLevels).EnumToList();
+            //return this.Config.GetValue<string>("TicketsLevels").Split(',');
         }
 
         //[HttpGet("GetRangedDate1")]
@@ -102,7 +104,7 @@ namespace SnowReports.Controllers
         //}
 
         [HttpGet("GetRangedDate")]
-        public List<HourData> GetRangedDate(DateTime startDate, DateTime endDate, string assigmentGroup, string ticketsLevel, int timeZoneOffsetInHours = 0)
+        public List<HourData> GetRangedDate(DateTime startDate, DateTime endDate, string assigmentGroup, TicketLevels ticketsLevel, int timeZoneOffsetInHours = 0)
         {
             startDate = startDate.AddHours(-timeZoneOffsetInHours);
             endDate = endDate.AddHours(23).AddHours(-timeZoneOffsetInHours);
@@ -110,11 +112,17 @@ namespace SnowReports.Controllers
             int deltaHours = 300;
 
 
-            var chagnes = this.SnowRepository.GetAllCaseStateChanges(startDate, endDate, assigmentGroup, ticketsLevel, deltaHours);
+            
+
+            var chagnes = this.SnowRepository.GetAllCaseStateChanges(startDate, endDate, assigmentGroup, deltaHours);
             var hourData = new List<HourData>();
 
+            bool write = true;
             for (DateTime i = startDate; i <= endDate; i = i.AddHours(1))
             {
+                //string logResult = $"{ticketsLevel} Time {i}:{Environment.NewLine}";
+
+
 
                 var hourTicketStates = new Dictionary<string, int>();
                 foreach (var state in this.SnowRepository.GetCaseStates())
@@ -124,18 +132,22 @@ namespace SnowReports.Controllers
 
                 foreach (var item in chagnes)
                 {
-                    var ticketState = item.GetStateForDateTime(i);
+                    var ticketState = item.GetStateForDateTime(i, ticketsLevel);
 
                     if (!string.IsNullOrEmpty(ticketState) && ticketState!="N/A")
                     {
                         hourTicketStates[ticketState] += 1;
                     }
+                    //logResult += $"  {item.Id} -> {ticketState}{Environment.NewLine}";
                 }
 
                 hourData.Add(new HourData(i.AddHours(timeZoneOffsetInHours), hourTicketStates));
 
-
-
+                //if (write)
+                //{
+                //    System.IO.File.AppendAllText("log.txt", logResult);
+                //}
+                //write = false;
             }
 
 
