@@ -45,7 +45,8 @@ const CheckboxesList = ({setSelectedValue, setAllowCombineCheckboxes, source, na
 
         return (
             <div>
-               <Checkbox CheckboxOnChange={(e)=>{setAllowCombineCheckboxes(e.target.checked); setCombinedCheckboxState(e.target.checked);}} value="Combine" checked={combinedCheckboxState} className={styles.CombineSwitcher}  />
+               <Checkbox CheckboxOnChange={(e)=>{setAllowCombineCheckboxes(e.target.checked); setCombinedCheckboxState(e.target.checked);}}
+                         value="Combine" checked={combinedCheckboxState} className={styles.CombineSwitcher}  />
 
         <ul id={name} className={styles.CheckboxesList} >
             {source.map((elem, index) => <li key={index}><Checkbox CheckboxOnChange={(e)=>

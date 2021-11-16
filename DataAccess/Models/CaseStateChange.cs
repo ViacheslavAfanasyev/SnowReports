@@ -14,15 +14,20 @@ namespace DataAccess.Models
             this.EnteredDate = entereddate;
             this.StateEntered = stateEntered;
 
-            if (level=="1")
+            if (level=="L1")
             {
                 this.Level = TicketLevels.L1;
             }
-            else if (level=="2")
+            else if (level=="L2")
             {
                 this.Level = TicketLevels.L2;
             }
+            else
+            {
+                throw new Exception($"Incorrect level is detected '{level}'. Statistic might be inaccurate");
+            }
         }
+
         public string StateEntered { get; set; }
         public DateTime EnteredDate { get; set; }
 

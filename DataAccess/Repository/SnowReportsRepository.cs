@@ -74,7 +74,7 @@ namespace DataAccess.Repository
                              AssignmentGroup = c.AssignmentGroup,
                              CreatedDate = c.DateCreated,
                              ClosedDate = c.DateClosed,
-                             Level = csc.SupportLevel.Trim()
+                             Level = csc.SupportLevel//.Trim()
                          };
 
             
@@ -87,26 +87,33 @@ namespace DataAccess.Repository
             //Microsoft.Data.SqlClient.SqlException
             foreach (var item in query)
             {
-                var uniqueCase = uniqueCases.FirstOrDefault(u => u.Id == item.CaseId);
-                if (uniqueCase == null)
+                try
                 {
-                    if (!assignmentGroup.Contains("All of"))
+                    var uniqueCase = uniqueCases.FirstOrDefault(u => u.Id == item.CaseId);
+                    if (uniqueCase == null)
                     {
-                        if (item.AssignmentGroup == null || item.AssignmentGroup != null && item.AssignmentGroup != assignmentGroup)
+                        if (!assignmentGroup.Contains("All of"))
+                        {
+                            if (item.AssignmentGroup == null || item.AssignmentGroup != null && item.AssignmentGroup != assignmentGroup)
+                            {
+                                continue;
+                            }
+                        }
+                        else if (item.AssignmentGroup == null || !handledAssigmentGroups.Contains(item.AssignmentGroup))
                         {
                             continue;
                         }
-                    }
-                    else if(item.AssignmentGroup == null || !handledAssigmentGroups.Contains(item.AssignmentGroup))
-                    {
-                        continue;
+
+                        uniqueCase = new UniqueCase(item.CaseId, item.CreatedDate, item.ClosedDate);
+                        uniqueCases.Add(uniqueCase);
                     }
 
-                    uniqueCase = new UniqueCase(item.CaseId, item.CreatedDate, item.ClosedDate);
-                    uniqueCases.Add(uniqueCase);
+                    uniqueCase.States.Add(new CaseStateChange(item.State, item.StateChangeDate, item.Level));
                 }
-
-                uniqueCase.States.Add(new CaseStateChange(item.State, item.StateChangeDate, item.Level));
+                catch(Exception ex)
+                {
+                    throw new Exception($"{item.CaseId} {item.StateChangeDate}{Environment.NewLine} {ex.Message} {ex.StackTrace}");
+                }
 
             }
 

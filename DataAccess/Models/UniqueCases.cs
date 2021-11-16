@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -58,57 +59,59 @@ namespace DataAccess.Models
 
         public string GetStateForDateTime(DateTime time, TicketLevels ticketsLevel)
         {
-            if (!this.LevelChangeTimeCalculated)
-            {
-                CalculateLevelChangeTimeCalculated();
-            }
 
-            if (time> UniqueCase.LastTicketTime)
-            {
-                return "N/A";
-            }
-
-            if (ticketsLevel==TicketLevels.L1&& !this.HasL1States)
-            {
-                return "N/A";
-            }
-
-            if (ticketsLevel == TicketLevels.L2 && !this.HasL2States)
-            {
-                return "N/A";
-            }
-
-            if (ticketsLevel == TicketLevels.L1 && this.HasLevelBeenChanged && this.LevelChangeTime < time)
-            {
-                return "N/A";
-            }
-
-            if (ticketsLevel == TicketLevels.L2 && this.HasLevelBeenChanged && this.LevelChangeTime > time)
-            {
-                return "N/A";
-            }
-
-            CaseStateChange caseStateChange = null;
-
-            if (ticketsLevel==TicketLevels.All)
-            {
-                caseStateChange = this.States.Where(t => t.EnteredDate <= time).Max();
-            }
-            else
-            {
-                caseStateChange = this.States.Where(t => t.EnteredDate <= time && t.Level == ticketsLevel).Max();
-            }
-
-
-            if (caseStateChange != null)
-            {
-                if (this.ClosedDate != UniqueCase.DefaultCaseDateTime && this.ClosedDate < time)
+                if (!this.LevelChangeTimeCalculated)
                 {
-                    return "N/A";//Closed
+                    CalculateLevelChangeTimeCalculated();
                 }
-                return caseStateChange.StateEntered;
-            }
-            return "N/A";
+
+                if (time > UniqueCase.LastTicketTime)
+                {
+                    return "N/A";
+                }
+
+                if (ticketsLevel == TicketLevels.L1 && !this.HasL1States)
+                {
+                    return "N/A";
+                }
+
+                if (ticketsLevel == TicketLevels.L2 && !this.HasL2States)
+                {
+                    return "N/A";
+                }
+
+                if (ticketsLevel == TicketLevels.L1 && this.HasLevelBeenChanged && this.LevelChangeTime < time)
+                {
+                    return "N/A";
+                }
+
+                if (ticketsLevel == TicketLevels.L2 && this.HasLevelBeenChanged && this.LevelChangeTime > time)
+                {
+                     return "N/A";
+                }
+
+                CaseStateChange caseStateChange = null;
+
+                if (ticketsLevel == TicketLevels.All)
+                {
+                    caseStateChange = this.States.Where(t => t.EnteredDate <= time).Max();
+                }
+                else
+                {
+                    caseStateChange = this.States.Where(t => t.EnteredDate <= time && t.Level == ticketsLevel).Max();
+                }
+
+
+                if (caseStateChange != null)
+                {
+                    if (this.ClosedDate != UniqueCase.DefaultCaseDateTime && this.ClosedDate < time)
+                    {
+                        return "N/A";//Closed
+                    }
+                    return caseStateChange.StateEntered;
+                }
+                 return "N/A";
+            
         }
 
         public void CalculateLevelChangeTimeCalculated()
@@ -133,7 +136,7 @@ namespace DataAccess.Models
                     this.LevelChangeTime = maxL1.EnteredDate.AddMinutes(minL2.EnteredDate.Subtract(maxL1.EnteredDate).Minutes / 2);
                 }
 
-                this.States.Add(new CaseStateChange("In Progress", this.LevelChangeTime, "2"));
+                this.States.Add(new CaseStateChange("In Progress", this.LevelChangeTime, "L2"));
             }
             else
             {
