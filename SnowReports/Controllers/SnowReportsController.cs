@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using SnowReports.Models;
 using System.Linq;
 using DataAccess.Extensions;
+using Logging;
 
 namespace SnowReports.Controllers
 {
@@ -16,10 +17,13 @@ namespace SnowReports.Controllers
         ISnowReportsRepository SnowRepository;
         private readonly IConfiguration Config;
 
-        public SnowReportsController(ISnowReportsRepository snowRepository, IConfiguration config)
+        private ILogger<FileLogger> Logger;
+
+        public SnowReportsController(ISnowReportsRepository snowRepository, IConfiguration config, ILogger<FileLogger> logger)
         {
             this.SnowRepository = snowRepository;
             this.Config = config;
+            this.Logger = logger;
         }
 
 
@@ -112,12 +116,15 @@ namespace SnowReports.Controllers
             int deltaHours = 300;
 
 
-            
+            this.Logger.LogInformation($"ticketsLevel -> {ticketsLevel}");
 
             var chagnes = this.SnowRepository.GetAllCaseStateChanges(startDate, endDate, assigmentGroup, deltaHours);
             var hourData = new List<HourData>();
 
-            bool write = true;
+
+            var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
+
             for (DateTime i = startDate; i <= endDate; i = i.AddHours(1))
             {
                 //string logResult = $"{ticketsLevel} Time {i}:{Environment.NewLine}";
@@ -138,18 +145,19 @@ namespace SnowReports.Controllers
                     {
                         hourTicketStates[ticketState] += 1;
                     }
-                    //logResult += $"  {item.Id} -> {ticketState}{Environment.NewLine}";
+
+                    //logResult += $"{item.Id} -> {ticketState}{Environment.NewLine}";
                 }
 
                 hourData.Add(new HourData(i.AddHours(timeZoneOffsetInHours), hourTicketStates));
 
-                //if (write)
-                //{
-                //    System.IO.File.AppendAllText("log.txt", logResult);
-                //}
-                //write = false;
+
+                //this.Logger.LogInformation($"ticketsLevel -> {logResult}");
+
             }
 
+            watch.Stop();
+            this.Logger.LogInformation($"Processing tickets states({chagnes.Count} took {watch.ElapsedMilliseconds} ms | {startDate} {endDate}");
 
             return hourData;
         }

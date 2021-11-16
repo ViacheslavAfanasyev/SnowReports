@@ -8,6 +8,7 @@ namespace DataAccess.Models
 {
     public class CaseStateChange : IComparable
     {
+        public static DateTime LastTicketTime = DateTime.MaxValue;
         public CaseStateChange(string stateEntered, DateTime entereddate, string level)
         {
             this.EnteredDate = entereddate;

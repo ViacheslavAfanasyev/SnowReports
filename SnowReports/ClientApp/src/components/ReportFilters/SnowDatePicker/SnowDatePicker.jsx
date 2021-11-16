@@ -47,7 +47,7 @@ const SnowDatePicker = ({setDate}) => {
 
     let displayFormat = 'yyyy-MM-dd';
     return (
-        <div>
+        <div id={styles.DatePicker}>
             <DatePicker
                 closeOnScroll={true}
                 selected={dateRange.startDate}

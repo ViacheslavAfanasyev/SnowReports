@@ -11,3 +11,5 @@ D:\Projects\SnowReports\DataAccess\obj\Debug\net6.0\DataAccess.dll
 D:\Projects\SnowReports\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
 D:\Projects\SnowReports\DataAccess\obj\Debug\net6.0\DataAccess.pdb
 D:\Projects\SnowReports\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+D:\Projects\SnowReports\DataAccess\bin\Debug\net6.0\Logging.dll
+D:\Projects\SnowReports\DataAccess\bin\Debug\net6.0\Logging.pdb

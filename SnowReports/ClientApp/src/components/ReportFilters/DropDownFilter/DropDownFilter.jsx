@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import DropDownElement from "./DropDownElement";
-
+import "./DropDownFilter.module.css"
 
 const DropDownFilter = ({setSelectedValue, source, name}) => {
 
@@ -45,11 +45,12 @@ const DropDownFilter = ({setSelectedValue, source, name}) => {
     }
 
     return (
-        <select id={name} onChange={SelectionChange} value={value}  >
+        <select id={name} onChange={SelectionChange} value={value} /*className={styles.DropDown}*/  >
             {source.map((elem,index)=> <DropDownElement key={index} value={elem} />)}
         </select>
     );
 };
+
 
 
 

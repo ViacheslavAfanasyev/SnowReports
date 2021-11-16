@@ -1,5 +1,7 @@
 ﻿using DataAccess.DataAccess;
 using DataAccess.Models;
+using Logging;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +13,11 @@ namespace DataAccess.Repository
     public class SnowReportsRepository : ISnowReportsRepository
     {
         CasesContext DbContext;
-        public SnowReportsRepository(CasesContext dbContext)
+        ILogger<FileLogger> Logger;
+        public SnowReportsRepository(CasesContext dbContext, ILogger<FileLogger> logger)
         {
             this.DbContext = dbContext;
+            this.Logger = logger;
         }
         public void Dispose()
         {
@@ -35,19 +39,24 @@ namespace DataAccess.Repository
             this.disposed = true;
         }
 
-        private List<UniqueCase> GetUniqueCase(DateTime startDate, DateTime endDate, string assignmentGroup, int correctionDeltaHours)
+        private List<UniqueCase> GetUniqueCase(DateTime startDate, DateTime endDate, string assignmentGroup)
         {
+            var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
+            
+            var lastTicketTime = this.DbContext.Cases.OrderByDescending(s => s.DateUpdated).Select(s => s.DateUpdated);
+            UniqueCase.LastTicketTime = lastTicketTime.FirstOrDefault();
+            
+            watch.Stop();
+            this.Logger.LogInformation($"Last case update date took -> {watch.ElapsedMilliseconds} ms");
 
-            //if (ticketsLevel==null || ticketsLevel.ToLowerInvariant()=="all")
-            //{
-            //    ticketsLevel = string.Empty;
-            //}
 
+
+            var watch1 = new System.Diagnostics.Stopwatch();
+            watch1.Start();
 
             var handledAssigmentGroups = GetTechSupportAssignmentGroups(String.Empty, true);
 
-
-            //startDate = startDate.AddHours(-correctionDeltaHours);
 
             bool includeState = false;
             
@@ -67,6 +76,8 @@ namespace DataAccess.Repository
                              ClosedDate = c.DateClosed,
                              Level = csc.SupportLevel.Trim()
                          };
+
+            
 
 
             var uniqueCases = new List<UniqueCase>();
@@ -100,30 +111,8 @@ namespace DataAccess.Repository
             }
 
 
-            //foreach (var item in this.DbContext.CaseStateChanges.Where(c => c.StartDate >= startDate && c.StartDate <= endDate))
-            //{
-            //    var uniqueCase = uniqueCases.FirstOrDefault(u => u.Id == item.CaseId);
-            //    if (uniqueCase == null)
-            //    {
-            //        //var caseAssignmentGroup = this.DbContext.Cases.FirstOrDefault(c => c.Id == item.CaseId)?.AssignmentGroup;
-
-            //        object aG = null;
-            //        //Enum.TryParse(typeof(AssignmentGroup), caseAssignmentGroup.Replace(' ', '_'), out aG);
-
-
-
-            //        //if (aG != null && !(assignmentGroup == AssignmentGroup.Any) || (AssignmentGroup)aG != assignmentGroup)
-            //        //{
-            //        //    continue;
-            //        //}
-
-            //        uniqueCase = new UniqueCase(item.CaseId);
-            //        uniqueCases.Add(uniqueCase);
-            //    }
-
-            //    uniqueCase.States.Add(new CaseStateChange(item.State, item.StateChangeDate));
-
-            //}
+            watch1.Stop();
+            this.Logger.LogInformation($"Retrieving cases states({uniqueCases.Count}) from db took -> {watch1.ElapsedMilliseconds} ms | {startDate} - {endDate}");
 
             return uniqueCases;
         }
@@ -131,7 +120,7 @@ namespace DataAccess.Repository
 
         public List<UniqueCase> GetAllCaseStateChanges(DateTime startDate, DateTime endDate, string assignmentGroup, int correctionDeltaHours)
         {
-            var results = this.GetUniqueCase(startDate, endDate, assignmentGroup, correctionDeltaHours);
+            var results = this.GetUniqueCase(startDate, endDate, assignmentGroup);
 
             return results;
         }

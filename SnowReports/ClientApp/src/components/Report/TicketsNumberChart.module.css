@@ -12,6 +12,22 @@ color:white;
 
 .ToolTipChartInfo
 {
-    text-align: center;
-    margin: 0px 0px 0px 0px;
 }
+
+
+#ReportBlock a{
+    background-color: #A239CA;
+    color: white !important;
+
+}
+
+#ReportBlock
+{
+    width: 99%;
+    /*background-color: green;*/
+    margin: 5px;
+
+    height: 100%;
+    float: left;
+}
+

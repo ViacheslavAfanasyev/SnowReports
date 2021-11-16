@@ -8,11 +8,35 @@ const colorList = [  'Plum', 'YellowGreen','Gold', 'DeepPink', 'PowderBlue',  'V
 
 const TicketsNumberChart = () => {
 
-    const {chartData, chartLines}= useContext(ReportFiltersContext)
+    const {chartData, chartLines, displayCombinedGraph}= useContext(ReportFiltersContext)
+
+    let combinedGraph = [];
+
+    if (displayCombinedGraph)
+    {
+        const checkedGraphs = chartLines.filter(v=>v.checked);
+
+        chartData.map((element, index)=>{
+
+            let sum = 0;
+            checkedGraphs.map((e,i)=>{
+
+                sum += element.value[e.value];
+            })
+
+            combinedGraph.push({date: element.date, value_Combined:sum})
+
+
+        });
+
+
+        console.log("Checked Graphs -"+checkedGraphs);
+    }
 
     return (
+        <div id={styles.ReportBlock}>
         <ResponsiveContainer width="100%" height={400}>
-            <AreaChart data={chartData} width="100%">
+            <AreaChart data={displayCombinedGraph?combinedGraph:chartData} width="100%">
                 <defs>
                     <linearGradient id="bluegradient" x1="0" y1="0" x2="0" y2="1" >
                         <stop offset="0%" stopColor="#2451B7" stopOpacity={0.4} />
@@ -25,10 +49,22 @@ const TicketsNumberChart = () => {
                 </defs>
 
 
-                {chartLines.map((line, index) => {
-                    return <Area key={index} dataKey={"value."+line.value}  width="100%" type="monotone" stroke={colorList[(index%colorList.length)]} fill="url(#bluegradient)" strokeWidth="3px" hide={!line.checked} />
-                })}
+                if (displayCombinedGraph)
+                {
+                     <Area dataKey={"value_Combined"} width="100%" type="monotone"
+                                     stroke={colorList[0]} fill="url(#bluegradient)"
+                                     strokeWidth="3px" />
+                }
+                else
+                {
 
+                        chartLines.map((line, index) => {
+                            return <Area key={index} dataKey={"value." + line.value} width="100%" type="monotone"
+                                         stroke={colorList[(index % colorList.length)]} fill="url(#bluegradient)"
+                                         strokeWidth="3px" hide={!line.checked}/>
+                        })
+
+                }
 
                 <XAxis dataKey="date" axisLine={false} tickLine={false} interval={Math.round(chartData.length/10)}  tickFormatter={(dateTime)=>
                 {
@@ -47,6 +83,7 @@ const TicketsNumberChart = () => {
             </AreaChart>
 
         </ResponsiveContainer>
+        </div>
     );
 };
 

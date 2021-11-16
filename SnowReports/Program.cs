@@ -1,5 +1,6 @@
 using DataAccess.DataAccess;
 using DataAccess.Repository;
+using Logging;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -39,7 +40,16 @@ if (!builder.Environment.IsDevelopment())
 
 builder.Services.AddControllersWithViews();
 
-var connectionString = builder.Configuration.GetConnectionString("SNReporting");
+string connectionString = string.Empty;
+if (builder.Environment.IsDevelopment())
+{
+    connectionString = builder.Configuration.GetConnectionString("devSNReporting");
+}
+else
+{
+    connectionString = builder.Configuration.GetConnectionString("SNReporting");
+}
+
 builder.Services.AddDbContext<CasesContext>((options) =>
 {
     options.UseSqlServer(connectionString);
@@ -47,6 +57,8 @@ builder.Services.AddDbContext<CasesContext>((options) =>
 
 builder.Services.AddScoped<ISnowReportsRepository, SnowReportsRepository>();
 
+//Register file logger
+builder.Logging.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "logs"));
 
 
 var app = builder.Build();

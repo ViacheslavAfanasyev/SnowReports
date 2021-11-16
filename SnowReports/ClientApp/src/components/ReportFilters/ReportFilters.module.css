@@ -1,12 +1,17 @@
 .ReportFiltersList {
     list-style-type: none;
+    text-align: left;
+    padding: 1px;
 }
 
-.ReportFiltersList li{
-    display: inline-block;
+.ReportFiltersList > li{
+    /*display: inline-block;*/
+    margin: 15px 0px 5px 0px;
 }
 
-.Right
+#FiltersBlock
 {
-    float: right;
+  /*  background-color: blue;*/
+    padding: 5px;
 }
+

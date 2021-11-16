@@ -3,7 +3,7 @@ import React from 'react';
 const Checkbox = ({CheckboxOnChange, ...props}) => {
 
     return (
-        <div>
+        <div className={props.className}>
             <input id={`state-checkbox-${props.value}`} type="checkbox"
                    value={props.value}
                    name={props.value}
@@ -11,8 +11,6 @@ const Checkbox = ({CheckboxOnChange, ...props}) => {
                    onChange={CheckboxOnChange}/>
 
             <label htmlFor={`state-checkbox-${props.value}`} className='noselect'>{props.value}</label>
-
-
         </div>
     );
 };

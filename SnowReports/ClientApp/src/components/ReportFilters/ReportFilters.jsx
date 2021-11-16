@@ -25,7 +25,7 @@ const ReportFilters = () => {
 
     const reportFiltersName = "_byState"
     //Restore ReportFiltersContext
-    const {setChartLines, setQueryString}= useContext(ReportFiltersContext)
+    const {setChartLines, setAllowCombineCheckboxes, setAssignmentGroup,setTicketsLevel, setTimeZoneOffsetInHours}= useContext(ReportFiltersContext)
 
     //Create states
     const [assignmentGroupsList, setAssignmentGroupsList ] = useState([])
@@ -50,7 +50,9 @@ const ReportFilters = () => {
     })
 
     //Create dynamic query string
+/*
     const [queryString, setDate, setAssignmentGroup,setTicketsLevel, setTimeZoneOffsetInHours]= useDynamicQueryString();
+*/
 
     //Define execution of the functions
     useEffect(()=>{
@@ -59,15 +61,16 @@ const ReportFilters = () => {
         setTimezonesList(Extensions.GetTimeZones());
         fetchTicketsLevels();
     },[]);
-    useEffect(()=>setQueryString(queryString), [queryString]);
+    //useEffect(()=>setQueryString(queryString), [queryString]);
     useEffect(()=>setChartLines(statesList),[statesList])
 
     //chartData, setChartData
 
     return (
+        <div id={styles.FiltersBlock}>
          <ul className={styles.ReportFiltersList} >
           <li>
-                <CheckboxesList setSelectedValue={setStatesList} source={statesList} name={"States"+reportFiltersName} />
+                <CheckboxesList setSelectedValue={setStatesList} setAllowCombineCheckboxes={setAllowCombineCheckboxes} source={statesList} name={"States"+reportFiltersName} />
             </li>
             <li>
                 <DropDownFilter setSelectedValue={setAssignmentGroup} source={assignmentGroupsList} name={"AssigmentGroups"+reportFiltersName} />
@@ -78,11 +81,8 @@ const ReportFilters = () => {
              <li>
                  <DropDownFilter setSelectedValue={setTicketsLevel} source={ticketsLevelsList} name={"Levels"+reportFiltersName} />
              </li>
+         </ul></div>
 
-            <li className={styles.Right}>
-                <SnowDatePicker setDate={setDate} />
-            </li>
-        </ul>
     );
 };
 

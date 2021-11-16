@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Checkbox from "./Checkbox";
 import styles from './CheckboxesList.module.css'
 
-const CheckboxesList = ({setSelectedValue, source, name}) => {
+const CheckboxesList = ({setSelectedValue, setAllowCombineCheckboxes, source, name}) => {
 
     const storageName = name+"_checkboxesList";
     const storageV = localStorage.getItem(storageName);
@@ -11,6 +11,8 @@ const CheckboxesList = ({setSelectedValue, source, name}) => {
     {
         selectedCheckboxes = storageV.split(',');
     }
+
+    const [combinedCheckboxState, setCombinedCheckboxState] = useState(false)
 
     useEffect(()=>{
         if (source!=undefined && source.length>0 && selectedCheckboxes.length>0)
@@ -42,7 +44,10 @@ const CheckboxesList = ({setSelectedValue, source, name}) => {
     }
 
         return (
-        <ul id={name} className={styles.TicketStatesList} >
+            <div>
+               <Checkbox CheckboxOnChange={(e)=>{setAllowCombineCheckboxes(e.target.checked); setCombinedCheckboxState(e.target.checked);}} value="Combine" checked={combinedCheckboxState} className={styles.CombineSwitcher}  />
+
+        <ul id={name} className={styles.CheckboxesList} >
             {source.map((elem, index) => <li key={index}><Checkbox CheckboxOnChange={(e)=>
             {let shallowArr = [...source]; shallowArr[elem.key].checked = e.target.checked;
 
@@ -55,6 +60,7 @@ const CheckboxesList = ({setSelectedValue, source, name}) => {
             key={elem.key} value={elem.value} label={elem.value}
             checked={elem.checked} /></li>)}
         </ul>
+    </div>
     );
 };
 

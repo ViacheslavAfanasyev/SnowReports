@@ -9,6 +9,7 @@ namespace DataAccess.Models
     public class UniqueCase
     {
         public static DateTime DefaultCaseDateTime = DateTime.Parse("1/1/1900 12:00:00 AM");
+        public static DateTime LastTicketTime = DateTime.MaxValue;
         public UniqueCase(string id, DateTime createdDate, DateTime closedDate)
         {
             this.Id = id;
@@ -60,6 +61,11 @@ namespace DataAccess.Models
             if (!this.LevelChangeTimeCalculated)
             {
                 CalculateLevelChangeTimeCalculated();
+            }
+
+            if (time> UniqueCase.LastTicketTime)
+            {
+                return "N/A";
             }
 
             if (ticketsLevel==TicketLevels.L1&& !this.HasL1States)
