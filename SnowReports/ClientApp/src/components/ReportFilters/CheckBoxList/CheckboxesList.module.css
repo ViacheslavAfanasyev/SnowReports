@@ -9,16 +9,38 @@
     list-style-type: none;
 }
 
+.dim
+{
+   /* color:gray!important;*/
+    font-weight: normal!important;
+    opacity: 0.3;
+}
+
 .CheckboxesList li{
     margin-right: 10px;
+    font-size: 14px;
 }
 
 .CheckboxesList li label
 {
     color: white;
+    margin-left: 3px;
 }
 
-.CombineSwitcher
+.CombinedLabel
 {
     color: papayawhip;
 }
+
+
+.CombinedSwitcher:checked  + .CombinedLabel{
+    color: red;
+    font-weight: bold;
+}
+
+.regularCheckbox:checked + .regularLabel
+{
+    font-size: 15px;
+/*    font-weight: bolder;*/
+}
+

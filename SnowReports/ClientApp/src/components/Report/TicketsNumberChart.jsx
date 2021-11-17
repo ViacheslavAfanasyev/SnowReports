@@ -52,8 +52,9 @@ const TicketsNumberChart = () => {
                 if (displayCombinedGraph)
                 {
                      <Area dataKey={"value_Combined"} width="100%" type="monotone"
-                                     stroke={colorList[0]} fill="url(#bluegradient)"
-                                     strokeWidth="3px" />
+                                     stroke={colorList[3]} fill="url(#bluegradient)"
+                                     strokeWidth="5px"
+                     />
                 }
                 else
                 {

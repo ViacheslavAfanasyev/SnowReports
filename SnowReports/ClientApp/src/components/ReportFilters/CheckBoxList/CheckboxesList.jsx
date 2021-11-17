@@ -2,6 +2,30 @@ import React, { useState, useEffect } from "react";
 import Checkbox from "./Checkbox";
 import styles from './CheckboxesList.module.css'
 
+
+function ApplyStyles()
+{
+    const cs = document.querySelector("."+styles.CombinedSwitcher);
+    const cl = document.querySelector("."+styles.CombinedLabel);
+
+    if (cs.checked)
+    {
+        const elems = document.getElementsByClassName(styles.regularLabel);
+        for(let i=0; i<elems.length; ++i){
+            elems[i].classList.add(styles.dim);
+        }
+
+        cl.classList.remove(styles.dim);
+    }
+    else {
+        const elems = document.getElementsByClassName(styles.regularLabel);
+        for(let i=0; i<elems.length; ++i){
+            elems[i].classList.remove(styles.dim);
+        }
+        cl.classList.add(styles.dim);
+    }
+}
+
 const CheckboxesList = ({setSelectedValue, setAllowCombineCheckboxes, source, name}) => {
 
     const storageName = name+"_checkboxesList";
@@ -45,8 +69,11 @@ const CheckboxesList = ({setSelectedValue, setAllowCombineCheckboxes, source, na
 
         return (
             <div>
-               <Checkbox CheckboxOnChange={(e)=>{setAllowCombineCheckboxes(e.target.checked); setCombinedCheckboxState(e.target.checked);}}
-                         value="Combine" checked={combinedCheckboxState} className={styles.CombineSwitcher}  />
+
+        <Checkbox CheckboxOnChange={(e)=>{setAllowCombineCheckboxes(e.target.checked); setCombinedCheckboxState(e.target.checked); ApplyStyles();}}
+                         value="Combine" checked={combinedCheckboxState}
+                       labelClass={styles.CombinedLabel}
+                       inputClass={styles.CombinedSwitcher}  />
 
         <ul id={name} className={styles.CheckboxesList} >
             {source.map((elem, index) => <li key={index}><Checkbox CheckboxOnChange={(e)=>
@@ -59,7 +86,11 @@ const CheckboxesList = ({setSelectedValue, setAllowCombineCheckboxes, source, na
             setSelectedValue(shallowArr);
           }}
             key={elem.key} value={elem.value} label={elem.value}
-            checked={elem.checked} /></li>)}
+            checked={elem.checked}
+            labelClass={styles.regularLabel}
+            inputClass={styles.regularCheckbox}
+
+            /></li>)}
         </ul>
     </div>
     );
