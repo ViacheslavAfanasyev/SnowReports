@@ -8,7 +8,8 @@ export const useDynamicQueryString = () =>{
             endDate:"",//new Date().toJSON().slice(0,10),
             assigmentGroup:"",
             ticketsLevel:"",
-            timeZoneOffsetInHours:0
+            timeZoneOffsetInHours:0,
+            minutesInterval:0
         });
 
 
@@ -26,14 +27,22 @@ export const useDynamicQueryString = () =>{
 
     function setDate(value)
     {
+        let local = "en-ca"
         //console.log("SET DATE - "+value.startDate.toLocaleString().slice(0,10) + " "+value.startDate.toLocaleDateString().slice(0,10));
-        let parameters = {...urlParameters, startDate : value.startDate.toLocaleDateString().slice(0,10), endDate : value.endDate.toLocaleDateString().slice(0,10) };
+        let parameters = {...urlParameters, startDate : value.startDate.toLocaleDateString(local).slice(0,10), endDate : value.endDate.toLocaleDateString(local).slice(0,10) };
+        console.log(parameters)
         setUrlParameters(parameters);
     }
 
     function setTicketsLevel(value)
     {
         let parameters = {...urlParameters, ticketsLevel : value};
+        setUrlParameters(parameters);
+    }
+
+    const setMinutesInterval = (minutesInterval) =>
+    {
+        let parameters = {...urlParameters, minutesInterval : minutesInterval};
         setUrlParameters(parameters);
     }
 
@@ -45,7 +54,7 @@ export const useDynamicQueryString = () =>{
     },[urlParameters]);
 
 
-    return [queryString, setDate, setAssignmentGroup,setTicketsLevel, setTimeZoneOffsetInHours];
+    return [queryString, setDate, setAssignmentGroup,setTicketsLevel, setTimeZoneOffsetInHours, setMinutesInterval];
 
 }
 

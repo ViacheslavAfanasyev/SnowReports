@@ -2,7 +2,6 @@ D:\Projects\SnowReports\Logging\bin\Debug\net6.0\Logging.deps.json
 D:\Projects\SnowReports\Logging\bin\Debug\net6.0\Logging.dll
 D:\Projects\SnowReports\Logging\bin\Debug\net6.0\ref\Logging.dll
 D:\Projects\SnowReports\Logging\bin\Debug\net6.0\Logging.pdb
-D:\Projects\SnowReports\Logging\obj\Debug\net6.0\Logging.GlobalUsings.g.cs
 D:\Projects\SnowReports\Logging\obj\Debug\net6.0\Logging.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projects\SnowReports\Logging\obj\Debug\net6.0\Logging.AssemblyInfoInputs.cache
 D:\Projects\SnowReports\Logging\obj\Debug\net6.0\Logging.AssemblyInfo.cs

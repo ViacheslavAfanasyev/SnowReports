@@ -6,15 +6,16 @@
       "applicationUrl": "http://localhost:64910",
       "sslPort": 0
     }
-  },
+  }
+  ,
   "profiles": {
     "SnowReports": {
       "commandName": "Project",
-      "launchBrowser": true,
-      "applicationUrl": "http://localhost:5100",
+      "launchBrowser": false,
+      "applicationUrl": "http://localhost:5757",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy"
+        //"ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy",
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
     "IIS Express": {

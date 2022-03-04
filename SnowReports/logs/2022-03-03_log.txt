@@ -1,0 +1,360 @@
+Information: 2022-03-03 4:54:02 PM Now listening on: http://localhost:5757
+Information: 2022-03-03 4:54:02 PM Application started. Press Ctrl+C to shut down.
+Information: 2022-03-03 4:54:02 PM Hosting environment: Development
+Information: 2022-03-03 4:54:02 PM Content root path: D:\Projects\SnowReports\SnowReports\
+Warning: 2022-03-03 4:54:44 PM No type was specified for the decimal property 'MetricWaitCloud' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 4:54:44 PM No type was specified for the decimal property 'MetricWaitCustomer' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 4:54:44 PM No type was specified for the decimal property 'MetricWaitProduct' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 4:54:44 PM No type was specified for the decimal property 'MetricWaitSupport' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 4:54:44 PM No type was specified for the decimal property 'ResolutionTimeDays' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 4:54:44 PM No type was specified for the decimal property 'TotalTimeWorked' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 4:54:44 PM No type was specified for the decimal property 'StateDurationHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 4:54:44 PM No type was specified for the decimal property 'StateDurationWeekdayHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Information: 2022-03-03 4:58:32 PM Now listening on: http://localhost:5757
+Information: 2022-03-03 4:58:32 PM Application started. Press Ctrl+C to shut down.
+Information: 2022-03-03 4:58:32 PM Hosting environment: Development
+Information: 2022-03-03 4:58:32 PM Content root path: D:\Projects\SnowReports\SnowReports\
+Warning: 2022-03-03 4:58:40 PM No type was specified for the decimal property 'MetricWaitCloud' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 4:58:40 PM No type was specified for the decimal property 'MetricWaitCustomer' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 4:58:40 PM No type was specified for the decimal property 'MetricWaitProduct' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 4:58:40 PM No type was specified for the decimal property 'MetricWaitSupport' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 4:58:40 PM No type was specified for the decimal property 'ResolutionTimeDays' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 4:58:40 PM No type was specified for the decimal property 'TotalTimeWorked' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 4:58:40 PM No type was specified for the decimal property 'StateDurationHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 4:58:40 PM No type was specified for the decimal property 'StateDurationWeekdayHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Information: 2022-03-03 4:58:43 PM ticketsLevel -> All
+Information: 2022-03-03 4:58:43 PM Last case update date took -> 51 ms
+Information: 2022-03-03 4:58:43 PM Retrieving cases states(356) from db took -> 175 ms | 2021-09-26 10:00:00 PM - 2021-10-13 9:00:00 PM
+Information: 2022-03-03 4:58:43 PM Processing tickets states(356 took 64 ms | 2021-09-26 10:00:00 PM 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:26:39 PM Now listening on: http://localhost:5757
+Information: 2022-03-03 5:26:39 PM Application started. Press Ctrl+C to shut down.
+Information: 2022-03-03 5:26:39 PM Hosting environment: Development
+Information: 2022-03-03 5:26:39 PM Content root path: D:\Projects\SnowReports\SnowReports\
+Warning: 2022-03-03 5:26:47 PM No type was specified for the decimal property 'MetricWaitCloud' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 5:26:47 PM No type was specified for the decimal property 'MetricWaitCustomer' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 5:26:47 PM No type was specified for the decimal property 'MetricWaitProduct' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 5:26:47 PM No type was specified for the decimal property 'MetricWaitSupport' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 5:26:47 PM No type was specified for the decimal property 'ResolutionTimeDays' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 5:26:47 PM No type was specified for the decimal property 'TotalTimeWorked' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 5:26:47 PM No type was specified for the decimal property 'StateDurationHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 5:26:47 PM No type was specified for the decimal property 'StateDurationWeekdayHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Information: 2022-03-03 5:26:48 PM ticketsLevel -> All
+Information: 2022-03-03 5:26:48 PM Last case update date took -> 57 ms
+Information: 2022-03-03 5:26:49 PM Retrieving cases states(356) from db took -> 154 ms | 2021-09-26 10:00:00 PM - 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:26:49 PM Processing tickets states(356 took 78 ms | 2021-09-26 10:00:00 PM 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:27:11 PM Now listening on: http://localhost:5757
+Information: 2022-03-03 5:27:11 PM Application started. Press Ctrl+C to shut down.
+Information: 2022-03-03 5:27:11 PM Hosting environment: Development
+Information: 2022-03-03 5:27:11 PM Content root path: D:\Projects\SnowReports\SnowReports\
+Warning: 2022-03-03 5:27:25 PM No type was specified for the decimal property 'MetricWaitCloud' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 5:27:25 PM No type was specified for the decimal property 'MetricWaitCustomer' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 5:27:25 PM No type was specified for the decimal property 'MetricWaitProduct' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 5:27:25 PM No type was specified for the decimal property 'MetricWaitSupport' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 5:27:25 PM No type was specified for the decimal property 'ResolutionTimeDays' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 5:27:25 PM No type was specified for the decimal property 'TotalTimeWorked' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 5:27:25 PM No type was specified for the decimal property 'StateDurationHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 5:27:25 PM No type was specified for the decimal property 'StateDurationWeekdayHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Information: 2022-03-03 5:27:28 PM ticketsLevel -> All
+Information: 2022-03-03 5:27:28 PM Last case update date took -> 50 ms
+Information: 2022-03-03 5:27:28 PM Retrieving cases states(356) from db took -> 172 ms | 2021-09-26 10:00:00 PM - 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:27:29 PM Processing tickets states(356 took 266 ms | 2021-09-26 10:00:00 PM 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:46:14 PM Now listening on: http://localhost:5757
+Information: 2022-03-03 5:46:14 PM Application started. Press Ctrl+C to shut down.
+Information: 2022-03-03 5:46:14 PM Hosting environment: Development
+Information: 2022-03-03 5:46:14 PM Content root path: D:\Projects\SnowReports\SnowReports\
+Warning: 2022-03-03 5:46:22 PM No type was specified for the decimal property 'MetricWaitCloud' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 5:46:22 PM No type was specified for the decimal property 'MetricWaitCustomer' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 5:46:22 PM No type was specified for the decimal property 'MetricWaitProduct' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 5:46:22 PM No type was specified for the decimal property 'MetricWaitSupport' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 5:46:22 PM No type was specified for the decimal property 'ResolutionTimeDays' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 5:46:22 PM No type was specified for the decimal property 'TotalTimeWorked' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 5:46:22 PM No type was specified for the decimal property 'StateDurationHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 5:46:22 PM No type was specified for the decimal property 'StateDurationWeekdayHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Information: 2022-03-03 5:46:24 PM ticketsLevel -> All
+Information: 2022-03-03 5:46:24 PM Last case update date took -> 56 ms
+Information: 2022-03-03 5:46:24 PM Retrieving cases states(356) from db took -> 182 ms | 2021-09-26 10:00:00 PM - 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:46:24 PM Processing tickets states(356 took 79 ms | 2021-09-26 10:00:00 PM 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:46:39 PM ticketsLevel -> All
+Information: 2022-03-03 5:46:39 PM Last case update date took -> 8 ms
+Information: 2022-03-03 5:46:39 PM Retrieving cases states(356) from db took -> 118 ms | 2021-09-26 10:00:00 PM - 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:46:40 PM Processing tickets states(356 took 70 ms | 2021-09-26 10:00:00 PM 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:46:53 PM ticketsLevel -> All
+Information: 2022-03-03 5:46:53 PM Last case update date took -> 10 ms
+Information: 2022-03-03 5:46:53 PM Retrieving cases states(356) from db took -> 88 ms | 2021-09-26 10:00:00 PM - 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:46:53 PM Processing tickets states(356 took 11 ms | 2021-09-26 10:00:00 PM 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:47:01 PM ticketsLevel -> All
+Information: 2022-03-03 5:47:01 PM Last case update date took -> 5 ms
+Information: 2022-03-03 5:47:01 PM Retrieving cases states(356) from db took -> 96 ms | 2021-09-26 10:00:00 PM - 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:47:04 PM Processing tickets states(356 took 2715 ms | 2021-09-26 10:00:00 PM 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:49:30 PM ticketsLevel -> All
+Information: 2022-03-03 5:49:30 PM Last case update date took -> 8 ms
+Information: 2022-03-03 5:49:30 PM Retrieving cases states(356) from db took -> 106 ms | 2021-09-26 10:00:00 PM - 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:49:30 PM Processing tickets states(356 took 50 ms | 2021-09-26 10:00:00 PM 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:54:02 PM ticketsLevel -> All
+Information: 2022-03-03 5:54:03 PM Last case update date took -> 1048 ms
+Information: 2022-03-03 5:54:03 PM Retrieving cases states(356) from db took -> 123 ms | 2021-09-26 10:00:00 PM - 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:54:03 PM Processing tickets states(356 took 49 ms | 2021-09-26 10:00:00 PM 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:54:04 PM ticketsLevel -> All
+Information: 2022-03-03 5:54:04 PM Last case update date took -> 6 ms
+Information: 2022-03-03 5:54:04 PM Retrieving cases states(356) from db took -> 102 ms | 2021-09-26 10:00:00 PM - 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:54:04 PM Processing tickets states(356 took 46 ms | 2021-09-26 10:00:00 PM 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:55:50 PM ticketsLevel -> All
+Information: 2022-03-03 5:55:50 PM Last case update date took -> 9 ms
+Information: 2022-03-03 5:55:50 PM Retrieving cases states(356) from db took -> 96 ms | 2021-09-26 10:00:00 PM - 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:55:50 PM Processing tickets states(356 took 54 ms | 2021-09-26 10:00:00 PM 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:55:53 PM ticketsLevel -> All
+Information: 2022-03-03 5:55:53 PM Last case update date took -> 5 ms
+Information: 2022-03-03 5:55:53 PM Retrieving cases states(356) from db took -> 86 ms | 2021-09-26 10:00:00 PM - 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:55:53 PM Processing tickets states(356 took 55 ms | 2021-09-26 10:00:00 PM 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:56:23 PM ticketsLevel -> All
+Information: 2022-03-03 5:56:23 PM Last case update date took -> 7 ms
+Information: 2022-03-03 5:56:23 PM Retrieving cases states(356) from db took -> 87 ms | 2021-09-26 10:00:00 PM - 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:56:23 PM Processing tickets states(356 took 50 ms | 2021-09-26 10:00:00 PM 2021-10-13 9:00:00 PM
+Information: 2022-03-03 5:56:35 PM ticketsLevel -> All
+Information: 2022-03-03 5:56:35 PM Last case update date took -> 7 ms
+Information: 2022-03-03 5:56:35 PM Retrieving cases states(356) from db took -> 88 ms | 2021-09-27 12:00:00 AM - 2021-10-13 11:00:00 PM
+Information: 2022-03-03 5:56:35 PM Processing tickets states(356 took 51 ms | 2021-09-27 12:00:00 AM 2021-10-13 11:00:00 PM
+Information: 2022-03-03 5:56:54 PM ticketsLevel -> All
+Information: 2022-03-03 5:56:54 PM Last case update date took -> 7 ms
+Information: 2022-03-03 5:56:54 PM Retrieving cases states(368) from db took -> 100 ms | 2021-10-19 12:00:00 AM - 2021-10-21 11:00:00 PM
+Information: 2022-03-03 5:56:54 PM Processing tickets states(368 took 13 ms | 2021-10-19 12:00:00 AM 2021-10-21 11:00:00 PM
+Information: 2022-03-03 6:09:15 PM Now listening on: http://localhost:5757
+Information: 2022-03-03 6:09:15 PM Application started. Press Ctrl+C to shut down.
+Information: 2022-03-03 6:09:15 PM Hosting environment: Development
+Information: 2022-03-03 6:09:15 PM Content root path: D:\Projects\SnowReports\SnowReports\
+Warning: 2022-03-03 6:09:30 PM No type was specified for the decimal property 'MetricWaitCloud' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 6:09:30 PM No type was specified for the decimal property 'MetricWaitCustomer' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 6:09:30 PM No type was specified for the decimal property 'MetricWaitProduct' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 6:09:30 PM No type was specified for the decimal property 'MetricWaitSupport' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 6:09:30 PM No type was specified for the decimal property 'ResolutionTimeDays' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 6:09:30 PM No type was specified for the decimal property 'TotalTimeWorked' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 6:09:30 PM No type was specified for the decimal property 'StateDurationHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-03 6:09:30 PM No type was specified for the decimal property 'StateDurationWeekdayHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Information: 2022-03-03 6:09:32 PM ticketsLevel -> All
+Information: 2022-03-03 6:09:32 PM Last case update date took -> 49 ms
+Information: 2022-03-03 6:09:33 PM Retrieving cases states(374) from db took -> 179 ms | 2021-10-18 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-03 6:09:33 PM Processing tickets states(374 took 208 ms | 2021-10-18 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-03 6:09:37 PM ticketsLevel -> All
+Information: 2022-03-03 6:09:37 PM Last case update date took -> 7 ms
+Information: 2022-03-03 6:09:37 PM Retrieving cases states(374) from db took -> 109 ms | 2021-10-18 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-03 6:09:37 PM Processing tickets states(374 took 31 ms | 2021-10-18 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-03 6:09:42 PM ticketsLevel -> All
+Information: 2022-03-03 6:09:42 PM Last case update date took -> 5 ms
+Information: 2022-03-03 6:09:42 PM Retrieving cases states(374) from db took -> 104 ms | 2021-10-18 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-03 6:09:42 PM Processing tickets states(374 took 7 ms | 2021-10-18 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-03 6:09:48 PM ticketsLevel -> All
+Information: 2022-03-03 6:09:48 PM Last case update date took -> 5 ms
+Information: 2022-03-03 6:09:48 PM Retrieving cases states(374) from db took -> 89 ms | 2021-10-18 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-03 6:09:48 PM Processing tickets states(374 took 177 ms | 2021-10-18 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-03 6:09:52 PM ticketsLevel -> All
+Information: 2022-03-03 6:09:52 PM Last case update date took -> 5 ms
+Information: 2022-03-03 6:09:52 PM Retrieving cases states(336) from db took -> 82 ms | 2021-10-20 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-03 6:09:53 PM Processing tickets states(336 took 47 ms | 2021-10-20 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-03 6:10:18 PM ticketsLevel -> All
+Information: 2022-03-03 6:10:18 PM Last case update date took -> 10 ms
+Information: 2022-03-03 6:10:18 PM Retrieving cases states(323) from db took -> 89 ms | 2021-10-13 12:00:00 AM - 2021-10-14 11:00:00 PM
+Information: 2022-03-03 6:10:18 PM Processing tickets states(323 took 92 ms | 2021-10-13 12:00:00 AM 2021-10-14 11:00:00 PM
+Information: 2022-03-03 8:58:27 PM ticketsLevel -> All
+Information: 2022-03-03 8:58:28 PM Last case update date took -> 1074 ms
+Information: 2022-03-03 8:58:28 PM Retrieving cases states(310) from db took -> 107 ms | 2021-10-12 12:00:00 AM - 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:58:29 PM Processing tickets states(310 took 71 ms | 2021-10-12 12:00:00 AM 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:58:33 PM ticketsLevel -> All
+Information: 2022-03-03 8:58:33 PM Last case update date took -> 4 ms
+Information: 2022-03-03 8:58:33 PM Retrieving cases states(310) from db took -> 95 ms | 2021-10-12 12:00:00 AM - 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:58:33 PM Processing tickets states(310 took 28 ms | 2021-10-12 12:00:00 AM 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:58:48 PM ticketsLevel -> All
+Information: 2022-03-03 8:58:48 PM Last case update date took -> 9 ms
+Information: 2022-03-03 8:58:48 PM Retrieving cases states(310) from db took -> 115 ms | 2021-10-12 12:00:00 AM - 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:58:48 PM Processing tickets states(310 took 4 ms | 2021-10-12 12:00:00 AM 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:00 PM ticketsLevel -> All
+Information: 2022-03-03 8:59:01 PM Last case update date took -> 8 ms
+Information: 2022-03-03 8:59:01 PM Retrieving cases states(310) from db took -> 91 ms | 2021-10-12 12:00:00 AM - 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:01 PM Processing tickets states(310 took 5 ms | 2021-10-12 12:00:00 AM 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:15 PM ticketsLevel -> All
+Information: 2022-03-03 8:59:15 PM Last case update date took -> 10 ms
+Information: 2022-03-03 8:59:15 PM Retrieving cases states(310) from db took -> 78 ms | 2021-10-12 12:00:00 AM - 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:15 PM Processing tickets states(310 took 26 ms | 2021-10-12 12:00:00 AM 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:17 PM ticketsLevel -> All
+Information: 2022-03-03 8:59:17 PM Last case update date took -> 7 ms
+Information: 2022-03-03 8:59:17 PM Retrieving cases states(310) from db took -> 81 ms | 2021-10-12 12:00:00 AM - 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:17 PM Processing tickets states(310 took 101 ms | 2021-10-12 12:00:00 AM 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:18 PM ticketsLevel -> All
+Information: 2022-03-03 8:59:18 PM Last case update date took -> 6 ms
+Information: 2022-03-03 8:59:18 PM Retrieving cases states(310) from db took -> 189 ms | 2021-10-12 12:00:00 AM - 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:18 PM Processing tickets states(310 took 28 ms | 2021-10-12 12:00:00 AM 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:21 PM ticketsLevel -> All
+Information: 2022-03-03 8:59:21 PM Last case update date took -> 4 ms
+Information: 2022-03-03 8:59:21 PM Retrieving cases states(310) from db took -> 98 ms | 2021-10-12 12:00:00 AM - 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:21 PM Processing tickets states(310 took 15 ms | 2021-10-12 12:00:00 AM 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:27 PM ticketsLevel -> All
+Information: 2022-03-03 8:59:27 PM Last case update date took -> 5 ms
+Information: 2022-03-03 8:59:27 PM Retrieving cases states(310) from db took -> 102 ms | 2021-10-12 12:00:00 AM - 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:27 PM Processing tickets states(310 took 6 ms | 2021-10-12 12:00:00 AM 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:29 PM ticketsLevel -> All
+Information: 2022-03-03 8:59:29 PM Last case update date took -> 5 ms
+Information: 2022-03-03 8:59:30 PM Retrieving cases states(310) from db took -> 111 ms | 2021-10-12 12:00:00 AM - 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:30 PM Processing tickets states(310 took 4 ms | 2021-10-12 12:00:00 AM 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:31 PM ticketsLevel -> All
+Information: 2022-03-03 8:59:31 PM Last case update date took -> 5 ms
+Information: 2022-03-03 8:59:31 PM Retrieving cases states(310) from db took -> 89 ms | 2021-10-12 12:00:00 AM - 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:31 PM Processing tickets states(310 took 4 ms | 2021-10-12 12:00:00 AM 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:32 PM ticketsLevel -> All
+Information: 2022-03-03 8:59:32 PM Last case update date took -> 6 ms
+Information: 2022-03-03 8:59:32 PM Retrieving cases states(310) from db took -> 118 ms | 2021-10-12 12:00:00 AM - 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:32 PM Processing tickets states(310 took 101 ms | 2021-10-12 12:00:00 AM 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:35 PM ticketsLevel -> All
+Information: 2022-03-03 8:59:35 PM Last case update date took -> 11 ms
+Information: 2022-03-03 8:59:35 PM Retrieving cases states(310) from db took -> 86 ms | 2021-10-12 12:00:00 AM - 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:35 PM Processing tickets states(310 took 25 ms | 2021-10-12 12:00:00 AM 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:36 PM ticketsLevel -> All
+Information: 2022-03-03 8:59:36 PM Last case update date took -> 5 ms
+Information: 2022-03-03 8:59:36 PM Retrieving cases states(310) from db took -> 108 ms | 2021-10-12 12:00:00 AM - 2021-10-13 11:00:00 PM
+Information: 2022-03-03 8:59:36 PM Processing tickets states(310 took 85 ms | 2021-10-12 12:00:00 AM 2021-10-13 11:00:00 PM
+Information: 2022-03-03 9:00:56 PM ticketsLevel -> All
+Information: 2022-03-03 9:00:56 PM Last case update date took -> 11 ms
+Information: 2022-03-03 9:00:56 PM Retrieving cases states(310) from db took -> 82 ms | 2021-10-12 12:00:00 AM - 2021-10-13 11:00:00 PM
+Information: 2022-03-03 9:00:56 PM Processing tickets states(310 took 0 ms | 2021-10-12 12:00:00 AM 2021-10-13 11:00:00 PM
+Information: 2022-03-03 9:01:04 PM ticketsLevel -> All
+Information: 2022-03-03 9:01:04 PM Last case update date took -> 6 ms
+Information: 2022-03-03 9:01:04 PM Retrieving cases states(610) from db took -> 166 ms | 2021-10-01 12:00:00 AM - 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:01:04 PM Processing tickets states(610 took 14 ms | 2021-10-01 12:00:00 AM 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:01:26 PM ticketsLevel -> All
+Information: 2022-03-03 9:01:26 PM Last case update date took -> 9 ms
+Information: 2022-03-03 9:01:26 PM Retrieving cases states(610) from db took -> 157 ms | 2021-10-01 12:00:00 AM - 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:01:26 PM Processing tickets states(610 took 18 ms | 2021-10-01 12:00:00 AM 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:01:30 PM ticketsLevel -> All
+Information: 2022-03-03 9:01:30 PM Last case update date took -> 5 ms
+Information: 2022-03-03 9:01:30 PM Retrieving cases states(610) from db took -> 164 ms | 2021-10-01 12:00:00 AM - 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:01:30 PM Processing tickets states(610 took 9 ms | 2021-10-01 12:00:00 AM 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:01:42 PM ticketsLevel -> All
+Information: 2022-03-03 9:01:42 PM Last case update date took -> 7 ms
+Information: 2022-03-03 9:01:42 PM Retrieving cases states(610) from db took -> 155 ms | 2021-10-01 12:00:00 AM - 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:01:42 PM Processing tickets states(610 took 24 ms | 2021-10-01 12:00:00 AM 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:02:06 PM ticketsLevel -> All
+Information: 2022-03-03 9:02:06 PM Last case update date took -> 13 ms
+Information: 2022-03-03 9:02:07 PM Retrieving cases states(610) from db took -> 142 ms | 2021-10-01 12:00:00 AM - 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:02:07 PM Processing tickets states(610 took 40 ms | 2021-10-01 12:00:00 AM 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:02:09 PM ticketsLevel -> All
+Information: 2022-03-03 9:02:09 PM Last case update date took -> 4 ms
+Information: 2022-03-03 9:02:09 PM Retrieving cases states(610) from db took -> 152 ms | 2021-10-01 12:00:00 AM - 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:02:11 PM Processing tickets states(610 took 1779 ms | 2021-10-01 12:00:00 AM 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:03:20 PM ticketsLevel -> All
+Information: 2022-03-03 9:03:20 PM Last case update date took -> 12 ms
+Information: 2022-03-03 9:03:20 PM Retrieving cases states(610) from db took -> 185 ms | 2021-10-01 12:00:00 AM - 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:03:20 PM Processing tickets states(610 took 8 ms | 2021-10-01 12:00:00 AM 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:03:27 PM ticketsLevel -> All
+Information: 2022-03-03 9:03:27 PM Last case update date took -> 6 ms
+Information: 2022-03-03 9:03:27 PM Retrieving cases states(610) from db took -> 149 ms | 2021-10-01 12:00:00 AM - 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:03:27 PM Processing tickets states(610 took 31 ms | 2021-10-01 12:00:00 AM 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:03:47 PM ticketsLevel -> All
+Information: 2022-03-03 9:03:47 PM Last case update date took -> 5 ms
+Information: 2022-03-03 9:03:47 PM Retrieving cases states(610) from db took -> 153 ms | 2021-10-01 12:00:00 AM - 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:03:49 PM Processing tickets states(610 took 1843 ms | 2021-10-01 12:00:00 AM 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:03:57 PM ticketsLevel -> All
+Information: 2022-03-03 9:03:57 PM Last case update date took -> 6 ms
+Information: 2022-03-03 9:03:57 PM Retrieving cases states(610) from db took -> 172 ms | 2021-10-01 12:00:00 AM - 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:03:58 PM Processing tickets states(610 took 598 ms | 2021-10-01 12:00:00 AM 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:04:01 PM ticketsLevel -> All
+Information: 2022-03-03 9:04:01 PM Last case update date took -> 6 ms
+Information: 2022-03-03 9:04:02 PM Retrieving cases states(610) from db took -> 151 ms | 2021-10-01 12:00:00 AM - 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:04:02 PM Processing tickets states(610 took 310 ms | 2021-10-01 12:00:00 AM 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:04:05 PM ticketsLevel -> All
+Information: 2022-03-03 9:04:05 PM Last case update date took -> 5 ms
+Information: 2022-03-03 9:04:05 PM Retrieving cases states(610) from db took -> 153 ms | 2021-10-01 12:00:00 AM - 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:04:05 PM Processing tickets states(610 took 150 ms | 2021-10-01 12:00:00 AM 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:04:15 PM ticketsLevel -> All
+Information: 2022-03-03 9:04:15 PM Last case update date took -> 6 ms
+Information: 2022-03-03 9:04:15 PM Retrieving cases states(610) from db took -> 172 ms | 2021-10-01 12:00:00 AM - 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:04:15 PM Processing tickets states(610 took 77 ms | 2021-10-01 12:00:00 AM 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:04:19 PM ticketsLevel -> All
+Information: 2022-03-03 9:04:19 PM Last case update date took -> 5 ms
+Information: 2022-03-03 9:04:20 PM Retrieving cases states(610) from db took -> 145 ms | 2021-10-01 12:00:00 AM - 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:04:20 PM Processing tickets states(610 took 52 ms | 2021-10-01 12:00:00 AM 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:04:23 PM ticketsLevel -> All
+Information: 2022-03-03 9:04:23 PM Last case update date took -> 37 ms
+Information: 2022-03-03 9:04:23 PM Retrieving cases states(610) from db took -> 215 ms | 2021-10-01 12:00:00 AM - 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:04:23 PM Processing tickets states(610 took 30 ms | 2021-10-01 12:00:00 AM 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:04:26 PM ticketsLevel -> All
+Information: 2022-03-03 9:04:26 PM Last case update date took -> 5 ms
+Information: 2022-03-03 9:04:26 PM Retrieving cases states(610) from db took -> 219 ms | 2021-10-01 12:00:00 AM - 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:04:28 PM Processing tickets states(610 took 1750 ms | 2021-10-01 12:00:00 AM 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:04:30 PM ticketsLevel -> All
+Information: 2022-03-03 9:04:30 PM Last case update date took -> 6 ms
+Information: 2022-03-03 9:04:31 PM Retrieving cases states(610) from db took -> 215 ms | 2021-10-01 12:00:00 AM - 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:04:31 PM Processing tickets states(610 took 174 ms | 2021-10-01 12:00:00 AM 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:04:35 PM ticketsLevel -> All
+Information: 2022-03-03 9:04:35 PM Last case update date took -> 4 ms
+Information: 2022-03-03 9:04:35 PM Retrieving cases states(610) from db took -> 157 ms | 2021-10-01 12:00:00 AM - 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:04:37 PM Processing tickets states(610 took 1769 ms | 2021-10-01 12:00:00 AM 2021-10-31 11:00:00 PM
+Information: 2022-03-03 9:04:44 PM ticketsLevel -> All
+Information: 2022-03-03 9:04:44 PM Last case update date took -> 10 ms
+Information: 2022-03-03 9:04:44 PM Retrieving cases states(272) from db took -> 181 ms | 2021-10-07 12:00:00 AM - 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:04:44 PM Processing tickets states(272 took 69 ms | 2021-10-07 12:00:00 AM 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:04:48 PM ticketsLevel -> All
+Information: 2022-03-03 9:04:48 PM Last case update date took -> 5 ms
+Information: 2022-03-03 9:04:48 PM Retrieving cases states(272) from db took -> 86 ms | 2021-10-07 12:00:00 AM - 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:04:48 PM Processing tickets states(272 took 5 ms | 2021-10-07 12:00:00 AM 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:04:54 PM ticketsLevel -> All
+Information: 2022-03-03 9:04:54 PM Last case update date took -> 5 ms
+Information: 2022-03-03 9:04:54 PM Retrieving cases states(272) from db took -> 95 ms | 2021-10-07 12:00:00 AM - 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:04:54 PM Processing tickets states(272 took 56 ms | 2021-10-07 12:00:00 AM 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:05:09 PM ticketsLevel -> All
+Information: 2022-03-03 9:05:09 PM Last case update date took -> 9 ms
+Information: 2022-03-03 9:05:09 PM Retrieving cases states(272) from db took -> 79 ms | 2021-10-07 12:00:00 AM - 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:05:09 PM Processing tickets states(272 took 19 ms | 2021-10-07 12:00:00 AM 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:05:12 PM ticketsLevel -> All
+Information: 2022-03-03 9:05:12 PM Last case update date took -> 6 ms
+Information: 2022-03-03 9:05:12 PM Retrieving cases states(272) from db took -> 65 ms | 2021-10-07 12:00:00 AM - 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:05:12 PM Processing tickets states(272 took 1 ms | 2021-10-07 12:00:00 AM 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:05:15 PM ticketsLevel -> All
+Information: 2022-03-03 9:05:15 PM Last case update date took -> 47 ms
+Information: 2022-03-03 9:05:16 PM Retrieving cases states(272) from db took -> 360 ms | 2021-10-07 12:00:00 AM - 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:05:16 PM Processing tickets states(272 took 54 ms | 2021-10-07 12:00:00 AM 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:16:12 PM ticketsLevel -> All
+Information: 2022-03-03 9:16:13 PM Last case update date took -> 1051 ms
+Information: 2022-03-03 9:16:13 PM Retrieving cases states(272) from db took -> 218 ms | 2021-10-07 12:00:00 AM - 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:16:13 PM Processing tickets states(272 took 23 ms | 2021-10-07 12:00:00 AM 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:18:45 PM ticketsLevel -> All
+Information: 2022-03-03 9:18:45 PM Last case update date took -> 10 ms
+Information: 2022-03-03 9:18:45 PM Retrieving cases states(75) from db took -> 224 ms | 2021-10-07 12:00:00 AM - 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:18:45 PM Processing tickets states(75 took 4 ms | 2021-10-07 12:00:00 AM 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:18:46 PM ticketsLevel -> All
+Information: 2022-03-03 9:18:46 PM Last case update date took -> 7 ms
+Information: 2022-03-03 9:18:46 PM Retrieving cases states(973) from db took -> 128 ms | 2021-10-07 12:00:00 AM - 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:18:46 PM Processing tickets states(973 took 77 ms | 2021-10-07 12:00:00 AM 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:18:47 PM ticketsLevel -> All
+Information: 2022-03-03 9:18:47 PM Last case update date took -> 9 ms
+Information: 2022-03-03 9:18:47 PM Retrieving cases states(114) from db took -> 178 ms | 2021-10-07 12:00:00 AM - 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:18:47 PM Processing tickets states(114 took 9 ms | 2021-10-07 12:00:00 AM 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:18:48 PM ticketsLevel -> All
+Information: 2022-03-03 9:18:48 PM Last case update date took -> 6 ms
+Information: 2022-03-03 9:18:49 PM Retrieving cases states(65) from db took -> 212 ms | 2021-10-07 12:00:00 AM - 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:18:49 PM Processing tickets states(65 took 5 ms | 2021-10-07 12:00:00 AM 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:18:50 PM ticketsLevel -> All
+Information: 2022-03-03 9:18:50 PM Last case update date took -> 9 ms
+Information: 2022-03-03 9:18:50 PM Retrieving cases states(272) from db took -> 206 ms | 2021-10-07 12:00:00 AM - 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:18:50 PM Processing tickets states(272 took 20 ms | 2021-10-07 12:00:00 AM 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:18:53 PM ticketsLevel -> All
+Information: 2022-03-03 9:18:53 PM Last case update date took -> 6 ms
+Information: 2022-03-03 9:18:53 PM Retrieving cases states(973) from db took -> 331 ms | 2021-10-07 12:00:00 AM - 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:18:53 PM Processing tickets states(973 took 66 ms | 2021-10-07 12:00:00 AM 2021-10-08 11:00:00 PM
+Information: 2022-03-03 9:25:33 PM ticketsLevel -> All
+Information: 2022-03-03 9:25:34 PM Last case update date took -> 1065 ms
+Information: 2022-03-03 9:25:34 PM Retrieving cases states(941) from db took -> 106 ms | 2021-10-06 12:00:00 AM - 2021-10-07 11:00:00 PM
+Information: 2022-03-03 9:25:34 PM Processing tickets states(941 took 64 ms | 2021-10-06 12:00:00 AM 2021-10-07 11:00:00 PM
+Information: 2022-03-03 9:25:38 PM ticketsLevel -> All
+Information: 2022-03-03 9:25:38 PM Last case update date took -> 7 ms
+Information: 2022-03-03 9:25:38 PM Retrieving cases states(109) from db took -> 743 ms | 2021-10-06 12:00:00 AM - 2021-10-07 11:00:00 PM
+Information: 2022-03-03 9:25:38 PM Processing tickets states(109 took 6 ms | 2021-10-06 12:00:00 AM 2021-10-07 11:00:00 PM
+Information: 2022-03-03 9:25:41 PM ticketsLevel -> All
+Information: 2022-03-03 9:25:41 PM Last case update date took -> 6 ms
+Information: 2022-03-03 9:25:41 PM Retrieving cases states(109) from db took -> 245 ms | 2021-10-06 12:00:00 AM - 2021-10-07 11:00:00 PM
+Information: 2022-03-03 9:25:41 PM Processing tickets states(109 took 26 ms | 2021-10-06 12:00:00 AM 2021-10-07 11:00:00 PM
+Information: 2022-03-03 9:25:46 PM ticketsLevel -> All
+Information: 2022-03-03 9:25:46 PM Last case update date took -> 6 ms
+Information: 2022-03-03 9:25:46 PM Retrieving cases states(58) from db took -> 164 ms | 2021-10-06 12:00:00 AM - 2021-10-07 11:00:00 PM
+Information: 2022-03-03 9:25:46 PM Processing tickets states(58 took 8 ms | 2021-10-06 12:00:00 AM 2021-10-07 11:00:00 PM
+Information: 2022-03-03 9:25:49 PM ticketsLevel -> All
+Information: 2022-03-03 9:25:49 PM Last case update date took -> 5 ms
+Information: 2022-03-03 9:25:49 PM Retrieving cases states(941) from db took -> 136 ms | 2021-10-06 12:00:00 AM - 2021-10-07 11:00:00 PM
+Information: 2022-03-03 9:25:49 PM Processing tickets states(941 took 169 ms | 2021-10-06 12:00:00 AM 2021-10-07 11:00:00 PM

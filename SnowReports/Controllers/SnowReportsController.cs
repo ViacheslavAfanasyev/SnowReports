@@ -108,8 +108,10 @@ namespace SnowReports.Controllers
         //}
 
         [HttpGet("GetRangedDate")]
-        public List<HourData> GetRangedDate(DateTime startDate, DateTime endDate, string assigmentGroup, TicketLevels ticketsLevel, int timeZoneOffsetInHours = 0)
+        public List<HourData> GetRangedDate(DateTime startDate, DateTime endDate, string assigmentGroup, TicketLevels ticketsLevel, int timeZoneOffsetInHours = 0, int minutesInterval = 60)
         {
+            //int defaultMinutesInterval = 15;
+
             startDate = startDate.AddHours(-timeZoneOffsetInHours);
             endDate = endDate.AddHours(23).AddHours(-timeZoneOffsetInHours);
 
@@ -125,7 +127,7 @@ namespace SnowReports.Controllers
             var watch = new System.Diagnostics.Stopwatch();
             watch.Start();
 
-            for (DateTime i = startDate; i <= endDate; i = i.AddHours(1))
+            for (DateTime i = startDate; i <= endDate; i = i.AddMinutes(minutesInterval))
             {
                 //string logResult = $"{Environment.NewLine}{ticketsLevel} Time {i} :{Environment.NewLine}";
 

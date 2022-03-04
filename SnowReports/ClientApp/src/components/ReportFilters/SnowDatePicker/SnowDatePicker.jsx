@@ -5,6 +5,8 @@ import styles from './SnowDatePicker.module.css'
 
 const SnowDatePicker = ({setDate}) => {
 
+    const locale = process.env.REACT_APP_LOCALE;
+
     const savedDateRange = localStorage.getItem("dateRange")
     let [deafultStart, defaultEnd] = [];
 
@@ -18,6 +20,9 @@ const SnowDatePicker = ({setDate}) => {
     else
     {
         const [from, to] = savedDateRange.split(',');
+        console.log("from-"+from);
+        console.log("to-"+to);
+
         deafultStart = new Date(from);
         defaultEnd = new Date(to);
     }
@@ -33,13 +38,18 @@ const SnowDatePicker = ({setDate}) => {
 
     const onChange = dates => {
         const [start, end] = dates;
+
+        
         SetDateRange({startDate:start, endDate:end})
 
         if (start!=null && end!=null)
         {
-
+            dates[0] = dates[0].toLocaleDateString(locale);
+            dates[1] = dates[1].toLocaleDateString(locale);
             setDate({startDate:start, endDate:end})
             localStorage.setItem("dateRange",dates);
+            //localStorage.setItem("startDate",startDate);
+            //localStorage.setItem("endDate",endDate);
         }
     }
 

@@ -15,7 +15,7 @@ const TicketsNumberReport = () => {
     //const [queryString, setQueryString] = useState("");
     const [displayCombinedGraph, setDisplayCombinedGraph] = useState(false);
 
-    const [queryString, setDate, setAssignmentGroup,setTicketsLevel, setTimeZoneOffsetInHours]= useDynamicQueryString();
+    const [queryString, setDate, setAssignmentGroup,setTicketsLevel, setTimeZoneOffsetInHours, setMinutesInterval]= useDynamicQueryString();
 
 
     const [fetchData,isLoading,error] = useFetching(async () => {
@@ -31,7 +31,7 @@ const TicketsNumberReport = () => {
     }
 
     return(
-        <ReportFiltersContext.Provider value={{chartData, chartLines, setChartLines, setAssignmentGroup,setTicketsLevel, setTimeZoneOffsetInHours, setAllowCombineCheckboxes, displayCombinedGraph}}>
+        <ReportFiltersContext.Provider value={{chartData, chartLines, setChartLines, setAssignmentGroup,setTicketsLevel, setTimeZoneOffsetInHours, setMinutesInterval, setAllowCombineCheckboxes, displayCombinedGraph}}>
 
          {/*   {error!=''?<div className="alert alert-danger">{error}</div>:<div></div>}
             {isLoading?<div className="alert alert-primary">Loading...</div>:<div className="alert alert-success">Loaded</div>}*/}

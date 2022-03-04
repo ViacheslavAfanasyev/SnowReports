@@ -17,24 +17,23 @@ if (!builder.Environment.IsDevelopment())
     {
         builder.WebHost.UseUrls((string)allowedOriginsObj);
     }
-
-
-    builder.Services.AddCors(options =>
-    {
-        var allowedOriginsObj = builder.Configuration.GetValue(typeof(String), "AllowedOrigins");
-
-        if (allowedOriginsObj == null || (string)allowedOriginsObj==null)
-        {
-            allowedOriginsObj = "*";
-        }
-
-        options.AddPolicy(name: CorsPolicy,
-                          builder =>
-                          {
-                              builder.WithOrigins(((string)allowedOriginsObj).Split(';'));
-                          });
-    });
 }
+
+builder.Services.AddCors(options =>
+{
+    var allowedOriginsObj = builder.Configuration.GetValue(typeof(String), "AllowedOrigins");
+
+    if (allowedOriginsObj == null || (string)allowedOriginsObj == null)
+    {
+        allowedOriginsObj = "*";
+    }
+
+    options.AddPolicy(name: CorsPolicy,
+                      builder =>
+                      {
+                          builder.WithOrigins(((string)allowedOriginsObj).Split(';'));
+                      });
+});
 
 // Add services to the container.
 
@@ -64,11 +63,11 @@ builder.Logging.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "logs"));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseCors(CorsPolicy);
-}
-
+//if (!app.Environment.IsDevelopment())
+//{
+//    app.UseCors(CorsPolicy);
+//}
+app.UseCors(CorsPolicy);
 
 
 app.UseStaticFiles();

@@ -25,13 +25,14 @@ const ReportFilters = () => {
 
     const reportFiltersName = "_byState"
     //Restore ReportFiltersContext
-    const {setChartLines, setAllowCombineCheckboxes, setAssignmentGroup,setTicketsLevel, setTimeZoneOffsetInHours}= useContext(ReportFiltersContext)
+    const {setChartLines, setAllowCombineCheckboxes, setAssignmentGroup,setTicketsLevel, setTimeZoneOffsetInHours, setMinutesInterval}= useContext(ReportFiltersContext)
 
     //Create states
     const [assignmentGroupsList, setAssignmentGroupsList ] = useState([])
     const [statesList, setStatesList] = useState([])
     const [timezonesList, setTimezonesList] = useState([])
     const [ticketsLevelsList, setTicketsLevelsList] = useState([])
+    const [minutesIntervalList, setMinutesIntervalList] = useState([])
 
         //Define fetching functions to get the data
     const [fetchAssigmentGroups,assigmentGroupsIsLoading,assigmentGroupsError] = useFetching(async ()=>{
@@ -49,6 +50,7 @@ const ReportFilters = () => {
         setTicketsLevelsList(data);
     })
 
+    useEffect(()=> setMinutesIntervalList([5,15,30,60,120,180,300]),[])
     //Create dynamic query string
 /*
     const [queryString, setDate, setAssignmentGroup,setTicketsLevel, setTimeZoneOffsetInHours]= useDynamicQueryString();
@@ -80,6 +82,9 @@ const ReportFilters = () => {
              </li>
              <li>
                  <DropDownFilter setSelectedValue={setTicketsLevel} source={ticketsLevelsList} name={"Levels"+reportFiltersName} />
+             </li>
+             <li>
+                 <span>Interval(mins)</span><DropDownFilter setSelectedValue={setMinutesInterval} source={minutesIntervalList} name={"Interval"+reportFiltersName} />
              </li>
          </ul></div>
 

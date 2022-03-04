@@ -134,11 +134,22 @@ namespace DataAccess.Repository
 
         public IEnumerable<string> GetCaseStates()
         {
-            if (SnowCache.States.Count!=0)
+            try
             {
-                return SnowCache.States;
+                if (SnowCache.States.Count != 0)
+                {
+                    return SnowCache.States;
+                }
+                return SnowCache.States = this.DbContext.CaseStateChanges.Select(s => s.State).Distinct().Where(s => !string.IsNullOrEmpty(s)).ToList();
             }
-            return SnowCache.States = this.DbContext.CaseStateChanges.Select(s => s.State).Distinct().Where(s => !string.IsNullOrEmpty(s)).ToList();
+            catch (InvalidOperationException ex)
+            {
+                if (ex.Message.Contains("Timeout expired."))
+                {
+                    return new List<string>() { "Timeout expired." };
+                }
+                throw;
+            }
         }
 
         public IEnumerable<string> GetTechSupportAssignmentGroups(string filterValue, bool includeAccumulatedGroup)
