@@ -64,6 +64,7 @@ export const useFetching = (callback) =>
         }
         catch (e) {
             setError(e.message);
+            throw e;
         }
         finally {
             setIsLoading(false);

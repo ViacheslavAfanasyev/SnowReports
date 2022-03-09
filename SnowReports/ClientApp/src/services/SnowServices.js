@@ -1,17 +1,29 @@
 import axios from "axios";
 
-const ticketsReportData = process.env.REACT_APP_SNOW_HOST+"/api/snowreports/GetRangedDate";
+const statesComparedReportUrl = process.env.REACT_APP_SNOW_HOST+"/api/snowreports/GetRangedDate";
 const assignmentGroupsUrl = process.env.REACT_APP_SNOW_HOST+'/api/snowreports/AccumulatedAssignmentGroups';
 const ticketStatesUrl = process.env.REACT_APP_SNOW_HOST+'/api/SnowReports/States';
 const ticketsLevelsUrl = process.env.REACT_APP_SNOW_HOST+'/api/SnowReports/TicketsLevels';
 
 export default class SnowServices{
 
-    static async GetTicketsReportData(queryString)
+    static async GetStatesComparedReportData(queryString)
     {
 
-        if (SnowServices.hasQueryStringEmptyParameters(queryString) == false){
-            const response = await axios.get(ticketsReportData+queryString)
+        console.log("GetStatesComparedReportData" + queryString)
+        if (SnowServices.hasQueryStringEmptyParameters(queryString,"state") == false){
+            const response = await axios.get(statesComparedReportUrl+queryString)
+            return response.data;
+        }
+
+        return '';
+    }
+
+    static async GetRegionsComparedReportData(queryString)
+    {
+
+        if (SnowServices.hasQueryStringEmptyParameters(queryString,"assigmentGroup") == false){
+            const response = await axios.get(statesComparedReportUrl+queryString)
             return response.data;
         }
 
@@ -36,6 +48,9 @@ export default class SnowServices{
     static async GetData(url, addCheckedParameter=false)
     {
         const response = await axios.get(url)
+        //const result = [];
+        //return Object.keys(response.data).forEach(key => result.push({key: key, value: response.data[key], label:response.data[key] }))
+
 
         if (addCheckedParameter==false)
         {
@@ -55,7 +70,7 @@ export default class SnowServices{
         return result;
     }
 
-    static hasQueryStringEmptyParameters = (queryString) =>
+    static hasQueryStringEmptyParameters = (queryString, notVerifiedParam) =>
     {
         if (queryString==undefined || queryString=="")
         {
@@ -66,7 +81,7 @@ export default class SnowServices{
 
         for(let p in params)
         {
-            if (queryStringSearchParams.get(p)=="")
+            if (queryStringSearchParams.get(p)=="" && notVerifiedParam!=p)
             {
                 return true;
             }

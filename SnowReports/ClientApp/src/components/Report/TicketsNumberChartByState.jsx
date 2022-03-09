@@ -1,12 +1,12 @@
 import React, {useContext} from 'react';
 import { ResponsiveContainer, AreaChart, XAxis, YAxis, Area, Tooltip, CartesianGrid } from 'recharts';
 import {format, parseISO} from 'date-fns'
-import styles from './TicketsNumberChart.module.css'
+import styles from './TicketsNumberChartByState.module.css'
 import {ReportFiltersContext} from "../../context/ReportFiltersContext";
 
 const colorList = [  'Plum', 'YellowGreen','Gold', 'DeepPink', 'PowderBlue',  'Violet', 'PapayaWhip']
 
-const TicketsNumberChart = () => {
+const TicketsNumberChartByState = () => {
 
     const {chartData, chartLines, displayCombinedGraph}= useContext(ReportFiltersContext)
 
@@ -103,4 +103,4 @@ if (active)
 return "";
 }
 
-export default TicketsNumberChart;
+export default TicketsNumberChartByState;

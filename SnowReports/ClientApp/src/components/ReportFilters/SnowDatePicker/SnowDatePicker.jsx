@@ -20,8 +20,6 @@ const SnowDatePicker = ({setDate}) => {
     else
     {
         const [from, to] = savedDateRange.split(',');
-        console.log("from-"+from);
-        console.log("to-"+to);
 
         deafultStart = new Date(from);
         defaultEnd = new Date(to);

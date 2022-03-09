@@ -4,58 +4,56 @@ export const useDynamicQueryString = () =>{
 
     const [urlParameters, setUrlParameters] = useState(
         {
-            startDate:"",//weekAgo.toJSON().slice(0,10),
-            endDate:"",//new Date().toJSON().slice(0,10),
+            startDate:"",
+            endDate:"",
             assigmentGroup:"",
             ticketsLevel:"",
+            state:"",
             timeZoneOffsetInHours:0,
-            minutesInterval:0
+            minutesInterval:0,
         });
 
 
     const setAssignmentGroup = (assigmentGroup) =>
     {
-        let parameters = {...urlParameters, assigmentGroup : assigmentGroup};
-        setUrlParameters(parameters);
+        setUrlParameters({...urlParameters, assigmentGroup : assigmentGroup});
+    }
+
+    const setState = (state) =>
+    {
+        setUrlParameters({...urlParameters, state : state});
     }
 
     const setTimeZoneOffsetInHours = (offset) =>
     {
-        let parameters = {...urlParameters, timeZoneOffsetInHours : offset};
-        setUrlParameters(parameters);
+        setUrlParameters({...urlParameters, timeZoneOffsetInHours : offset});
     }
 
     function setDate(value)
     {
         let local = "en-ca"
-        //console.log("SET DATE - "+value.startDate.toLocaleString().slice(0,10) + " "+value.startDate.toLocaleDateString().slice(0,10));
-        let parameters = {...urlParameters, startDate : value.startDate.toLocaleDateString(local).slice(0,10), endDate : value.endDate.toLocaleDateString(local).slice(0,10) };
-        console.log(parameters)
-        setUrlParameters(parameters);
+        setUrlParameters({...urlParameters, startDate : value.startDate.toLocaleDateString(local).slice(0,10), endDate : value.endDate.toLocaleDateString(local).slice(0,10) });
     }
 
-    function setTicketsLevel(value)
+    function setTicketsLevel(level)
     {
-        let parameters = {...urlParameters, ticketsLevel : value};
-        setUrlParameters(parameters);
+        setUrlParameters({...urlParameters, ticketsLevel : level});
     }
 
     const setMinutesInterval = (minutesInterval) =>
     {
-        let parameters = {...urlParameters, minutesInterval : minutesInterval};
-        setUrlParameters(parameters);
+        setUrlParameters({...urlParameters, minutesInterval : minutesInterval});
     }
 
     const [queryString, setQueryString] = useState("");
 
     useEffect(()=>{
+        console.log("DDD set "+new URLSearchParams(urlParameters).toString())
         setQueryString("?"+new URLSearchParams(urlParameters).toString())
 
     },[urlParameters]);
 
 
-    return [queryString, setDate, setAssignmentGroup,setTicketsLevel, setTimeZoneOffsetInHours, setMinutesInterval];
+    return [queryString, setDate, setAssignmentGroup, setState, setTicketsLevel, setTimeZoneOffsetInHours, setMinutesInterval];
 
 }
-
-//setRequestUrl(process.env.REACT_APP_SNOW_HOST+"/api/snowreports/GetRangedDate?"+queryStringParameters)

@@ -130,9 +130,6 @@ namespace SnowReports.Controllers
             for (DateTime i = startDate; i <= endDate; i = i.AddMinutes(minutesInterval))
             {
                 //string logResult = $"{Environment.NewLine}{ticketsLevel} Time {i} :{Environment.NewLine}";
-
-
-
                 var hourTicketStates = new Dictionary<string, int>();
                 foreach (var state in this.SnowRepository.GetCaseStates())
                 {

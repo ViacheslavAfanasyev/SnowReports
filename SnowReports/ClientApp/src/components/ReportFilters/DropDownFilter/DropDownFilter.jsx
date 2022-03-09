@@ -9,6 +9,10 @@ const DropDownFilter = ({setSelectedValue, source, name}) => {
 
     let storageValue = localStorage.getItem(storageKey);
 
+    if (name == "Interval") {
+        console.log("minutesIntervalListSS - " + source)
+    }
+
     useEffect(()=>{
         if (storageValue!=undefined)
         {
@@ -22,8 +26,8 @@ const DropDownFilter = ({setSelectedValue, source, name}) => {
             setSelectedValue(val);
             setValue(val);
         }
-
-    },[source])
+    }
+    ,[source])
 
     function SelectionChange(e)
     {
@@ -38,10 +42,11 @@ const DropDownFilter = ({setSelectedValue, source, name}) => {
         return <div></div>
     }
 
+
     if (!Array.isArray(source))
     {
         console.log("DropDownFilter component | source is not an array | "+name + " "+source);
-        return  <div></div>
+        return  <div style={{color:"white"}}>{'DropDownFilter component | source is not an array | '+name + ' '+source}</div>
     }
 
     return (

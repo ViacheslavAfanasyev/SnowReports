@@ -46,7 +46,10 @@ export class NavMenu extends Component {
 
                                 }
                                 <NavItem>
-                                    <NavLink tag={Link} className="text-white" to="/tickets-number-report">Tickets number report</NavLink>
+                                    <NavLink exact  activeClassName="active" tag={Link}  className="text-white" to="/states-report">Tickets number report by State</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink exact  activeClassName="active" tag={Link} className="text-white" to="/regions-report">Tickets number report by Region</NavLink>
                                 </NavItem>
                             </ul>
                         </Collapse>
