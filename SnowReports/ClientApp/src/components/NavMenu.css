@@ -4,6 +4,46 @@
   word-break: break-all;
 }
 
+.nav-item
+{
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+.nav-item a
+{
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 30px;
+}
+
+.nav-item
+{
+  padding: 3px 10px 3px 10px;
+
+}
+
+.nav-item .active
+{
+  color: antiquewhite!important;
+  font-weight: bold;
+  border: antiquewhite solid 1px;
+}
+
+.nav-item a:hover
+{
+  border: antiquewhite dashed 1px;
+
+}
+
+
+
+.nav-item:hover a
+{
+  color:white!important;
+}
+
 html {
   font-size: 14px;
 }
@@ -15,14 +55,4 @@ html {
 
 .box-shadow {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-.nav-item:hover
-{
-  background: red;
-}
-
-.selected
-{
-  border: 2px solid blue;
 }

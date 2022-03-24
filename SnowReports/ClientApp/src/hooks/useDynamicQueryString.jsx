@@ -9,10 +9,9 @@ export const useDynamicQueryString = () =>{
             assigmentGroup:"",
             ticketsLevel:"",
             state:"",
-            timeZoneOffsetInHours:0,
-            minutesInterval:0,
+            timeZoneOffsetInHours:null,
+            minutesInterval:null,
         });
-
 
     const setAssignmentGroup = (assigmentGroup) =>
     {
@@ -48,9 +47,7 @@ export const useDynamicQueryString = () =>{
     const [queryString, setQueryString] = useState("");
 
     useEffect(()=>{
-        console.log("DDD set "+new URLSearchParams(urlParameters).toString())
         setQueryString("?"+new URLSearchParams(urlParameters).toString())
-
     },[urlParameters]);
 
 

@@ -28,10 +28,8 @@ const TicketsNumberChartByState = () => {
 
 
         });
-
-
-        console.log("Checked Graphs -"+checkedGraphs);
     }
+
 
     return (
         <div id={styles.ReportBlock}>
@@ -58,13 +56,11 @@ const TicketsNumberChartByState = () => {
                 }
                 else
                 {
-
                         chartLines.map((line, index) => {
                             return <Area key={index} dataKey={"value." + line.value} width="100%" type="monotone"
-                                         stroke={colorList[(index % colorList.length)]} fill="url(#bluegradient)"
-                                         strokeWidth="3px" hide={!line.checked}/>
+                                  stroke={colorList[(index % colorList.length)]} fill="url(#bluegradient)"
+                                  strokeWidth="3px" hide={!line.checked}/>
                         })
-
                 }
 
                 <XAxis dataKey="date" axisLine={false} tickLine={false} interval={Math.round(chartData.length/10)}  tickFormatter={(dateTime)=>

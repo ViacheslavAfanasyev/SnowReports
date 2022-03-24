@@ -48,6 +48,13 @@ namespace SnowReports.Controllers
 
         }
 
+        [HttpGet("Regions")]
+        public IEnumerable<string> Regions()
+        {
+            return this.SnowRepository.GetTechSupportRegions(this.Config.GetValue<string>("Assignment_group_v3"));
+
+        }
+
         [HttpGet("TicketsLevels")]
         public IEnumerable<string> TicketsLevels()
         {
@@ -107,7 +114,89 @@ namespace SnowReports.Controllers
         //    //return GenerateFakeDate(startDate, endDate, state);
         //}
 
-        [HttpGet("GetRangedDate")]
+        [HttpGet("GetRangedDateForState")]
+        public List<HourData> GetRangedDateForState(DateTime startDate, DateTime endDate, string assigmentGroup, TicketLevels ticketsLevel, int timeZoneOffsetInHours = 0, int minutesInterval = 60)
+        {
+            return GetRangedDate(startDate, endDate, assigmentGroup, ticketsLevel, timeZoneOffsetInHours, minutesInterval);
+        }
+
+        [HttpGet("GetRangedDateForRegions")]
+        public List<HourData> GetRangedDateForRegions(DateTime startDate, DateTime endDate, string state, TicketLevels ticketsLevel, int timeZoneOffsetInHours = 0, int minutesInterval = 60)
+        {
+            var hourData1 = new List<HourData>();
+            var d = DateTime.Now.AddDays(-5);
+            for (int i = 0; i < 100; i++)
+            {
+                var dd = new Dictionary<string, int>();
+
+                dd.Add("PSS Asia Pacific Core", new Random().Next(1, 100));
+                dd.Add("PSS Europe Commerce", new Random().Next(1, 100));
+                dd.Add("PSS North America Escalation", new Random().Next(1, 100));
+                dd.Add("PSS Europe Escalation", new Random().Next(1, 100));
+                dd.Add("PSS Asia Pacific Experience", new Random().Next(1, 100));
+                dd.Add("PSS Europe Platform", new Random().Next(1, 100));
+                dd.Add("PSS Asia Pacific Escalation", new Random().Next(1, 100));
+                dd.Add("PSS Europe Experience", new Random().Next(1, 100));
+                dd.Add("PSS EMEA", new Random().Next(1, 100));
+                dd.Add("PSS AMER", new Random().Next(1, 100));
+                dd.Add("PSS GPAC", new Random().Next(1, 100));
+
+                var c = new HourData(d.AddHours(i), dd);
+                hourData1.Add(c);
+            }
+            return hourData1;
+
+            //int defaultMinutesInterval = 15;
+
+            startDate = startDate.AddHours(-timeZoneOffsetInHours);
+            endDate = endDate.AddHours(23).AddHours(-timeZoneOffsetInHours);
+
+            int deltaHours = 300;
+
+
+            this.Logger.LogInformation($"ticketsLevel -> {ticketsLevel}");
+
+            var chagnes = this.SnowRepository.GetAllCaseStateChanges(startDate, endDate, "*", deltaHours);
+            var hourData = new List<HourData>();
+
+
+            var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
+
+            for (DateTime i = startDate; i <= endDate; i = i.AddMinutes(minutesInterval))
+            {
+                //string logResult = $"{Environment.NewLine}{ticketsLevel} Time {i} :{Environment.NewLine}";
+                var hourTicketStates = new Dictionary<string, int>();
+                foreach (var currentState in this.SnowRepository.GetCaseStates())
+                {
+                    hourTicketStates.Add(currentState, 0);
+                }
+
+                foreach (var item in chagnes)
+                {
+                    var ticketState = item.GetStateForDateTime(i, ticketsLevel);
+
+                    if (!string.IsNullOrEmpty(ticketState) && ticketState != "N/A")
+                    {
+                        hourTicketStates[ticketState] += 1;
+                    }
+
+                    //logResult += $"{item.Id} -> {ticketState}{Environment.NewLine}";
+                }
+
+                hourData.Add(new HourData(i.AddHours(timeZoneOffsetInHours), hourTicketStates));
+
+
+                //this.Logger.LogInformation($"ticketsLevel -> {logResult}");
+
+            }
+
+            watch.Stop();
+            this.Logger.LogInformation($"Processing tickets states({chagnes.Count} took {watch.ElapsedMilliseconds} ms | {startDate} {endDate}");
+
+            return hourData;
+        }
+
         public List<HourData> GetRangedDate(DateTime startDate, DateTime endDate, string assigmentGroup, TicketLevels ticketsLevel, int timeZoneOffsetInHours = 0, int minutesInterval = 60)
         {
             //int defaultMinutesInterval = 15;

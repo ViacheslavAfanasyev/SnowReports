@@ -9,7 +9,9 @@ namespace DataAccess
     public static class SnowCache
     {
         public static List<string> States = new List<string>();
-        public static List<string> AssigmentGroups = new List<string>();
-        public static List<string> AccumulatedAssigmentGroups = new List<string>();
+        public static IEnumerable<string> AssigmentGroups = new List<string>();
+        public static IEnumerable<string> AccumulatedAssigmentGroups = new List<string>();
+
+        public static IEnumerable<string> Regions = new List<string>();
     }
 }

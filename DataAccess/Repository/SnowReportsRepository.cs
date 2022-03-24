@@ -43,10 +43,10 @@ namespace DataAccess.Repository
         {
             var watch = new System.Diagnostics.Stopwatch();
             watch.Start();
-            
+
             var lastTicketTime = this.DbContext.Cases.OrderByDescending(s => s.DateUpdated).Select(s => s.DateUpdated);
             UniqueCase.LastTicketTime = lastTicketTime.FirstOrDefault();
-            
+
             watch.Stop();
             this.Logger.LogInformation($"Last case update date took -> {watch.ElapsedMilliseconds} ms");
 
@@ -59,25 +59,25 @@ namespace DataAccess.Repository
 
 
             bool includeState = false;
-            
+
             var query = from c in this.DbContext.Cases
                         where (c.DateClosed >= startDate || c.DateClosed == UniqueCase.DefaultCaseDateTime)
                         && c.DateCreated <= endDate
                         && handledAssigmentGroups.Contains(c.AssignmentGroup)
                         join csc in this.DbContext.CaseStateChanges on c.Id equals csc.CaseId
                         //where csc.SupportLevel.Contains(ticketsLevel)
-                         select new
-                         {
-                             CaseId = csc.CaseId,
-                             State = csc.State,
-                             StateChangeDate = csc.StateChangeDate,
-                             AssignmentGroup = c.AssignmentGroup,
-                             CreatedDate = c.DateCreated,
-                             ClosedDate = c.DateClosed,
-                             Level = csc.SupportLevel//.Trim()
-                         };
+                        select new
+                        {
+                            CaseId = csc.CaseId,
+                            State = csc.State,
+                            StateChangeDate = csc.StateChangeDate,
+                            AssignmentGroup = c.AssignmentGroup,
+                            CreatedDate = c.DateCreated,
+                            ClosedDate = c.DateClosed,
+                            Level = csc.SupportLevel//.Trim()
+                        };
 
-            
+
 
 
             var uniqueCases = new List<UniqueCase>();
@@ -110,7 +110,7 @@ namespace DataAccess.Repository
 
                     uniqueCase.States.Add(new CaseStateChange(item.State, item.StateChangeDate, item.Level));
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     throw new Exception($"{item.CaseId} {item.StateChangeDate}{Environment.NewLine} {ex.Message} {ex.StackTrace}");
                 }
@@ -154,7 +154,7 @@ namespace DataAccess.Repository
 
         public IEnumerable<string> GetTechSupportAssignmentGroups(string filterValue, bool includeAccumulatedGroup)
         {
-            if (SnowCache.AssigmentGroups.Count != 0)
+            if (SnowCache.AssigmentGroups.Count() != 0)
             {
                 if (includeAccumulatedGroup)
                 {
@@ -185,9 +185,35 @@ namespace DataAccess.Repository
 
             if (includeAccumulatedGroup)
             {
-                 return SnowCache.AccumulatedAssigmentGroups;
+                return SnowCache.AccumulatedAssigmentGroups;
             }
             return SnowCache.AssigmentGroups;
+
+        }
+
+        public IEnumerable<string> GetTechSupportRegions(string filterValue)
+        {
+            if (SnowCache.Regions.Count() != 0)
+            {
+                return SnowCache.Regions;
+            }
+            else
+            {
+                List<string> results = new List<string>();
+
+                if (string.IsNullOrEmpty(filterValue))
+                {
+                    results.AddRange(this.DbContext.Cases.Select(s => s.AssignmentGroupRegion).Distinct());
+                }
+                else
+                {
+                    results.AddRange(this.DbContext.Cases.Where(c => c.AssignmentGroupV3 == filterValue).Select(s => s.AssignmentGroupRegion).Distinct());
+                }
+                SnowCache.Regions = results;
+               
+            }
+
+            return SnowCache.Regions;
 
         }
     }

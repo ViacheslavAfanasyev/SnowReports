@@ -10,7 +10,7 @@ const Checkbox = ({CheckboxOnChange, ...props}) => {
                    checked={props.checked}
                    onChange={CheckboxOnChange}/>
 
-            <label htmlFor={`state-checkbox-${props.value}`} className={`${props.labelClass} noselect dim`} >{props.value}</label>
+            <label htmlFor={`state-checkbox-${props.value}`} className={`${props.labelClass} noselect dim`} >{props.label}</label>
         </div>
     );
 };

@@ -1,0 +1,1236 @@
+Information: 2022-03-24 12:25:00 PM Now listening on: http://localhost:5757
+Information: 2022-03-24 12:25:00 PM Application started. Press Ctrl+C to shut down.
+Information: 2022-03-24 12:25:00 PM Hosting environment: Development
+Information: 2022-03-24 12:25:00 PM Content root path: D:\Projects\SnowReports\SnowReports\
+Warning: 2022-03-24 12:26:26 PM No type was specified for the decimal property 'MetricWaitCloud' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 12:26:26 PM No type was specified for the decimal property 'MetricWaitCustomer' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 12:26:26 PM No type was specified for the decimal property 'MetricWaitProduct' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 12:26:26 PM No type was specified for the decimal property 'MetricWaitSupport' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 12:26:26 PM No type was specified for the decimal property 'ResolutionTimeDays' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 12:26:26 PM No type was specified for the decimal property 'TotalTimeWorked' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 12:26:26 PM No type was specified for the decimal property 'StateDurationHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 12:26:26 PM No type was specified for the decimal property 'StateDurationWeekdayHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Information: 2022-03-24 12:27:11 PM ticketsLevel -> L1
+Information: 2022-03-24 12:27:11 PM ticketsLevel -> L1
+Information: 2022-03-24 12:27:11 PM Last case update date took -> 31 ms
+Information: 2022-03-24 12:27:11 PM Last case update date took -> 66 ms
+Information: 2022-03-24 12:27:11 PM Retrieving cases states(129) from db took -> 218 ms | 2021-10-04 12:00:00 AM - 2021-10-06 11:00:00 PM
+Information: 2022-03-24 12:27:11 PM Processing tickets states(129 took 2 ms | 2021-10-04 12:00:00 AM 2021-10-06 11:00:00 PM
+Information: 2022-03-24 12:27:11 PM Retrieving cases states(129) from db took -> 233 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 12:27:11 PM Processing tickets states(129 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 12:27:26 PM ticketsLevel -> L1
+Information: 2022-03-24 12:27:26 PM Last case update date took -> 6 ms
+Information: 2022-03-24 12:27:26 PM ticketsLevel -> L1
+Information: 2022-03-24 12:27:26 PM Last case update date took -> 7 ms
+Information: 2022-03-24 12:27:26 PM Retrieving cases states(129) from db took -> 126 ms | 2021-10-04 12:00:00 AM - 2021-10-06 11:00:00 PM
+Information: 2022-03-24 12:27:26 PM Processing tickets states(129 took 0 ms | 2021-10-04 12:00:00 AM 2021-10-06 11:00:00 PM
+Information: 2022-03-24 12:27:26 PM Retrieving cases states(129) from db took -> 124 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 12:27:26 PM Processing tickets states(129 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 12:37:31 PM ticketsLevel -> L1
+Information: 2022-03-24 12:37:31 PM ticketsLevel -> L1
+Information: 2022-03-24 12:37:32 PM Last case update date took -> 1056 ms
+Information: 2022-03-24 12:37:32 PM Retrieving cases states(129) from db took -> 97 ms | 2021-10-04 12:00:00 AM - 2021-10-06 11:00:00 PM
+Information: 2022-03-24 12:37:32 PM Processing tickets states(129 took 0 ms | 2021-10-04 12:00:00 AM 2021-10-06 11:00:00 PM
+Information: 2022-03-24 12:37:33 PM Last case update date took -> 2059 ms
+Information: 2022-03-24 12:37:33 PM Retrieving cases states(129) from db took -> 93 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 12:37:33 PM Processing tickets states(129 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 12:39:18 PM ticketsLevel -> L1
+Information: 2022-03-24 12:39:18 PM Last case update date took -> 12 ms
+Information: 2022-03-24 12:39:18 PM ticketsLevel -> L1
+Information: 2022-03-24 12:39:18 PM Last case update date took -> 43 ms
+Information: 2022-03-24 12:39:18 PM Retrieving cases states(129) from db took -> 96 ms | 2021-10-04 12:00:00 AM - 2021-10-06 11:00:00 PM
+Information: 2022-03-24 12:39:18 PM Processing tickets states(129 took 1 ms | 2021-10-04 12:00:00 AM 2021-10-06 11:00:00 PM
+Information: 2022-03-24 12:39:18 PM Retrieving cases states(129) from db took -> 104 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 12:39:18 PM Processing tickets states(129 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 12:41:16 PM ticketsLevel -> L1
+Information: 2022-03-24 12:41:16 PM Last case update date took -> 7 ms
+Information: 2022-03-24 12:41:16 PM ticketsLevel -> L1
+Information: 2022-03-24 12:41:16 PM Last case update date took -> 5 ms
+Information: 2022-03-24 12:41:16 PM Retrieving cases states(129) from db took -> 78 ms | 2021-10-04 12:00:00 AM - 2021-10-06 11:00:00 PM
+Information: 2022-03-24 12:41:16 PM Processing tickets states(129 took 0 ms | 2021-10-04 12:00:00 AM 2021-10-06 11:00:00 PM
+Information: 2022-03-24 12:41:16 PM Retrieving cases states(129) from db took -> 97 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 12:41:16 PM Processing tickets states(129 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 12:41:23 PM ticketsLevel -> L1
+Information: 2022-03-24 12:41:23 PM Last case update date took -> 7 ms
+Information: 2022-03-24 12:41:23 PM ticketsLevel -> L1
+Information: 2022-03-24 12:41:23 PM Last case update date took -> 3 ms
+Information: 2022-03-24 12:41:23 PM Retrieving cases states(129) from db took -> 92 ms | 2021-10-04 12:00:00 AM - 2021-10-06 11:00:00 PM
+Information: 2022-03-24 12:41:23 PM Processing tickets states(129 took 0 ms | 2021-10-04 12:00:00 AM 2021-10-06 11:00:00 PM
+Information: 2022-03-24 12:41:23 PM Retrieving cases states(129) from db took -> 110 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 12:41:23 PM Processing tickets states(129 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 12:41:51 PM ticketsLevel -> L1
+Information: 2022-03-24 12:41:51 PM Last case update date took -> 9 ms
+Information: 2022-03-24 12:41:51 PM ticketsLevel -> L1
+Information: 2022-03-24 12:41:51 PM Last case update date took -> 42 ms
+Information: 2022-03-24 12:41:51 PM Retrieving cases states(129) from db took -> 92 ms | 2021-10-04 12:00:00 AM - 2021-10-06 11:00:00 PM
+Information: 2022-03-24 12:41:51 PM Processing tickets states(129 took 0 ms | 2021-10-04 12:00:00 AM 2021-10-06 11:00:00 PM
+Information: 2022-03-24 12:41:51 PM Retrieving cases states(129) from db took -> 75 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 12:41:51 PM Processing tickets states(129 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 12:42:23 PM ticketsLevel -> L1
+Information: 2022-03-24 12:42:23 PM Last case update date took -> 9 ms
+Information: 2022-03-24 12:42:23 PM Retrieving cases states(55) from db took -> 73 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 12:42:23 PM Processing tickets states(55 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 12:42:41 PM ticketsLevel -> L1
+Information: 2022-03-24 12:42:41 PM Last case update date took -> 11 ms
+Information: 2022-03-24 12:42:41 PM ticketsLevel -> L1
+Information: 2022-03-24 12:42:41 PM Last case update date took -> 5 ms
+Information: 2022-03-24 12:42:41 PM Retrieving cases states(55) from db took -> 100 ms | 2021-10-04 12:00:00 AM - 2021-10-06 11:00:00 PM
+Information: 2022-03-24 12:42:41 PM Processing tickets states(55 took 0 ms | 2021-10-04 12:00:00 AM 2021-10-06 11:00:00 PM
+Information: 2022-03-24 12:42:41 PM Retrieving cases states(55) from db took -> 123 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 12:42:41 PM Processing tickets states(55 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 1:23:38 PM ticketsLevel -> L1
+Information: 2022-03-24 1:23:38 PM ticketsLevel -> L1
+Information: 2022-03-24 1:23:39 PM Last case update date took -> 1055 ms
+Information: 2022-03-24 1:23:39 PM Retrieving cases states(55) from db took -> 121 ms | 2021-10-04 12:00:00 AM - 2021-10-06 11:00:00 PM
+Information: 2022-03-24 1:23:39 PM Processing tickets states(55 took 0 ms | 2021-10-04 12:00:00 AM 2021-10-06 11:00:00 PM
+Information: 2022-03-24 1:23:40 PM Last case update date took -> 2065 ms
+Information: 2022-03-24 1:23:41 PM Retrieving cases states(55) from db took -> 210 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 1:23:41 PM Processing tickets states(55 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 1:31:18 PM ticketsLevel -> L1
+Information: 2022-03-24 1:31:18 PM ticketsLevel -> L1
+Information: 2022-03-24 1:31:19 PM Last case update date took -> 1044 ms
+Information: 2022-03-24 1:31:19 PM Retrieving cases states(55) from db took -> 222 ms | 2021-10-04 12:00:00 AM - 2021-10-06 11:00:00 PM
+Information: 2022-03-24 1:31:19 PM Processing tickets states(55 took 0 ms | 2021-10-04 12:00:00 AM 2021-10-06 11:00:00 PM
+Information: 2022-03-24 1:31:20 PM Last case update date took -> 2044 ms
+Information: 2022-03-24 1:31:20 PM Retrieving cases states(55) from db took -> 185 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 1:31:20 PM Processing tickets states(55 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:23:20 PM ticketsLevel -> L1
+Information: 2022-03-24 2:23:20 PM ticketsLevel -> L1
+Information: 2022-03-24 2:23:21 PM Last case update date took -> 1066 ms
+Information: 2022-03-24 2:23:21 PM Retrieving cases states(55) from db took -> 109 ms | 2021-10-04 12:00:00 AM - 2021-10-06 11:00:00 PM
+Information: 2022-03-24 2:23:21 PM Processing tickets states(55 took 0 ms | 2021-10-04 12:00:00 AM 2021-10-06 11:00:00 PM
+Information: 2022-03-24 2:23:22 PM Last case update date took -> 2068 ms
+Information: 2022-03-24 2:23:22 PM Retrieving cases states(55) from db took -> 94 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:23:22 PM Processing tickets states(55 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:26:17 PM ticketsLevel -> L1
+Information: 2022-03-24 2:26:17 PM Last case update date took -> 10 ms
+Information: 2022-03-24 2:26:17 PM ticketsLevel -> L1
+Information: 2022-03-24 2:26:18 PM Last case update date took -> 4 ms
+Information: 2022-03-24 2:26:18 PM Retrieving cases states(55) from db took -> 134 ms | 2021-10-04 12:00:00 AM - 2021-10-06 11:00:00 PM
+Information: 2022-03-24 2:26:18 PM Processing tickets states(55 took 0 ms | 2021-10-04 12:00:00 AM 2021-10-06 11:00:00 PM
+Information: 2022-03-24 2:26:18 PM Retrieving cases states(55) from db took -> 155 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:26:18 PM Processing tickets states(55 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:31:30 PM ticketsLevel -> L1
+Information: 2022-03-24 2:31:30 PM ticketsLevel -> L1
+Information: 2022-03-24 2:31:31 PM Last case update date took -> 1055 ms
+Information: 2022-03-24 2:31:31 PM Retrieving cases states(55) from db took -> 125 ms | 2021-10-04 12:00:00 AM - 2021-10-06 11:00:00 PM
+Information: 2022-03-24 2:31:31 PM Processing tickets states(55 took 0 ms | 2021-10-04 12:00:00 AM 2021-10-06 11:00:00 PM
+Information: 2022-03-24 2:31:32 PM Last case update date took -> 2073 ms
+Information: 2022-03-24 2:31:32 PM Retrieving cases states(55) from db took -> 93 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:31:32 PM Processing tickets states(55 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:32:28 PM ticketsLevel -> L1
+Information: 2022-03-24 2:32:28 PM Last case update date took -> 9 ms
+Information: 2022-03-24 2:32:28 PM ticketsLevel -> L1
+Information: 2022-03-24 2:32:28 PM Last case update date took -> 22 ms
+Information: 2022-03-24 2:32:28 PM Retrieving cases states(55) from db took -> 90 ms | 2021-10-04 12:00:00 AM - 2021-10-06 11:00:00 PM
+Information: 2022-03-24 2:32:28 PM Processing tickets states(55 took 0 ms | 2021-10-04 12:00:00 AM 2021-10-06 11:00:00 PM
+Information: 2022-03-24 2:32:28 PM Retrieving cases states(55) from db took -> 85 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:32:28 PM Processing tickets states(55 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:33:04 PM ticketsLevel -> L1
+Information: 2022-03-24 2:33:04 PM Last case update date took -> 8 ms
+Information: 2022-03-24 2:33:04 PM Retrieving cases states(55) from db took -> 81 ms | 2021-10-04 12:00:00 AM - 2021-10-06 11:00:00 PM
+Information: 2022-03-24 2:33:04 PM Processing tickets states(55 took 0 ms | 2021-10-04 12:00:00 AM 2021-10-06 11:00:00 PM
+Information: 2022-03-24 2:33:07 PM ticketsLevel -> L1
+Information: 2022-03-24 2:33:07 PM Last case update date took -> 8 ms
+Information: 2022-03-24 2:33:07 PM Retrieving cases states(55) from db took -> 63 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:33:07 PM Processing tickets states(55 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:40:44 PM Now listening on: http://localhost:5757
+Information: 2022-03-24 2:40:44 PM Application started. Press Ctrl+C to shut down.
+Information: 2022-03-24 2:40:44 PM Hosting environment: Development
+Information: 2022-03-24 2:40:44 PM Content root path: D:\Projects\SnowReports\SnowReports\
+Warning: 2022-03-24 2:41:01 PM No type was specified for the decimal property 'MetricWaitCloud' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 2:41:01 PM No type was specified for the decimal property 'MetricWaitCustomer' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 2:41:01 PM No type was specified for the decimal property 'MetricWaitProduct' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 2:41:01 PM No type was specified for the decimal property 'MetricWaitSupport' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 2:41:01 PM No type was specified for the decimal property 'ResolutionTimeDays' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 2:41:01 PM No type was specified for the decimal property 'TotalTimeWorked' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 2:41:01 PM No type was specified for the decimal property 'StateDurationHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 2:41:01 PM No type was specified for the decimal property 'StateDurationWeekdayHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Information: 2022-03-24 2:41:09 PM ticketsLevel -> L1
+Information: 2022-03-24 2:41:09 PM ticketsLevel -> L1
+Information: 2022-03-24 2:41:09 PM Last case update date took -> 41 ms
+Information: 2022-03-24 2:41:09 PM Last case update date took -> 51 ms
+Information: 2022-03-24 2:41:09 PM Retrieving cases states(55) from db took -> 186 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:41:09 PM Retrieving cases states(55) from db took -> 188 ms | 2021-10-04 12:00:00 AM - 2021-10-06 11:00:00 PM
+Information: 2022-03-24 2:41:09 PM Processing tickets states(55 took 1 ms | 2021-10-04 12:00:00 AM 2021-10-06 11:00:00 PM
+Information: 2022-03-24 2:41:09 PM Processing tickets states(55 took 4 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:43:45 PM ticketsLevel -> L1
+Information: 2022-03-24 2:43:45 PM Last case update date took -> 8 ms
+Information: 2022-03-24 2:43:45 PM Retrieving cases states(0) from db took -> 93 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:43:45 PM Processing tickets states(0 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:49:12 PM Now listening on: http://localhost:5757
+Information: 2022-03-24 2:49:12 PM Application started. Press Ctrl+C to shut down.
+Information: 2022-03-24 2:49:12 PM Hosting environment: Development
+Information: 2022-03-24 2:49:12 PM Content root path: D:\Projects\SnowReports\SnowReports\
+Warning: 2022-03-24 2:49:17 PM No type was specified for the decimal property 'MetricWaitCloud' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 2:49:17 PM No type was specified for the decimal property 'MetricWaitCustomer' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 2:49:17 PM No type was specified for the decimal property 'MetricWaitProduct' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 2:49:17 PM No type was specified for the decimal property 'MetricWaitSupport' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 2:49:17 PM No type was specified for the decimal property 'ResolutionTimeDays' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 2:49:17 PM No type was specified for the decimal property 'TotalTimeWorked' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 2:49:17 PM No type was specified for the decimal property 'StateDurationHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 2:49:17 PM No type was specified for the decimal property 'StateDurationWeekdayHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Information: 2022-03-24 2:49:20 PM ticketsLevel -> L1
+Information: 2022-03-24 2:49:20 PM Last case update date took -> 18 ms
+Information: 2022-03-24 2:49:20 PM Retrieving cases states(0) from db took -> 153 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:49:20 PM Processing tickets states(0 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:49:22 PM ticketsLevel -> L1
+Information: 2022-03-24 2:49:22 PM Last case update date took -> 6 ms
+Information: 2022-03-24 2:49:22 PM Retrieving cases states(0) from db took -> 77 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:49:22 PM Processing tickets states(0 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:49:23 PM ticketsLevel -> L1
+Information: 2022-03-24 2:49:23 PM Last case update date took -> 6 ms
+Information: 2022-03-24 2:49:23 PM Retrieving cases states(0) from db took -> 104 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:49:23 PM Processing tickets states(0 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:49:24 PM ticketsLevel -> L1
+Information: 2022-03-24 2:49:24 PM Last case update date took -> 6 ms
+Information: 2022-03-24 2:49:24 PM Retrieving cases states(0) from db took -> 89 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:49:24 PM Processing tickets states(0 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:49:25 PM ticketsLevel -> L1
+Information: 2022-03-24 2:49:25 PM Last case update date took -> 6 ms
+Information: 2022-03-24 2:49:25 PM Retrieving cases states(0) from db took -> 100 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:49:25 PM Processing tickets states(0 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:49:26 PM ticketsLevel -> L1
+Information: 2022-03-24 2:49:26 PM Last case update date took -> 5 ms
+Information: 2022-03-24 2:49:26 PM Retrieving cases states(0) from db took -> 113 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:49:26 PM Processing tickets states(0 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:49:51 PM ticketsLevel -> L1
+Information: 2022-03-24 2:49:51 PM Last case update date took -> 7 ms
+Information: 2022-03-24 2:49:51 PM ticketsLevel -> L1
+Information: 2022-03-24 2:49:51 PM Retrieving cases states(55) from db took -> 78 ms | 2021-10-04 12:00:00 AM - 2021-10-06 11:00:00 PM
+Information: 2022-03-24 2:49:51 PM Last case update date took -> 5 ms
+Information: 2022-03-24 2:49:51 PM Processing tickets states(55 took 5 ms | 2021-10-04 12:00:00 AM 2021-10-06 11:00:00 PM
+Information: 2022-03-24 2:49:51 PM Retrieving cases states(55) from db took -> 87 ms | 2021-10-03 10:00:00 PM - 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:49:51 PM Processing tickets states(55 took 0 ms | 2021-10-03 10:00:00 PM 2021-10-06 9:00:00 PM
+Information: 2022-03-24 2:52:53 PM ticketsLevel -> L1
+Information: 2022-03-24 2:52:53 PM Last case update date took -> 11 ms
+Information: 2022-03-24 2:52:53 PM ticketsLevel -> L1
+Information: 2022-03-24 2:52:53 PM Last case update date took -> 10 ms
+Information: 2022-03-24 2:52:53 PM Retrieving cases states(0) from db took -> 103 ms | 2022-03-17 12:00:00 AM - 2022-03-24 11:00:00 PM
+Information: 2022-03-24 2:52:53 PM Processing tickets states(0 took 1 ms | 2022-03-17 12:00:00 AM 2022-03-24 11:00:00 PM
+Information: 2022-03-24 2:52:53 PM Retrieving cases states(0) from db took -> 176 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:52:53 PM Processing tickets states(0 took 1 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:52:59 PM ticketsLevel -> L1
+Information: 2022-03-24 2:52:59 PM Last case update date took -> 7 ms
+Information: 2022-03-24 2:52:59 PM Retrieving cases states(0) from db took -> 122 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:52:59 PM Processing tickets states(0 took 1 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:11 PM ticketsLevel -> L1
+Information: 2022-03-24 2:56:11 PM Last case update date took -> 7 ms
+Information: 2022-03-24 2:56:11 PM Retrieving cases states(0) from db took -> 109 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:11 PM Processing tickets states(0 took 1 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:15 PM ticketsLevel -> L1
+Information: 2022-03-24 2:56:15 PM Last case update date took -> 7 ms
+Information: 2022-03-24 2:56:15 PM Retrieving cases states(0) from db took -> 147 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:15 PM Processing tickets states(0 took 1 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:16 PM ticketsLevel -> L1
+Information: 2022-03-24 2:56:16 PM Last case update date took -> 5 ms
+Information: 2022-03-24 2:56:16 PM Retrieving cases states(0) from db took -> 178 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:16 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:26 PM ticketsLevel -> L1
+Information: 2022-03-24 2:56:26 PM Last case update date took -> 9 ms
+Information: 2022-03-24 2:56:26 PM Retrieving cases states(0) from db took -> 129 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:26 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:26 PM ticketsLevel -> L1
+Information: 2022-03-24 2:56:26 PM Last case update date took -> 5 ms
+Information: 2022-03-24 2:56:27 PM Retrieving cases states(0) from db took -> 185 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:27 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:30 PM ticketsLevel -> L1
+Information: 2022-03-24 2:56:30 PM Last case update date took -> 4 ms
+Information: 2022-03-24 2:56:30 PM Retrieving cases states(0) from db took -> 112 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:30 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:32 PM ticketsLevel -> L1
+Information: 2022-03-24 2:56:32 PM Last case update date took -> 5 ms
+Information: 2022-03-24 2:56:33 PM Retrieving cases states(0) from db took -> 114 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:33 PM Processing tickets states(0 took 1 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:36 PM ticketsLevel -> L1
+Information: 2022-03-24 2:56:36 PM Last case update date took -> 6 ms
+Information: 2022-03-24 2:56:36 PM Retrieving cases states(0) from db took -> 135 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:36 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:42 PM ticketsLevel -> L2
+Information: 2022-03-24 2:56:42 PM Last case update date took -> 6 ms
+Information: 2022-03-24 2:56:42 PM Retrieving cases states(0) from db took -> 120 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:42 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:51 PM ticketsLevel -> L2
+Information: 2022-03-24 2:56:51 PM Last case update date took -> 5 ms
+Information: 2022-03-24 2:56:52 PM Retrieving cases states(0) from db took -> 145 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:52 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:52 PM ticketsLevel -> L2
+Information: 2022-03-24 2:56:52 PM Last case update date took -> 6 ms
+Information: 2022-03-24 2:56:52 PM Retrieving cases states(0) from db took -> 155 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:52 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:53 PM ticketsLevel -> L2
+Information: 2022-03-24 2:56:53 PM Last case update date took -> 38 ms
+Information: 2022-03-24 2:56:53 PM Retrieving cases states(0) from db took -> 132 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:53 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:53 PM ticketsLevel -> L2
+Information: 2022-03-24 2:56:53 PM Last case update date took -> 6 ms
+Information: 2022-03-24 2:56:54 PM Retrieving cases states(0) from db took -> 184 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:54 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:54 PM ticketsLevel -> L2
+Information: 2022-03-24 2:56:54 PM Last case update date took -> 7 ms
+Information: 2022-03-24 2:56:54 PM Retrieving cases states(0) from db took -> 91 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:54 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:55 PM ticketsLevel -> L2
+Information: 2022-03-24 2:56:55 PM Last case update date took -> 53 ms
+Information: 2022-03-24 2:56:55 PM Retrieving cases states(0) from db took -> 118 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:55 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:55 PM ticketsLevel -> L2
+Information: 2022-03-24 2:56:55 PM Last case update date took -> 4 ms
+Information: 2022-03-24 2:56:55 PM Retrieving cases states(0) from db took -> 168 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:55 PM Processing tickets states(0 took 1 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:56 PM ticketsLevel -> L2
+Information: 2022-03-24 2:56:56 PM Last case update date took -> 5 ms
+Information: 2022-03-24 2:56:56 PM Retrieving cases states(0) from db took -> 124 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:56 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:58 PM ticketsLevel -> L2
+Information: 2022-03-24 2:56:58 PM Last case update date took -> 5 ms
+Information: 2022-03-24 2:56:59 PM Retrieving cases states(0) from db took -> 94 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:56:59 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:57:01 PM ticketsLevel -> L2
+Information: 2022-03-24 2:57:01 PM Last case update date took -> 9 ms
+Information: 2022-03-24 2:57:02 PM Retrieving cases states(0) from db took -> 109 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:57:02 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:57:02 PM ticketsLevel -> L2
+Information: 2022-03-24 2:57:02 PM Last case update date took -> 7 ms
+Information: 2022-03-24 2:57:03 PM Retrieving cases states(0) from db took -> 119 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:57:03 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:57:03 PM ticketsLevel -> L2
+Information: 2022-03-24 2:57:03 PM Last case update date took -> 6 ms
+Information: 2022-03-24 2:57:03 PM Retrieving cases states(0) from db took -> 186 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:57:03 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:57:04 PM ticketsLevel -> L2
+Information: 2022-03-24 2:57:04 PM Last case update date took -> 5 ms
+Information: 2022-03-24 2:57:04 PM ticketsLevel -> L2
+Information: 2022-03-24 2:57:05 PM ticketsLevel -> L2
+Information: 2022-03-24 2:57:06 PM ticketsLevel -> L2
+Information: 2022-03-24 2:57:06 PM ticketsLevel -> L2
+Information: 2022-03-24 2:57:07 PM ticketsLevel -> L2
+Information: 2022-03-24 2:57:08 PM Last case update date took -> 3277 ms
+Information: 2022-03-24 2:57:08 PM Last case update date took -> 1219 ms
+Information: 2022-03-24 2:57:08 PM Last case update date took -> 2637 ms
+Information: 2022-03-24 2:57:10 PM Last case update date took -> 2779 ms
+Information: 2022-03-24 2:57:13 PM Last case update date took -> 8181 ms
+Information: 2022-03-24 2:57:15 PM Retrieving cases states(0) from db took -> 11382 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:57:15 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:57:15 PM Retrieving cases states(0) from db took -> 6785 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:57:15 PM Processing tickets states(0 took 1 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:57:15 PM Retrieving cases states(0) from db took -> 7820 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:57:15 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:57:16 PM Retrieving cases states(0) from db took -> 8083 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:57:16 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:57:16 PM Retrieving cases states(0) from db took -> 6320 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:57:16 PM Processing tickets states(0 took 2 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:57:17 PM Retrieving cases states(0) from db took -> 3489 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:57:17 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:59:46 PM ticketsLevel -> L2
+Information: 2022-03-24 2:59:46 PM Last case update date took -> 12 ms
+Information: 2022-03-24 2:59:46 PM Retrieving cases states(0) from db took -> 117 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:59:46 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:59:46 PM ticketsLevel -> L2
+Information: 2022-03-24 2:59:46 PM Last case update date took -> 5 ms
+Information: 2022-03-24 2:59:46 PM Retrieving cases states(0) from db took -> 105 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:59:46 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:59:47 PM ticketsLevel -> L2
+Information: 2022-03-24 2:59:47 PM Last case update date took -> 6 ms
+Information: 2022-03-24 2:59:47 PM Retrieving cases states(0) from db took -> 91 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:59:47 PM Processing tickets states(0 took 0 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:59:48 PM ticketsLevel -> L2
+Information: 2022-03-24 2:59:48 PM Last case update date took -> 5 ms
+Information: 2022-03-24 2:59:48 PM Retrieving cases states(0) from db took -> 100 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:59:48 PM Processing tickets states(0 took 1 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 2:59:50 PM ticketsLevel -> L2
+Information: 2022-03-24 2:59:50 PM Last case update date took -> 6 ms
+Information: 2022-03-24 2:59:51 PM Retrieving cases states(0) from db took -> 109 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 2:59:51 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 2:59:52 PM ticketsLevel -> L2
+Information: 2022-03-24 2:59:52 PM Last case update date took -> 4 ms
+Information: 2022-03-24 2:59:52 PM Retrieving cases states(0) from db took -> 107 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 2:59:52 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 2:59:53 PM ticketsLevel -> L2
+Information: 2022-03-24 2:59:53 PM Last case update date took -> 6 ms
+Information: 2022-03-24 2:59:53 PM Retrieving cases states(0) from db took -> 150 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 2:59:53 PM Processing tickets states(0 took 4 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 2:59:55 PM ticketsLevel -> L2
+Information: 2022-03-24 2:59:55 PM Last case update date took -> 7 ms
+Information: 2022-03-24 2:59:55 PM ticketsLevel -> L2
+Information: 2022-03-24 2:59:55 PM Last case update date took -> 7 ms
+Information: 2022-03-24 2:59:55 PM Retrieving cases states(0) from db took -> 189 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 2:59:55 PM Retrieving cases states(0) from db took -> 215 ms | 2022-03-17 12:00:00 AM - 2022-03-24 11:00:00 PM
+Information: 2022-03-24 2:59:55 PM Processing tickets states(0 took 1 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 2:59:55 PM Processing tickets states(0 took 1 ms | 2022-03-17 12:00:00 AM 2022-03-24 11:00:00 PM
+Information: 2022-03-24 3:04:12 PM ticketsLevel -> L2
+Information: 2022-03-24 3:04:12 PM Last case update date took -> 8 ms
+Information: 2022-03-24 3:04:12 PM ticketsLevel -> L2
+Information: 2022-03-24 3:04:12 PM Last case update date took -> 9 ms
+Information: 2022-03-24 3:04:12 PM Retrieving cases states(0) from db took -> 247 ms | 2022-03-17 12:00:00 AM - 2022-03-24 11:00:00 PM
+Information: 2022-03-24 3:04:12 PM Processing tickets states(0 took 0 ms | 2022-03-17 12:00:00 AM 2022-03-24 11:00:00 PM
+Information: 2022-03-24 3:04:12 PM Retrieving cases states(0) from db took -> 283 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:04:12 PM Processing tickets states(0 took 1 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:05:53 PM ticketsLevel -> L2
+Information: 2022-03-24 3:05:53 PM Last case update date took -> 12 ms
+Information: 2022-03-24 3:05:53 PM Retrieving cases states(0) from db took -> 91 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:05:53 PM Processing tickets states(0 took 2 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:05:54 PM ticketsLevel -> L2
+Information: 2022-03-24 3:05:54 PM Last case update date took -> 6 ms
+Information: 2022-03-24 3:05:54 PM ticketsLevel -> L2
+Information: 2022-03-24 3:05:54 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:05:54 PM Retrieving cases states(0) from db took -> 139 ms | 2022-03-17 12:00:00 AM - 2022-03-24 11:00:00 PM
+Information: 2022-03-24 3:05:54 PM Processing tickets states(0 took 0 ms | 2022-03-17 12:00:00 AM 2022-03-24 11:00:00 PM
+Information: 2022-03-24 3:05:54 PM Retrieving cases states(0) from db took -> 197 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:05:54 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:05:57 PM ticketsLevel -> L2
+Information: 2022-03-24 3:05:57 PM Last case update date took -> 7 ms
+Information: 2022-03-24 3:05:57 PM ticketsLevel -> L2
+Information: 2022-03-24 3:05:57 PM Last case update date took -> 9 ms
+Information: 2022-03-24 3:05:58 PM Retrieving cases states(0) from db took -> 561 ms | 2022-03-17 12:00:00 AM - 2022-03-24 11:00:00 PM
+Information: 2022-03-24 3:05:58 PM Processing tickets states(0 took 0 ms | 2022-03-17 12:00:00 AM 2022-03-24 11:00:00 PM
+Information: 2022-03-24 3:05:58 PM Retrieving cases states(0) from db took -> 603 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:05:58 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:29 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:29 PM Last case update date took -> 6 ms
+Information: 2022-03-24 3:06:29 PM Retrieving cases states(0) from db took -> 124 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:29 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:30 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:30 PM Last case update date took -> 9 ms
+Information: 2022-03-24 3:06:30 PM Retrieving cases states(0) from db took -> 116 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:30 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:30 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:30 PM Last case update date took -> 10 ms
+Information: 2022-03-24 3:06:30 PM Retrieving cases states(0) from db took -> 92 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:30 PM Processing tickets states(0 took 1 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:31 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:31 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:06:31 PM Retrieving cases states(0) from db took -> 101 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:31 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:31 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:31 PM Last case update date took -> 7 ms
+Information: 2022-03-24 3:06:31 PM Retrieving cases states(0) from db took -> 88 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:31 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:32 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:32 PM Last case update date took -> 3 ms
+Information: 2022-03-24 3:06:32 PM Retrieving cases states(0) from db took -> 103 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:32 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:32 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:32 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:06:32 PM Retrieving cases states(0) from db took -> 112 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:32 PM Processing tickets states(0 took 3 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:33 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:33 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:06:33 PM Retrieving cases states(0) from db took -> 139 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:33 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:34 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:34 PM Last case update date took -> 6 ms
+Information: 2022-03-24 3:06:34 PM Retrieving cases states(0) from db took -> 134 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:34 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:34 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:34 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:06:34 PM Retrieving cases states(0) from db took -> 84 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:34 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:35 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:35 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:06:35 PM Retrieving cases states(0) from db took -> 121 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:35 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:35 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:35 PM Last case update date took -> 6 ms
+Information: 2022-03-24 3:06:35 PM Retrieving cases states(0) from db took -> 108 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:35 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:36 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:36 PM Last case update date took -> 7 ms
+Information: 2022-03-24 3:06:36 PM Retrieving cases states(0) from db took -> 126 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:36 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:37 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:37 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:06:38 PM Retrieving cases states(0) from db took -> 99 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:38 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:38 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:38 PM Last case update date took -> 6 ms
+Information: 2022-03-24 3:06:38 PM Retrieving cases states(0) from db took -> 104 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:38 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:39 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:39 PM Last case update date took -> 6 ms
+Information: 2022-03-24 3:06:40 PM Retrieving cases states(0) from db took -> 199 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:40 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:42 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:42 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:06:42 PM Retrieving cases states(0) from db took -> 175 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:42 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:42 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:42 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:06:42 PM Retrieving cases states(0) from db took -> 163 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:42 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:43 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:43 PM Last case update date took -> 7 ms
+Information: 2022-03-24 3:06:43 PM Retrieving cases states(0) from db took -> 128 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:43 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:43 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:43 PM Last case update date took -> 19 ms
+Information: 2022-03-24 3:06:43 PM Retrieving cases states(0) from db took -> 229 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:43 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:44 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:44 PM Last case update date took -> 11 ms
+Information: 2022-03-24 3:06:44 PM Retrieving cases states(0) from db took -> 217 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:44 PM Processing tickets states(0 took 1 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:44 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:44 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:06:44 PM Retrieving cases states(0) from db took -> 236 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:44 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:53 PM ticketsLevel -> L2
+Information: 2022-03-24 3:06:53 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:06:54 PM Retrieving cases states(0) from db took -> 115 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:06:54 PM Processing tickets states(0 took 1 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:07:50 PM ticketsLevel -> L2
+Information: 2022-03-24 3:07:50 PM Last case update date took -> 8 ms
+Information: 2022-03-24 3:07:50 PM ticketsLevel -> L2
+Information: 2022-03-24 3:07:50 PM Last case update date took -> 6 ms
+Information: 2022-03-24 3:07:50 PM Retrieving cases states(0) from db took -> 123 ms | 2022-03-17 12:00:00 AM - 2022-03-24 11:00:00 PM
+Information: 2022-03-24 3:07:50 PM Processing tickets states(0 took 2 ms | 2022-03-17 12:00:00 AM 2022-03-24 11:00:00 PM
+Information: 2022-03-24 3:07:51 PM Retrieving cases states(0) from db took -> 182 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:07:51 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:08:24 PM ticketsLevel -> L2
+Information: 2022-03-24 3:08:24 PM Last case update date took -> 10 ms
+Information: 2022-03-24 3:08:24 PM Retrieving cases states(0) from db took -> 172 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:08:24 PM Processing tickets states(0 took 2 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:10:45 PM ticketsLevel -> L2
+Information: 2022-03-24 3:10:45 PM Last case update date took -> 13 ms
+Information: 2022-03-24 3:10:45 PM ticketsLevel -> L2
+Information: 2022-03-24 3:10:45 PM Last case update date took -> 7 ms
+Information: 2022-03-24 3:10:45 PM Retrieving cases states(0) from db took -> 171 ms | 2022-03-17 12:00:00 AM - 2022-03-24 11:00:00 PM
+Information: 2022-03-24 3:10:45 PM Processing tickets states(0 took 0 ms | 2022-03-17 12:00:00 AM 2022-03-24 11:00:00 PM
+Information: 2022-03-24 3:10:46 PM Retrieving cases states(0) from db took -> 229 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:10:46 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:10:47 PM ticketsLevel -> L2
+Information: 2022-03-24 3:10:47 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:10:47 PM ticketsLevel -> L2
+Information: 2022-03-24 3:10:47 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:10:48 PM Retrieving cases states(0) from db took -> 224 ms | 2022-03-17 12:00:00 AM - 2022-03-24 11:00:00 PM
+Information: 2022-03-24 3:10:48 PM Processing tickets states(0 took 0 ms | 2022-03-17 12:00:00 AM 2022-03-24 11:00:00 PM
+Information: 2022-03-24 3:10:48 PM Retrieving cases states(0) from db took -> 237 ms | 2022-03-17 5:00:00 AM - 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:10:48 PM Processing tickets states(0 took 0 ms | 2022-03-17 5:00:00 AM 2022-03-25 4:00:00 AM
+Information: 2022-03-24 3:10:54 PM ticketsLevel -> L2
+Information: 2022-03-24 3:10:54 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:10:55 PM Retrieving cases states(0) from db took -> 110 ms | 2021-10-13 5:00:00 AM - 2021-10-16 4:00:00 AM
+Information: 2022-03-24 3:10:55 PM Processing tickets states(0 took 0 ms | 2021-10-13 5:00:00 AM 2021-10-16 4:00:00 AM
+Information: 2022-03-24 3:11:11 PM ticketsLevel -> L2
+Information: 2022-03-24 3:11:11 PM Last case update date took -> 8 ms
+Information: 2022-03-24 3:11:11 PM Retrieving cases states(0) from db took -> 120 ms | 2021-10-13 5:00:00 AM - 2021-10-16 4:00:00 AM
+Information: 2022-03-24 3:11:11 PM Processing tickets states(0 took 0 ms | 2021-10-13 5:00:00 AM 2021-10-16 4:00:00 AM
+Information: 2022-03-24 3:11:12 PM ticketsLevel -> L2
+Information: 2022-03-24 3:11:12 PM Last case update date took -> 3 ms
+Information: 2022-03-24 3:11:12 PM Retrieving cases states(0) from db took -> 103 ms | 2021-10-13 5:00:00 AM - 2021-10-16 4:00:00 AM
+Information: 2022-03-24 3:11:12 PM Processing tickets states(0 took 0 ms | 2021-10-13 5:00:00 AM 2021-10-16 4:00:00 AM
+Information: 2022-03-24 3:11:21 PM ticketsLevel -> L2
+Information: 2022-03-24 3:11:21 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:11:22 PM Retrieving cases states(0) from db took -> 181 ms | 2021-10-12 5:00:00 AM - 2021-10-20 4:00:00 AM
+Information: 2022-03-24 3:11:22 PM Processing tickets states(0 took 1 ms | 2021-10-12 5:00:00 AM 2021-10-20 4:00:00 AM
+Information: 2022-03-24 3:11:24 PM ticketsLevel -> L2
+Information: 2022-03-24 3:11:24 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:11:24 PM Retrieving cases states(0) from db took -> 133 ms | 2021-10-12 5:00:00 AM - 2021-10-20 4:00:00 AM
+Information: 2022-03-24 3:11:24 PM Processing tickets states(0 took 1 ms | 2021-10-12 5:00:00 AM 2021-10-20 4:00:00 AM
+Information: 2022-03-24 3:11:39 PM ticketsLevel -> L2
+Information: 2022-03-24 3:11:39 PM Last case update date took -> 11 ms
+Information: 2022-03-24 3:11:39 PM Retrieving cases states(0) from db took -> 176 ms | 2021-09-07 5:00:00 AM - 2021-12-03 4:00:00 AM
+Information: 2022-03-24 3:11:39 PM Processing tickets states(0 took 11 ms | 2021-09-07 5:00:00 AM 2021-12-03 4:00:00 AM
+Information: 2022-03-24 3:11:49 PM ticketsLevel -> L2
+Information: 2022-03-24 3:11:49 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:11:49 PM ticketsLevel -> L2
+Information: 2022-03-24 3:11:49 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:11:49 PM Retrieving cases states(0) from db took -> 277 ms | 2021-09-06 12:00:00 AM - 2021-12-01 11:00:00 PM
+Information: 2022-03-24 3:11:49 PM Retrieving cases states(0) from db took -> 263 ms | 2021-09-06 5:00:00 AM - 2021-12-02 4:00:00 AM
+Information: 2022-03-24 3:11:49 PM Processing tickets states(0 took 11 ms | 2021-09-06 12:00:00 AM 2021-12-01 11:00:00 PM
+Information: 2022-03-24 3:11:49 PM Processing tickets states(0 took 20 ms | 2021-09-06 5:00:00 AM 2021-12-02 4:00:00 AM
+Information: 2022-03-24 3:11:51 PM ticketsLevel -> L2
+Information: 2022-03-24 3:11:51 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:11:51 PM ticketsLevel -> L2
+Information: 2022-03-24 3:11:51 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:11:51 PM Retrieving cases states(0) from db took -> 308 ms | 2021-09-06 12:00:00 AM - 2021-12-01 11:00:00 PM
+Information: 2022-03-24 3:11:51 PM Processing tickets states(0 took 9 ms | 2021-09-06 12:00:00 AM 2021-12-01 11:00:00 PM
+Information: 2022-03-24 3:11:51 PM Retrieving cases states(0) from db took -> 312 ms | 2021-09-06 5:00:00 AM - 2021-12-02 4:00:00 AM
+Information: 2022-03-24 3:11:51 PM Processing tickets states(0 took 12 ms | 2021-09-06 5:00:00 AM 2021-12-02 4:00:00 AM
+Information: 2022-03-24 3:11:58 PM ticketsLevel -> L2
+Information: 2022-03-24 3:11:58 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:11:59 PM Retrieving cases states(0) from db took -> 175 ms | 2021-09-06 12:00:00 AM - 2021-12-01 11:00:00 PM
+Information: 2022-03-24 3:11:59 PM Processing tickets states(0 took 12 ms | 2021-09-06 12:00:00 AM 2021-12-01 11:00:00 PM
+Information: 2022-03-24 3:12:04 PM ticketsLevel -> L2
+Information: 2022-03-24 3:12:04 PM Last case update date took -> 6 ms
+Information: 2022-03-24 3:12:04 PM Retrieving cases states(0) from db took -> 150 ms | 2021-09-06 12:00:00 AM - 2021-12-01 11:00:00 PM
+Information: 2022-03-24 3:12:04 PM Processing tickets states(0 took 0 ms | 2021-09-06 12:00:00 AM 2021-12-01 11:00:00 PM
+Information: 2022-03-24 3:12:40 PM ticketsLevel -> L2
+Information: 2022-03-24 3:12:40 PM Last case update date took -> 8 ms
+Information: 2022-03-24 3:12:40 PM Retrieving cases states(0) from db took -> 102 ms | 2021-10-13 12:00:00 AM - 2021-10-14 11:00:00 PM
+Information: 2022-03-24 3:12:40 PM Processing tickets states(0 took 0 ms | 2021-10-13 12:00:00 AM 2021-10-14 11:00:00 PM
+Information: 2022-03-24 3:12:56 PM ticketsLevel -> L2
+Information: 2022-03-24 3:12:56 PM Last case update date took -> 9 ms
+Information: 2022-03-24 3:12:56 PM Retrieving cases states(0) from db took -> 113 ms | 2021-10-13 12:00:00 AM - 2021-10-14 11:00:00 PM
+Information: 2022-03-24 3:12:56 PM Processing tickets states(0 took 0 ms | 2021-10-13 12:00:00 AM 2021-10-14 11:00:00 PM
+Information: 2022-03-24 3:12:58 PM ticketsLevel -> L2
+Information: 2022-03-24 3:12:58 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:12:58 PM Retrieving cases states(0) from db took -> 106 ms | 2021-10-13 12:00:00 AM - 2021-10-14 11:00:00 PM
+Information: 2022-03-24 3:12:58 PM Processing tickets states(0 took 0 ms | 2021-10-13 12:00:00 AM 2021-10-14 11:00:00 PM
+Information: 2022-03-24 3:14:11 PM ticketsLevel -> L2
+Information: 2022-03-24 3:14:11 PM Last case update date took -> 7 ms
+Information: 2022-03-24 3:14:11 PM Retrieving cases states(0) from db took -> 200 ms | 2021-10-12 12:00:00 AM - 2021-10-13 11:00:00 PM
+Information: 2022-03-24 3:14:11 PM Processing tickets states(0 took 0 ms | 2021-10-12 12:00:00 AM 2021-10-13 11:00:00 PM
+Information: 2022-03-24 3:14:18 PM ticketsLevel -> L2
+Information: 2022-03-24 3:14:18 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:14:18 PM Retrieving cases states(0) from db took -> 80 ms | 2021-10-05 12:00:00 AM - 2021-10-07 11:00:00 PM
+Information: 2022-03-24 3:14:18 PM Processing tickets states(0 took 0 ms | 2021-10-05 12:00:00 AM 2021-10-07 11:00:00 PM
+Information: 2022-03-24 3:14:24 PM ticketsLevel -> L2
+Information: 2022-03-24 3:14:24 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:14:24 PM Retrieving cases states(0) from db took -> 88 ms | 2021-10-05 12:00:00 AM - 2021-10-07 11:00:00 PM
+Information: 2022-03-24 3:14:24 PM Processing tickets states(0 took 0 ms | 2021-10-05 12:00:00 AM 2021-10-07 11:00:00 PM
+Information: 2022-03-24 3:14:29 PM ticketsLevel -> L2
+Information: 2022-03-24 3:14:29 PM Last case update date took -> 3 ms
+Information: 2022-03-24 3:14:30 PM Retrieving cases states(113) from db took -> 74 ms | 2021-10-05 12:00:00 AM - 2021-10-07 11:00:00 PM
+Information: 2022-03-24 3:14:30 PM Processing tickets states(113 took 0 ms | 2021-10-05 12:00:00 AM 2021-10-07 11:00:00 PM
+Information: 2022-03-24 3:14:36 PM ticketsLevel -> L1
+Information: 2022-03-24 3:14:36 PM ticketsLevel -> L1
+Information: 2022-03-24 3:14:36 PM Last case update date took -> 8 ms
+Information: 2022-03-24 3:14:36 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:14:36 PM Retrieving cases states(1155) from db took -> 185 ms | 2022-03-17 12:00:00 AM - 2022-03-24 11:00:00 PM
+Information: 2022-03-24 3:14:36 PM Retrieving cases states(1155) from db took -> 228 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 3:14:37 PM Processing tickets states(1155 took 187 ms | 2022-03-17 12:00:00 AM 2022-03-24 11:00:00 PM
+Information: 2022-03-24 3:14:37 PM Processing tickets states(1155 took 170 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 3:14:44 PM ticketsLevel -> L1
+Information: 2022-03-24 3:14:44 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:14:44 PM Retrieving cases states(1086) from db took -> 118 ms | 2021-10-12 10:00:00 PM - 2021-10-13 9:00:00 PM
+Information: 2022-03-24 3:14:44 PM Processing tickets states(1086 took 53 ms | 2021-10-12 10:00:00 PM 2021-10-13 9:00:00 PM
+Information: 2022-03-24 3:14:45 PM ticketsLevel -> L1
+Information: 2022-03-24 3:14:45 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:14:45 PM Retrieving cases states(1324) from db took -> 170 ms | 2021-10-19 10:00:00 PM - 2021-10-21 9:00:00 PM
+Information: 2022-03-24 3:14:46 PM Processing tickets states(1324 took 196 ms | 2021-10-19 10:00:00 PM 2021-10-21 9:00:00 PM
+Information: 2022-03-24 3:14:56 PM ticketsLevel -> L1
+Information: 2022-03-24 3:14:56 PM Last case update date took -> 8 ms
+Information: 2022-03-24 3:14:57 PM Retrieving cases states(0) from db took -> 387 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:14:57 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:15:02 PM ticketsLevel -> L1
+Information: 2022-03-24 3:15:02 PM Last case update date took -> 3 ms
+Information: 2022-03-24 3:15:02 PM Retrieving cases states(0) from db took -> 131 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:15:02 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:15:05 PM ticketsLevel -> L1
+Information: 2022-03-24 3:15:05 PM Last case update date took -> 7 ms
+Information: 2022-03-24 3:15:05 PM ticketsLevel -> L1
+Information: 2022-03-24 3:15:05 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:15:05 PM Retrieving cases states(1295) from db took -> 175 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:15:05 PM Retrieving cases states(1327) from db took -> 229 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:15:05 PM Processing tickets states(1295 took 158 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:15:05 PM Processing tickets states(1327 took 155 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:15:08 PM ticketsLevel -> L1
+Information: 2022-03-24 3:15:08 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:15:08 PM ticketsLevel -> L1
+Information: 2022-03-24 3:15:08 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:15:09 PM Retrieving cases states(0) from db took -> 209 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:15:09 PM Processing tickets states(0 took 0 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:15:09 PM Retrieving cases states(0) from db took -> 215 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:15:09 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:15:09 PM ticketsLevel -> L1
+Information: 2022-03-24 3:15:09 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:15:09 PM ticketsLevel -> L1
+Information: 2022-03-24 3:15:09 PM Last case update date took -> 6 ms
+Information: 2022-03-24 3:15:10 PM Retrieving cases states(1295) from db took -> 236 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:15:10 PM Retrieving cases states(1327) from db took -> 225 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:15:10 PM Processing tickets states(1295 took 142 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:15:10 PM Processing tickets states(1327 took 143 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:15:12 PM ticketsLevel -> L1
+Information: 2022-03-24 3:15:12 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:15:12 PM ticketsLevel -> L1
+Information: 2022-03-24 3:15:12 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:15:13 PM Retrieving cases states(0) from db took -> 309 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:15:13 PM Processing tickets states(0 took 0 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:15:13 PM Retrieving cases states(0) from db took -> 435 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:15:13 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:15:17 PM ticketsLevel -> L1
+Information: 2022-03-24 3:15:17 PM Last case update date took -> 6 ms
+Information: 2022-03-24 3:15:17 PM Retrieving cases states(0) from db took -> 94 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:15:17 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:15:20 PM ticketsLevel -> L1
+Information: 2022-03-24 3:15:20 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:15:20 PM ticketsLevel -> L1
+Information: 2022-03-24 3:15:20 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:15:20 PM Retrieving cases states(1295) from db took -> 153 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:15:20 PM Retrieving cases states(1327) from db took -> 178 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:15:21 PM Processing tickets states(1295 took 129 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:15:21 PM Processing tickets states(1327 took 145 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:35:16 PM ticketsLevel -> L1
+Information: 2022-03-24 3:35:16 PM ticketsLevel -> L1
+Information: 2022-03-24 3:35:17 PM Last case update date took -> 1045 ms
+Information: 2022-03-24 3:35:18 PM Retrieving cases states(0) from db took -> 140 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:35:18 PM Processing tickets states(0 took 0 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:35:18 PM Last case update date took -> 2053 ms
+Information: 2022-03-24 3:35:19 PM Retrieving cases states(0) from db took -> 134 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:35:19 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:35:27 PM ticketsLevel -> L1
+Information: 2022-03-24 3:35:27 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:35:28 PM ticketsLevel -> L1
+Information: 2022-03-24 3:35:28 PM Last case update date took -> 8 ms
+Information: 2022-03-24 3:35:28 PM Retrieving cases states(1295) from db took -> 165 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:35:28 PM Retrieving cases states(1327) from db took -> 199 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:35:28 PM Processing tickets states(1295 took 156 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:35:28 PM Processing tickets states(1327 took 138 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:35:29 PM ticketsLevel -> L1
+Information: 2022-03-24 3:35:29 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:35:29 PM ticketsLevel -> L1
+Information: 2022-03-24 3:35:29 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:35:29 PM Retrieving cases states(0) from db took -> 143 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:35:29 PM Processing tickets states(0 took 0 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:35:29 PM Retrieving cases states(0) from db took -> 167 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:35:29 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:36:50 PM ticketsLevel -> L1
+Information: 2022-03-24 3:36:50 PM Last case update date took -> 9 ms
+Information: 2022-03-24 3:36:50 PM Retrieving cases states(0) from db took -> 109 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:36:50 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:36:53 PM ticketsLevel -> L1
+Information: 2022-03-24 3:36:53 PM Last case update date took -> 6 ms
+Information: 2022-03-24 3:36:53 PM ticketsLevel -> L1
+Information: 2022-03-24 3:36:53 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:36:53 PM Retrieving cases states(1295) from db took -> 164 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:36:53 PM Retrieving cases states(1327) from db took -> 213 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:36:53 PM Processing tickets states(1295 took 171 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:36:53 PM Processing tickets states(1327 took 130 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:36:58 PM ticketsLevel -> L1
+Information: 2022-03-24 3:36:58 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:36:58 PM ticketsLevel -> L1
+Information: 2022-03-24 3:36:58 PM Last case update date took -> 3 ms
+Information: 2022-03-24 3:36:58 PM Retrieving cases states(0) from db took -> 130 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:36:58 PM Processing tickets states(0 took 0 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:36:58 PM Retrieving cases states(0) from db took -> 150 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:36:58 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:37:09 PM ticketsLevel -> L1
+Information: 2022-03-24 3:37:09 PM Last case update date took -> 7 ms
+Information: 2022-03-24 3:37:09 PM Retrieving cases states(0) from db took -> 92 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:37:09 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:37:11 PM ticketsLevel -> L1
+Information: 2022-03-24 3:37:11 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:37:11 PM Retrieving cases states(0) from db took -> 153 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:37:11 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:38:40 PM ticketsLevel -> L1
+Information: 2022-03-24 3:38:40 PM Last case update date took -> 9 ms
+Information: 2022-03-24 3:38:40 PM Retrieving cases states(0) from db took -> 90 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:38:40 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:38:45 PM ticketsLevel -> L1
+Information: 2022-03-24 3:38:45 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:38:45 PM Retrieving cases states(0) from db took -> 96 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:38:45 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:39:45 PM ticketsLevel -> L1
+Information: 2022-03-24 3:39:45 PM Last case update date took -> 6 ms
+Information: 2022-03-24 3:39:45 PM Retrieving cases states(0) from db took -> 116 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:39:45 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:40:33 PM ticketsLevel -> L1
+Information: 2022-03-24 3:40:33 PM Last case update date took -> 9 ms
+Information: 2022-03-24 3:40:33 PM Retrieving cases states(0) from db took -> 112 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:40:33 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:42:30 PM ticketsLevel -> L1
+Information: 2022-03-24 3:42:30 PM Last case update date took -> 7 ms
+Information: 2022-03-24 3:42:30 PM Retrieving cases states(0) from db took -> 104 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:42:30 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:44:43 PM ticketsLevel -> L1
+Information: 2022-03-24 3:46:32 PM Last case update date took -> 16 ms
+Information: 2022-03-24 3:46:32 PM Retrieving cases states(0) from db took -> 131 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:46:51 PM Processing tickets states(0 took 9645 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:47:34 PM ticketsLevel -> L1
+Information: 2022-03-24 3:47:34 PM Last case update date took -> 7 ms
+Information: 2022-03-24 3:47:34 PM Retrieving cases states(0) from db took -> 90 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:47:34 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:50:32 PM ticketsLevel -> L1
+Information: 2022-03-24 3:50:32 PM Last case update date took -> 8 ms
+Information: 2022-03-24 3:50:32 PM Retrieving cases states(0) from db took -> 100 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:50:32 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:50:44 PM ticketsLevel -> L1
+Information: 2022-03-24 3:50:44 PM Last case update date took -> 6 ms
+Information: 2022-03-24 3:50:44 PM Retrieving cases states(0) from db took -> 113 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:50:44 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:50:59 PM ticketsLevel -> L1
+Information: 2022-03-24 3:51:00 PM Last case update date took -> 9 ms
+Information: 2022-03-24 3:51:00 PM Retrieving cases states(0) from db took -> 119 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:51:00 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:51:56 PM ticketsLevel -> L1
+Information: 2022-03-24 3:51:56 PM Last case update date took -> 6 ms
+Information: 2022-03-24 3:51:56 PM ticketsLevel -> L1
+Information: 2022-03-24 3:51:56 PM Retrieving cases states(1295) from db took -> 147 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:51:56 PM Processing tickets states(1295 took 6 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:51:57 PM Last case update date took -> 1034 ms
+Information: 2022-03-24 3:51:58 PM Retrieving cases states(1327) from db took -> 154 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:51:58 PM Processing tickets states(1327 took 7 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:52:24 PM ticketsLevel -> L1
+Information: 2022-03-24 3:52:24 PM Last case update date took -> 7 ms
+Information: 2022-03-24 3:52:24 PM Retrieving cases states(171) from db took -> 97 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:52:24 PM Processing tickets states(171 took 1 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:53:21 PM ticketsLevel -> L1
+Information: 2022-03-24 3:53:21 PM Last case update date took -> 7 ms
+Information: 2022-03-24 3:53:21 PM Retrieving cases states(136) from db took -> 88 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:53:21 PM Processing tickets states(136 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:53:26 PM ticketsLevel -> L1
+Information: 2022-03-24 3:53:26 PM ticketsLevel -> L1
+Information: 2022-03-24 3:53:26 PM Last case update date took -> 6 ms
+Information: 2022-03-24 3:53:26 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:53:27 PM Retrieving cases states(0) from db took -> 184 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:53:27 PM Processing tickets states(0 took 0 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:53:27 PM Retrieving cases states(0) from db took -> 202 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:53:27 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:53:36 PM ticketsLevel -> L1
+Information: 2022-03-24 3:53:36 PM Last case update date took -> 6 ms
+Information: 2022-03-24 3:53:36 PM Retrieving cases states(0) from db took -> 106 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:53:36 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:53:39 PM ticketsLevel -> L1
+Information: 2022-03-24 3:53:39 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:53:39 PM Retrieving cases states(0) from db took -> 110 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:53:39 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:53:46 PM ticketsLevel -> L1
+Information: 2022-03-24 3:53:46 PM ticketsLevel -> L1
+Information: 2022-03-24 3:53:46 PM Last case update date took -> 7 ms
+Information: 2022-03-24 3:53:46 PM Last case update date took -> 7 ms
+Information: 2022-03-24 3:53:46 PM Retrieving cases states(132) from db took -> 165 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:53:46 PM Processing tickets states(132 took 0 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:53:46 PM Retrieving cases states(136) from db took -> 168 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:53:46 PM Processing tickets states(136 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:54:09 PM ticketsLevel -> L1
+Information: 2022-03-24 3:54:09 PM Last case update date took -> 10 ms
+Information: 2022-03-24 3:54:09 PM Retrieving cases states(99) from db took -> 117 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:54:09 PM Processing tickets states(99 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:54:13 PM ticketsLevel -> L1
+Information: 2022-03-24 3:54:13 PM ticketsLevel -> L1
+Information: 2022-03-24 3:54:13 PM Last case update date took -> 6 ms
+Information: 2022-03-24 3:54:13 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:54:13 PM Retrieving cases states(0) from db took -> 207 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:54:13 PM Processing tickets states(0 took 0 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:54:13 PM Retrieving cases states(0) from db took -> 206 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:54:13 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:54:39 PM ticketsLevel -> L1
+Information: 2022-03-24 3:54:39 PM Last case update date took -> 8 ms
+Information: 2022-03-24 3:54:40 PM Retrieving cases states(0) from db took -> 135 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:54:40 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:55:04 PM ticketsLevel -> L1
+Information: 2022-03-24 3:55:04 PM Last case update date took -> 6 ms
+Information: 2022-03-24 3:55:05 PM Retrieving cases states(0) from db took -> 91 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:55:05 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:57:13 PM ticketsLevel -> L1
+Information: 2022-03-24 3:57:13 PM Last case update date took -> 9 ms
+Information: 2022-03-24 3:57:13 PM Retrieving cases states(0) from db took -> 121 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:57:13 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:57:20 PM ticketsLevel -> L1
+Information: 2022-03-24 3:57:20 PM ticketsLevel -> L1
+Information: 2022-03-24 3:57:20 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:57:20 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:57:20 PM Retrieving cases states(98) from db took -> 206 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:57:20 PM Processing tickets states(98 took 0 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:57:20 PM Retrieving cases states(99) from db took -> 205 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:57:20 PM Processing tickets states(99 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:57:34 PM ticketsLevel -> L1
+Information: 2022-03-24 3:57:34 PM Last case update date took -> 8 ms
+Information: 2022-03-24 3:57:34 PM Retrieving cases states(174) from db took -> 101 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:57:34 PM Processing tickets states(174 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:57:47 PM ticketsLevel -> L1
+Information: 2022-03-24 3:57:47 PM Last case update date took -> 7 ms
+Information: 2022-03-24 3:57:47 PM Retrieving cases states(100) from db took -> 114 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:57:47 PM Processing tickets states(100 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:57:54 PM ticketsLevel -> L1
+Information: 2022-03-24 3:57:54 PM Last case update date took -> 4 ms
+Information: 2022-03-24 3:57:54 PM ticketsLevel -> L1
+Information: 2022-03-24 3:57:54 PM Last case update date took -> 10 ms
+Information: 2022-03-24 3:57:54 PM Retrieving cases states(0) from db took -> 159 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:57:54 PM Processing tickets states(0 took 0 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 3:57:54 PM Retrieving cases states(0) from db took -> 164 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:57:54 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:58:19 PM ticketsLevel -> L1
+Information: 2022-03-24 3:58:19 PM Last case update date took -> 30 ms
+Information: 2022-03-24 3:58:19 PM Retrieving cases states(0) from db took -> 109 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:58:19 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:59:08 PM ticketsLevel -> L1
+Information: 2022-03-24 3:59:08 PM Last case update date took -> 8 ms
+Information: 2022-03-24 3:59:08 PM Retrieving cases states(0) from db took -> 91 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:59:08 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:59:24 PM ticketsLevel -> L1
+Information: 2022-03-24 3:59:24 PM Last case update date took -> 5 ms
+Information: 2022-03-24 3:59:24 PM Retrieving cases states(0) from db took -> 100 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:59:24 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:59:29 PM ticketsLevel -> L1
+Information: 2022-03-24 3:59:29 PM Last case update date took -> 8 ms
+Information: 2022-03-24 3:59:29 PM Retrieving cases states(0) from db took -> 141 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:59:29 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:59:33 PM ticketsLevel -> L1
+Information: 2022-03-24 3:59:33 PM Last case update date took -> 6 ms
+Information: 2022-03-24 3:59:33 PM Retrieving cases states(0) from db took -> 112 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 3:59:33 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:01:28 PM ticketsLevel -> L1
+Information: 2022-03-24 4:01:28 PM Last case update date took -> 5 ms
+Information: 2022-03-24 4:01:28 PM ticketsLevel -> L1
+Information: 2022-03-24 4:01:28 PM Last case update date took -> 9 ms
+Information: 2022-03-24 4:01:28 PM Retrieving cases states(99) from db took -> 178 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 4:01:28 PM Processing tickets states(99 took 0 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 4:01:28 PM Retrieving cases states(100) from db took -> 187 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:01:28 PM Processing tickets states(100 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:01:36 PM ticketsLevel -> L1
+Information: 2022-03-24 4:01:36 PM Last case update date took -> 6 ms
+Information: 2022-03-24 4:01:36 PM Retrieving cases states(88) from db took -> 108 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:01:36 PM Processing tickets states(88 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:01:46 PM ticketsLevel -> L1
+Information: 2022-03-24 4:01:46 PM Last case update date took -> 6 ms
+Information: 2022-03-24 4:01:46 PM ticketsLevel -> L1
+Information: 2022-03-24 4:01:46 PM Last case update date took -> 5 ms
+Information: 2022-03-24 4:01:47 PM Retrieving cases states(0) from db took -> 134 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 4:01:47 PM Processing tickets states(0 took 0 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 4:01:47 PM Retrieving cases states(0) from db took -> 162 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:01:47 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:02:24 PM ticketsLevel -> L1
+Information: 2022-03-24 4:02:24 PM Last case update date took -> 6 ms
+Information: 2022-03-24 4:02:24 PM ticketsLevel -> L1
+Information: 2022-03-24 4:02:24 PM Last case update date took -> 5 ms
+Information: 2022-03-24 4:02:24 PM Retrieving cases states(86) from db took -> 137 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 4:02:24 PM Processing tickets states(86 took 0 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 4:02:24 PM Retrieving cases states(88) from db took -> 154 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:02:24 PM Processing tickets states(88 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:08:51 PM ticketsLevel -> L1
+Information: 2022-03-24 4:08:51 PM ticketsLevel -> L1
+Information: 2022-03-24 4:08:52 PM Last case update date took -> 1056 ms
+Information: 2022-03-24 4:08:52 PM Retrieving cases states(0) from db took -> 125 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 4:08:52 PM Processing tickets states(0 took 0 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 4:08:53 PM Last case update date took -> 2071 ms
+Information: 2022-03-24 4:08:53 PM Retrieving cases states(0) from db took -> 111 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:08:53 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:21:33 PM Now listening on: http://localhost:5757
+Information: 2022-03-24 4:21:33 PM Application started. Press Ctrl+C to shut down.
+Information: 2022-03-24 4:21:33 PM Hosting environment: Development
+Information: 2022-03-24 4:21:33 PM Content root path: D:\Projects\SnowReports\SnowReports\
+Information: 2022-03-24 4:22:21 PM ticketsLevel -> L1
+Warning: 2022-03-24 4:22:21 PM No type was specified for the decimal property 'MetricWaitCloud' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:22:21 PM No type was specified for the decimal property 'MetricWaitCustomer' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:22:21 PM No type was specified for the decimal property 'MetricWaitProduct' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:22:21 PM No type was specified for the decimal property 'MetricWaitSupport' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:22:21 PM No type was specified for the decimal property 'ResolutionTimeDays' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:22:21 PM No type was specified for the decimal property 'TotalTimeWorked' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:22:21 PM No type was specified for the decimal property 'StateDurationHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:22:21 PM No type was specified for the decimal property 'StateDurationWeekdayHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Information: 2022-03-24 4:22:22 PM Last case update date took -> 1870 ms
+Information: 2022-03-24 4:22:23 PM Retrieving cases states(0) from db took -> 299 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:22:23 PM Processing tickets states(0 took 27 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:23:04 PM Now listening on: http://localhost:5757
+Information: 2022-03-24 4:23:04 PM Application started. Press Ctrl+C to shut down.
+Information: 2022-03-24 4:23:04 PM Hosting environment: Development
+Information: 2022-03-24 4:23:04 PM Content root path: D:\Projects\SnowReports\SnowReports\
+Information: 2022-03-24 4:23:23 PM ticketsLevel -> L1
+Warning: 2022-03-24 4:23:23 PM No type was specified for the decimal property 'MetricWaitCloud' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:23:23 PM No type was specified for the decimal property 'MetricWaitCustomer' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:23:23 PM No type was specified for the decimal property 'MetricWaitProduct' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:23:23 PM No type was specified for the decimal property 'MetricWaitSupport' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:23:23 PM No type was specified for the decimal property 'ResolutionTimeDays' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:23:23 PM No type was specified for the decimal property 'TotalTimeWorked' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:23:23 PM No type was specified for the decimal property 'StateDurationHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:23:23 PM No type was specified for the decimal property 'StateDurationWeekdayHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Information: 2022-03-24 4:23:25 PM Last case update date took -> 1955 ms
+Information: 2022-03-24 4:23:25 PM Retrieving cases states(0) from db took -> 272 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:23:25 PM Processing tickets states(0 took 20 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:24:23 PM Now listening on: http://localhost:5757
+Information: 2022-03-24 4:24:23 PM Application started. Press Ctrl+C to shut down.
+Information: 2022-03-24 4:24:23 PM Hosting environment: Development
+Information: 2022-03-24 4:24:23 PM Content root path: D:\Projects\SnowReports\SnowReports\
+Warning: 2022-03-24 4:24:33 PM No type was specified for the decimal property 'MetricWaitCloud' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:24:33 PM No type was specified for the decimal property 'MetricWaitCustomer' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:24:33 PM No type was specified for the decimal property 'MetricWaitProduct' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:24:33 PM No type was specified for the decimal property 'MetricWaitSupport' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:24:33 PM No type was specified for the decimal property 'ResolutionTimeDays' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:24:33 PM No type was specified for the decimal property 'TotalTimeWorked' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:24:33 PM No type was specified for the decimal property 'StateDurationHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:24:33 PM No type was specified for the decimal property 'StateDurationWeekdayHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Information: 2022-03-24 4:24:38 PM ticketsLevel -> L1
+Information: 2022-03-24 4:24:38 PM Last case update date took -> 49 ms
+Information: 2022-03-24 4:24:38 PM Retrieving cases states(88) from db took -> 195 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:24:38 PM Processing tickets states(88 took 2 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:24:40 PM ticketsLevel -> L1
+Information: 2022-03-24 4:24:40 PM Last case update date took -> 19 ms
+Information: 2022-03-24 4:24:40 PM Retrieving cases states(88) from db took -> 89 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:24:40 PM Processing tickets states(88 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:33:01 PM ticketsLevel -> L1
+Information: 2022-03-24 4:33:01 PM ticketsLevel -> L1
+Information: 2022-03-24 4:33:02 PM Last case update date took -> 1001 ms
+Information: 2022-03-24 4:33:02 PM Retrieving cases states(0) from db took -> 151 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:33:02 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:33:03 PM Last case update date took -> 2024 ms
+Information: 2022-03-24 4:33:03 PM Retrieving cases states(0) from db took -> 99 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 4:33:03 PM Processing tickets states(0 took 0 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 4:33:41 PM ticketsLevel -> L1
+Information: 2022-03-24 4:33:41 PM Last case update date took -> 10 ms
+Information: 2022-03-24 4:33:41 PM Retrieving cases states(0) from db took -> 96 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:33:41 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:34:12 PM ticketsLevel -> L1
+Information: 2022-03-24 4:34:12 PM Last case update date took -> 8 ms
+Information: 2022-03-24 4:34:12 PM Retrieving cases states(0) from db took -> 114 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:34:12 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:34:13 PM ticketsLevel -> L1
+Information: 2022-03-24 4:34:13 PM Last case update date took -> 5 ms
+Information: 2022-03-24 4:34:13 PM Retrieving cases states(0) from db took -> 107 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:34:13 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:34:14 PM ticketsLevel -> L1
+Information: 2022-03-24 4:34:14 PM Last case update date took -> 5 ms
+Information: 2022-03-24 4:34:14 PM Retrieving cases states(0) from db took -> 93 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:34:14 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:34:15 PM ticketsLevel -> L1
+Information: 2022-03-24 4:34:15 PM Last case update date took -> 6 ms
+Information: 2022-03-24 4:34:15 PM Retrieving cases states(0) from db took -> 89 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:34:15 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:34:17 PM ticketsLevel -> L1
+Information: 2022-03-24 4:34:17 PM Last case update date took -> 7 ms
+Information: 2022-03-24 4:34:17 PM Retrieving cases states(0) from db took -> 98 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:34:17 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:34:21 PM ticketsLevel -> L1
+Information: 2022-03-24 4:34:21 PM ticketsLevel -> L1
+Information: 2022-03-24 4:34:21 PM Last case update date took -> 7 ms
+Information: 2022-03-24 4:34:21 PM Last case update date took -> 5 ms
+Information: 2022-03-24 4:34:21 PM Retrieving cases states(88) from db took -> 143 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:34:21 PM Processing tickets states(88 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:34:21 PM Retrieving cases states(86) from db took -> 158 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 4:34:21 PM Processing tickets states(86 took 0 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 4:34:25 PM ticketsLevel -> L1
+Information: 2022-03-24 4:34:25 PM Last case update date took -> 5 ms
+Information: 2022-03-24 4:34:25 PM Retrieving cases states(171) from db took -> 77 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:34:25 PM Processing tickets states(171 took 1 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:34:28 PM ticketsLevel -> L1
+Information: 2022-03-24 4:34:28 PM Last case update date took -> 5 ms
+Information: 2022-03-24 4:34:28 PM Retrieving cases states(88) from db took -> 112 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:34:28 PM Processing tickets states(88 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:53:40 PM Now listening on: http://localhost:5757
+Information: 2022-03-24 4:53:40 PM Application started. Press Ctrl+C to shut down.
+Information: 2022-03-24 4:53:40 PM Hosting environment: Development
+Information: 2022-03-24 4:53:40 PM Content root path: D:\Projects\SnowReports\SnowReports\
+Warning: 2022-03-24 4:53:46 PM No type was specified for the decimal property 'MetricWaitCloud' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:53:46 PM No type was specified for the decimal property 'MetricWaitCustomer' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:53:46 PM No type was specified for the decimal property 'MetricWaitProduct' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:53:46 PM No type was specified for the decimal property 'MetricWaitSupport' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:53:46 PM No type was specified for the decimal property 'ResolutionTimeDays' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:53:46 PM No type was specified for the decimal property 'TotalTimeWorked' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:53:46 PM No type was specified for the decimal property 'StateDurationHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:53:46 PM No type was specified for the decimal property 'StateDurationWeekdayHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Information: 2022-03-24 4:53:48 PM ticketsLevel -> L1
+Information: 2022-03-24 4:53:48 PM Last case update date took -> 47 ms
+Information: 2022-03-24 4:53:48 PM Retrieving cases states(0) from db took -> 235 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:53:48 PM Processing tickets states(0 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 4:58:00 PM Now listening on: http://localhost:5757
+Information: 2022-03-24 4:58:00 PM Application started. Press Ctrl+C to shut down.
+Information: 2022-03-24 4:58:00 PM Hosting environment: Development
+Information: 2022-03-24 4:58:00 PM Content root path: D:\Projects\SnowReports\SnowReports\
+Warning: 2022-03-24 4:58:20 PM No type was specified for the decimal property 'MetricWaitCloud' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:58:20 PM No type was specified for the decimal property 'MetricWaitCustomer' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:58:20 PM No type was specified for the decimal property 'MetricWaitProduct' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:58:20 PM No type was specified for the decimal property 'MetricWaitSupport' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:58:20 PM No type was specified for the decimal property 'ResolutionTimeDays' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:58:20 PM No type was specified for the decimal property 'TotalTimeWorked' on entity type 'Case'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:58:20 PM No type was specified for the decimal property 'StateDurationHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Warning: 2022-03-24 4:58:20 PM No type was specified for the decimal property 'StateDurationWeekdayHours' on entity type 'CaseStateChange'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+Information: 2022-03-24 5:03:31 PM ticketsLevel -> L1
+Information: 2022-03-24 5:03:31 PM ticketsLevel -> L1
+Information: 2022-03-24 5:03:31 PM Last case update date took -> 19 ms
+Information: 2022-03-24 5:03:31 PM Last case update date took -> 18 ms
+Information: 2022-03-24 5:03:32 PM Retrieving cases states(88) from db took -> 177 ms | 2022-03-10 12:00:00 AM - 2022-03-23 11:00:00 PM
+Information: 2022-03-24 5:03:32 PM Processing tickets states(88 took 2 ms | 2022-03-10 12:00:00 AM 2022-03-23 11:00:00 PM
+Information: 2022-03-24 5:03:32 PM Retrieving cases states(88) from db took -> 187 ms | 2022-03-09 10:00:00 PM - 2022-03-23 9:00:00 PM
+Information: 2022-03-24 5:03:32 PM Processing tickets states(88 took 0 ms | 2022-03-09 10:00:00 PM 2022-03-23 9:00:00 PM
+Information: 2022-03-24 5:03:40 PM ticketsLevel -> L1
+Information: 2022-03-24 5:03:40 PM Last case update date took -> 10 ms
+Information: 2022-03-24 5:03:40 PM Retrieving cases states(97) from db took -> 94 ms | 2021-10-11 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 5:03:40 PM Processing tickets states(97 took 2 ms | 2021-10-11 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 5:05:25 PM ticketsLevel -> L1
+Information: 2022-03-24 5:05:25 PM ticketsLevel -> L1
+Information: 2022-03-24 5:05:25 PM Last case update date took -> 8 ms
+Information: 2022-03-24 5:05:25 PM Last case update date took -> 5 ms
+Information: 2022-03-24 5:05:25 PM Retrieving cases states(88) from db took -> 151 ms | 2022-03-01 10:00:00 PM - 2022-03-23 9:00:00 PM
+Information: 2022-03-24 5:05:25 PM Processing tickets states(88 took 1 ms | 2022-03-01 10:00:00 PM 2022-03-23 9:00:00 PM
+Information: 2022-03-24 5:05:25 PM Retrieving cases states(88) from db took -> 162 ms | 2022-03-02 12:00:00 AM - 2022-03-23 11:00:00 PM
+Information: 2022-03-24 5:05:25 PM Processing tickets states(88 took 1 ms | 2022-03-02 12:00:00 AM 2022-03-23 11:00:00 PM
+Information: 2022-03-24 5:08:32 PM ticketsLevel -> L1
+Information: 2022-03-24 5:08:32 PM ticketsLevel -> L1
+Information: 2022-03-24 5:08:32 PM Last case update date took -> 9 ms
+Information: 2022-03-24 5:08:32 PM Last case update date took -> 4 ms
+Information: 2022-03-24 5:08:32 PM Retrieving cases states(88) from db took -> 205 ms | 2022-03-01 10:00:00 PM - 2022-03-23 9:00:00 PM
+Information: 2022-03-24 5:08:32 PM Retrieving cases states(88) from db took -> 211 ms | 2022-03-02 12:00:00 AM - 2022-03-23 11:00:00 PM
+Information: 2022-03-24 5:08:32 PM Processing tickets states(88 took 1 ms | 2022-03-01 10:00:00 PM 2022-03-23 9:00:00 PM
+Information: 2022-03-24 5:08:32 PM Processing tickets states(88 took 2 ms | 2022-03-02 12:00:00 AM 2022-03-23 11:00:00 PM
+Information: 2022-03-24 5:08:41 PM ticketsLevel -> L1
+Information: 2022-03-24 5:08:41 PM Last case update date took -> 10 ms
+Information: 2022-03-24 5:08:41 PM Retrieving cases states(88) from db took -> 97 ms | 2022-02-16 10:00:00 PM - 2022-02-18 9:00:00 PM
+Information: 2022-03-24 5:08:41 PM Processing tickets states(88 took 0 ms | 2022-02-16 10:00:00 PM 2022-02-18 9:00:00 PM
+Information: 2022-03-24 5:19:52 PM ticketsLevel -> L1
+Information: 2022-03-24 5:19:52 PM ticketsLevel -> L1
+Information: 2022-03-24 5:19:53 PM Last case update date took -> 1043 ms
+Information: 2022-03-24 5:19:53 PM Retrieving cases states(88) from db took -> 95 ms | 2022-03-16 12:00:00 AM - 2022-03-23 11:00:00 PM
+Information: 2022-03-24 5:19:53 PM Processing tickets states(88 took 0 ms | 2022-03-16 12:00:00 AM 2022-03-23 11:00:00 PM
+Information: 2022-03-24 5:19:54 PM Last case update date took -> 1848 ms
+Information: 2022-03-24 5:19:54 PM Retrieving cases states(88) from db took -> 89 ms | 2022-03-15 10:00:00 PM - 2022-03-23 9:00:00 PM
+Information: 2022-03-24 5:19:54 PM Processing tickets states(88 took 0 ms | 2022-03-15 10:00:00 PM 2022-03-23 9:00:00 PM
+Information: 2022-03-24 5:20:45 PM ticketsLevel -> L1
+Information: 2022-03-24 5:20:45 PM Last case update date took -> 8 ms
+Information: 2022-03-24 5:20:45 PM ticketsLevel -> L1
+Information: 2022-03-24 5:20:45 PM Last case update date took -> 36 ms
+Information: 2022-03-24 5:20:45 PM Retrieving cases states(88) from db took -> 107 ms | 2022-03-16 12:00:00 AM - 2022-03-23 11:00:00 PM
+Information: 2022-03-24 5:20:45 PM Processing tickets states(88 took 0 ms | 2022-03-16 12:00:00 AM 2022-03-23 11:00:00 PM
+Information: 2022-03-24 5:20:45 PM Retrieving cases states(88) from db took -> 94 ms | 2022-03-15 10:00:00 PM - 2022-03-23 9:00:00 PM
+Information: 2022-03-24 5:20:45 PM Processing tickets states(88 took 0 ms | 2022-03-15 10:00:00 PM 2022-03-23 9:00:00 PM
+Information: 2022-03-24 5:20:50 PM ticketsLevel -> L1
+Information: 2022-03-24 5:20:50 PM Last case update date took -> 5 ms
+Information: 2022-03-24 5:20:50 PM ticketsLevel -> L1
+Information: 2022-03-24 5:20:50 PM Last case update date took -> 5 ms
+Information: 2022-03-24 5:20:50 PM Retrieving cases states(88) from db took -> 124 ms | 2022-03-16 12:00:00 AM - 2022-03-23 11:00:00 PM
+Information: 2022-03-24 5:20:50 PM Processing tickets states(88 took 0 ms | 2022-03-16 12:00:00 AM 2022-03-23 11:00:00 PM
+Information: 2022-03-24 5:20:50 PM Retrieving cases states(88) from db took -> 173 ms | 2022-03-15 10:00:00 PM - 2022-03-23 9:00:00 PM
+Information: 2022-03-24 5:20:50 PM Processing tickets states(88 took 0 ms | 2022-03-15 10:00:00 PM 2022-03-23 9:00:00 PM
+Information: 2022-03-24 5:39:31 PM ticketsLevel -> L1
+Information: 2022-03-24 5:39:31 PM ticketsLevel -> L1
+Information: 2022-03-24 5:39:32 PM Last case update date took -> 1054 ms
+Information: 2022-03-24 5:39:32 PM Retrieving cases states(88) from db took -> 88 ms | 2022-03-16 12:00:00 AM - 2022-03-23 11:00:00 PM
+Information: 2022-03-24 5:39:32 PM Processing tickets states(88 took 0 ms | 2022-03-16 12:00:00 AM 2022-03-23 11:00:00 PM
+Information: 2022-03-24 5:39:33 PM Last case update date took -> 2063 ms
+Information: 2022-03-24 5:39:33 PM Retrieving cases states(88) from db took -> 99 ms | 2022-03-15 10:00:00 PM - 2022-03-23 9:00:00 PM
+Information: 2022-03-24 5:39:33 PM Processing tickets states(88 took 0 ms | 2022-03-15 10:00:00 PM 2022-03-23 9:00:00 PM
+Information: 2022-03-24 5:43:54 PM ticketsLevel -> L1
+Information: 2022-03-24 5:43:54 PM Last case update date took -> 7 ms
+Information: 2022-03-24 5:43:54 PM Retrieving cases states(91) from db took -> 121 ms | 2021-10-20 12:00:00 AM - 2021-10-21 11:00:00 PM
+Information: 2022-03-24 5:43:54 PM Processing tickets states(91 took 0 ms | 2021-10-20 12:00:00 AM 2021-10-21 11:00:00 PM
+Information: 2022-03-24 5:44:04 PM ticketsLevel -> L1
+Information: 2022-03-24 5:44:04 PM Last case update date took -> 7 ms
+Information: 2022-03-24 5:44:04 PM Retrieving cases states(91) from db took -> 87 ms | 2021-10-19 10:00:00 PM - 2021-10-21 9:00:00 PM
+Information: 2022-03-24 5:44:04 PM Processing tickets states(91 took 0 ms | 2021-10-19 10:00:00 PM 2021-10-21 9:00:00 PM
+Information: 2022-03-24 5:47:20 PM ticketsLevel -> L1
+Information: 2022-03-24 5:47:20 PM ticketsLevel -> L1
+Information: 2022-03-24 5:47:20 PM Last case update date took -> 13 ms
+Information: 2022-03-24 5:47:20 PM Last case update date took -> 7 ms
+Information: 2022-03-24 5:47:21 PM Retrieving cases states(91) from db took -> 88 ms | 2021-10-19 10:00:00 PM - 2021-10-21 9:00:00 PM
+Information: 2022-03-24 5:47:21 PM Processing tickets states(91 took 0 ms | 2021-10-19 10:00:00 PM 2021-10-21 9:00:00 PM
+Information: 2022-03-24 5:47:22 PM Retrieving cases states(91) from db took -> 1129 ms | 2021-10-20 12:00:00 AM - 2021-10-21 11:00:00 PM
+Information: 2022-03-24 5:47:22 PM Processing tickets states(91 took 0 ms | 2021-10-20 12:00:00 AM 2021-10-21 11:00:00 PM
+Information: 2022-03-24 5:47:41 PM ticketsLevel -> L1
+Information: 2022-03-24 5:47:41 PM Last case update date took -> 6 ms
+Information: 2022-03-24 5:47:41 PM ticketsLevel -> L1
+Information: 2022-03-24 5:47:41 PM Last case update date took -> 5 ms
+Information: 2022-03-24 5:47:41 PM Retrieving cases states(91) from db took -> 149 ms | 2021-10-20 12:00:00 AM - 2021-10-21 11:00:00 PM
+Information: 2022-03-24 5:47:41 PM Processing tickets states(91 took 0 ms | 2021-10-20 12:00:00 AM 2021-10-21 11:00:00 PM
+Information: 2022-03-24 5:47:41 PM Retrieving cases states(91) from db took -> 160 ms | 2021-10-19 10:00:00 PM - 2021-10-21 9:00:00 PM
+Information: 2022-03-24 5:47:41 PM Processing tickets states(91 took 0 ms | 2021-10-19 10:00:00 PM 2021-10-21 9:00:00 PM
+Information: 2022-03-24 5:47:43 PM ticketsLevel -> L1
+Information: 2022-03-24 5:47:43 PM Last case update date took -> 5 ms
+Information: 2022-03-24 5:47:43 PM Retrieving cases states(79) from db took -> 76 ms | 2021-10-12 10:00:00 PM - 2021-10-15 9:00:00 PM
+Information: 2022-03-24 5:47:43 PM Processing tickets states(79 took 0 ms | 2021-10-12 10:00:00 PM 2021-10-15 9:00:00 PM
+Information: 2022-03-24 5:47:55 PM ticketsLevel -> L1
+Information: 2022-03-24 5:47:55 PM Last case update date took -> 10 ms
+Information: 2022-03-24 5:47:55 PM Retrieving cases states(133) from db took -> 103 ms | 2021-10-12 10:00:00 PM - 2021-10-15 9:00:00 PM
+Information: 2022-03-24 5:47:55 PM Processing tickets states(133 took 0 ms | 2021-10-12 10:00:00 PM 2021-10-15 9:00:00 PM
+Information: 2022-03-24 5:47:59 PM ticketsLevel -> L1
+Information: 2022-03-24 5:47:59 PM Last case update date took -> 15 ms
+Information: 2022-03-24 5:47:59 PM Retrieving cases states(150) from db took -> 100 ms | 2021-10-11 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 5:47:59 PM Processing tickets states(150 took 2 ms | 2021-10-11 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 5:48:11 PM ticketsLevel -> L1
+Information: 2022-03-24 5:48:11 PM Last case update date took -> 7 ms
+Information: 2022-03-24 5:48:11 PM Retrieving cases states(424) from db took -> 135 ms | 2021-10-11 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 5:48:11 PM Processing tickets states(424 took 8 ms | 2021-10-11 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 5:48:17 PM ticketsLevel -> L1
+Information: 2022-03-24 5:48:17 PM Last case update date took -> 5 ms
+Information: 2022-03-24 5:48:17 PM ticketsLevel -> L1
+Information: 2022-03-24 5:48:17 PM Last case update date took -> 8 ms
+Information: 2022-03-24 5:48:17 PM Retrieving cases states(407) from db took -> 127 ms | 2021-10-11 12:00:00 AM - 2021-10-19 11:00:00 PM
+Information: 2022-03-24 5:48:17 PM Processing tickets states(407 took 8 ms | 2021-10-11 12:00:00 AM 2021-10-19 11:00:00 PM
+Information: 2022-03-24 5:48:17 PM Retrieving cases states(405) from db took -> 146 ms | 2021-10-10 10:00:00 PM - 2021-10-19 9:00:00 PM
+Information: 2022-03-24 5:48:17 PM Processing tickets states(405 took 9 ms | 2021-10-10 10:00:00 PM 2021-10-19 9:00:00 PM
+Information: 2022-03-24 5:49:35 PM ticketsLevel -> L1
+Information: 2022-03-24 5:49:35 PM Last case update date took -> 10 ms
+Information: 2022-03-24 5:49:35 PM ticketsLevel -> L1
+Information: 2022-03-24 5:49:35 PM Last case update date took -> 18 ms
+Information: 2022-03-24 5:49:35 PM Retrieving cases states(407) from db took -> 108 ms | 2021-10-11 12:00:00 AM - 2021-10-19 11:00:00 PM
+Information: 2022-03-24 5:49:35 PM Processing tickets states(407 took 10 ms | 2021-10-11 12:00:00 AM 2021-10-19 11:00:00 PM
+Information: 2022-03-24 5:49:35 PM Retrieving cases states(405) from db took -> 125 ms | 2021-10-10 10:00:00 PM - 2021-10-19 9:00:00 PM
+Information: 2022-03-24 5:49:35 PM Processing tickets states(405 took 12 ms | 2021-10-10 10:00:00 PM 2021-10-19 9:00:00 PM
+Information: 2022-03-24 5:49:40 PM ticketsLevel -> L1
+Information: 2022-03-24 5:49:40 PM Last case update date took -> 6 ms
+Information: 2022-03-24 5:49:40 PM Retrieving cases states(359) from db took -> 87 ms | 2021-10-19 10:00:00 PM - 2021-10-21 9:00:00 PM
+Information: 2022-03-24 5:49:40 PM Processing tickets states(359 took 2 ms | 2021-10-19 10:00:00 PM 2021-10-21 9:00:00 PM
+Information: 2022-03-24 5:49:46 PM ticketsLevel -> L1
+Information: 2022-03-24 5:49:46 PM Last case update date took -> 4 ms
+Information: 2022-03-24 5:49:46 PM Retrieving cases states(359) from db took -> 93 ms | 2021-10-19 10:00:00 PM - 2021-10-21 9:00:00 PM
+Information: 2022-03-24 5:49:46 PM Processing tickets states(359 took 2 ms | 2021-10-19 10:00:00 PM 2021-10-21 9:00:00 PM
+Information: 2022-03-24 5:49:52 PM ticketsLevel -> L1
+Information: 2022-03-24 5:49:52 PM Last case update date took -> 6 ms
+Information: 2022-03-24 5:49:52 PM Retrieving cases states(1324) from db took -> 131 ms | 2021-10-19 10:00:00 PM - 2021-10-21 9:00:00 PM
+Information: 2022-03-24 5:49:52 PM Processing tickets states(1324 took 6 ms | 2021-10-19 10:00:00 PM 2021-10-21 9:00:00 PM
+Information: 2022-03-24 5:49:53 PM ticketsLevel -> L1
+Information: 2022-03-24 5:49:53 PM Last case update date took -> 5 ms
+Information: 2022-03-24 5:49:53 PM Retrieving cases states(91) from db took -> 86 ms | 2021-10-19 10:00:00 PM - 2021-10-21 9:00:00 PM
+Information: 2022-03-24 5:49:53 PM Processing tickets states(91 took 0 ms | 2021-10-19 10:00:00 PM 2021-10-21 9:00:00 PM
+Information: 2022-03-24 5:49:59 PM ticketsLevel -> L1
+Information: 2022-03-24 5:49:59 PM Last case update date took -> 6 ms
+Information: 2022-03-24 5:49:59 PM Retrieving cases states(359) from db took -> 116 ms | 2021-10-19 10:00:00 PM - 2021-10-21 9:00:00 PM
+Information: 2022-03-24 5:49:59 PM Processing tickets states(359 took 1 ms | 2021-10-19 10:00:00 PM 2021-10-21 9:00:00 PM
+Information: 2022-03-24 5:53:04 PM ticketsLevel -> L1
+Information: 2022-03-24 5:53:04 PM ticketsLevel -> L1
+Information: 2022-03-24 5:53:04 PM Last case update date took -> 9 ms
+Information: 2022-03-24 5:53:04 PM Last case update date took -> 7 ms
+Information: 2022-03-24 5:53:05 PM Retrieving cases states(355) from db took -> 150 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 5:53:05 PM Retrieving cases states(364) from db took -> 150 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 5:53:05 PM Processing tickets states(355 took 2 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 5:53:05 PM Processing tickets states(364 took 6 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 5:53:06 PM ticketsLevel -> L1
+Information: 2022-03-24 5:53:06 PM Last case update date took -> 4 ms
+Information: 2022-03-24 5:53:07 PM Retrieving cases states(1327) from db took -> 137 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 5:53:07 PM Processing tickets states(1327 took 3 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 5:53:09 PM ticketsLevel -> L1
+Information: 2022-03-24 5:53:09 PM Last case update date took -> 11 ms
+Information: 2022-03-24 5:53:09 PM Retrieving cases states(136) from db took -> 94 ms | 2021-10-18 10:00:00 PM - 2021-10-20 9:00:00 PM
+Information: 2022-03-24 5:53:09 PM Processing tickets states(136 took 0 ms | 2021-10-18 10:00:00 PM 2021-10-20 9:00:00 PM
+Information: 2022-03-24 6:00:40 PM ticketsLevel -> L1
+Information: 2022-03-24 6:00:40 PM ticketsLevel -> L1
+Information: 2022-03-24 6:00:41 PM Last case update date took -> 1039 ms
+Information: 2022-03-24 6:00:41 PM Retrieving cases states(132) from db took -> 99 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 6:00:41 PM Processing tickets states(132 took 0 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 6:00:42 PM Last case update date took -> 2043 ms
+Information: 2022-03-24 6:00:42 PM Retrieving cases states(132) from db took -> 88 ms | 2021-10-19 5:00:00 AM - 2021-10-21 4:00:00 AM
+Information: 2022-03-24 6:00:42 PM Processing tickets states(132 took 0 ms | 2021-10-19 5:00:00 AM 2021-10-21 4:00:00 AM
+Information: 2022-03-24 6:01:11 PM ticketsLevel -> L1
+Information: 2022-03-24 6:01:11 PM Last case update date took -> 11 ms
+Information: 2022-03-24 6:01:11 PM Retrieving cases states(132) from db took -> 112 ms | 2021-10-19 5:00:00 AM - 2021-10-21 4:00:00 AM
+Information: 2022-03-24 6:01:11 PM Processing tickets states(132 took 0 ms | 2021-10-19 5:00:00 AM 2021-10-21 4:00:00 AM
+Information: 2022-03-24 6:01:13 PM ticketsLevel -> L1
+Information: 2022-03-24 6:01:13 PM Last case update date took -> 4 ms
+Information: 2022-03-24 6:01:13 PM ticketsLevel -> L1
+Information: 2022-03-24 6:01:13 PM Last case update date took -> 11 ms
+Information: 2022-03-24 6:01:13 PM Retrieving cases states(132) from db took -> 88 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 6:01:13 PM Processing tickets states(132 took 0 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 6:01:13 PM Retrieving cases states(132) from db took -> 114 ms | 2021-10-19 5:00:00 AM - 2021-10-21 4:00:00 AM
+Information: 2022-03-24 6:01:13 PM Processing tickets states(132 took 0 ms | 2021-10-19 5:00:00 AM 2021-10-21 4:00:00 AM
+Information: 2022-03-24 6:02:54 PM ticketsLevel -> L1
+Information: 2022-03-24 6:02:54 PM Last case update date took -> 7 ms
+Information: 2022-03-24 6:02:54 PM Retrieving cases states(132) from db took -> 100 ms | 2021-10-19 5:00:00 AM - 2021-10-21 4:00:00 AM
+Information: 2022-03-24 6:02:54 PM Processing tickets states(132 took 0 ms | 2021-10-19 5:00:00 AM 2021-10-21 4:00:00 AM
+Information: 2022-03-24 6:03:35 PM ticketsLevel -> L1
+Information: 2022-03-24 6:03:35 PM Last case update date took -> 12 ms
+Information: 2022-03-24 6:03:35 PM ticketsLevel -> L1
+Information: 2022-03-24 6:03:35 PM Last case update date took -> 27 ms
+Information: 2022-03-24 6:03:35 PM Retrieving cases states(132) from db took -> 103 ms | 2021-10-19 12:00:00 AM - 2021-10-20 11:00:00 PM
+Information: 2022-03-24 6:03:35 PM Processing tickets states(132 took 0 ms | 2021-10-19 12:00:00 AM 2021-10-20 11:00:00 PM
+Information: 2022-03-24 6:03:35 PM Retrieving cases states(132) from db took -> 100 ms | 2021-10-19 5:00:00 AM - 2021-10-21 4:00:00 AM
+Information: 2022-03-24 6:03:35 PM Processing tickets states(132 took 0 ms | 2021-10-19 5:00:00 AM 2021-10-21 4:00:00 AM
+Information: 2022-03-24 6:04:11 PM ticketsLevel -> L1
+Information: 2022-03-24 6:04:11 PM Last case update date took -> 4 ms
+Information: 2022-03-24 6:04:11 PM ticketsLevel -> L1
+Information: 2022-03-24 6:04:11 PM Last case update date took -> 19 ms
+Information: 2022-03-24 6:04:12 PM Retrieving cases states(1155) from db took -> 134 ms | 2022-03-17 12:00:00 AM - 2022-03-24 11:00:00 PM
+Information: 2022-03-24 6:04:12 PM Retrieving cases states(1155) from db took -> 151 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 6:04:12 PM Processing tickets states(1155 took 101 ms | 2022-03-17 12:00:00 AM 2022-03-24 11:00:00 PM
+Information: 2022-03-24 6:04:12 PM Processing tickets states(1155 took 111 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 6:04:50 PM ticketsLevel -> L1
+Information: 2022-03-24 6:04:50 PM Last case update date took -> 6 ms
+Information: 2022-03-24 6:04:50 PM Retrieving cases states(1155) from db took -> 144 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 6:04:51 PM Processing tickets states(1155 took 104 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 6:06:26 PM ticketsLevel -> L1
+Information: 2022-03-24 6:06:26 PM Last case update date took -> 8 ms
+Information: 2022-03-24 6:06:26 PM Retrieving cases states(1155) from db took -> 122 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 6:06:26 PM Processing tickets states(1155 took 110 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 6:06:45 PM ticketsLevel -> L1
+Information: 2022-03-24 6:06:45 PM Last case update date took -> 9 ms
+Information: 2022-03-24 6:06:45 PM Retrieving cases states(1155) from db took -> 129 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 6:06:45 PM Processing tickets states(1155 took 105 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 6:08:04 PM ticketsLevel -> L1
+Information: 2022-03-24 6:08:04 PM Last case update date took -> 11 ms
+Information: 2022-03-24 6:08:04 PM Retrieving cases states(1155) from db took -> 115 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 6:08:04 PM Processing tickets states(1155 took 88 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 6:08:37 PM ticketsLevel -> L1
+Information: 2022-03-24 6:08:37 PM Last case update date took -> 6 ms
+Information: 2022-03-24 6:08:37 PM Retrieving cases states(1155) from db took -> 155 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 6:08:37 PM Processing tickets states(1155 took 91 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM
+Information: 2022-03-24 6:19:01 PM ticketsLevel -> L1
+Information: 2022-03-24 6:19:02 PM Last case update date took -> 1040 ms
+Information: 2022-03-24 6:19:02 PM Retrieving cases states(1155) from db took -> 139 ms | 2022-03-16 10:00:00 PM - 2022-03-24 9:00:00 PM
+Information: 2022-03-24 6:19:02 PM Processing tickets states(1155 took 100 ms | 2022-03-16 10:00:00 PM 2022-03-24 9:00:00 PM

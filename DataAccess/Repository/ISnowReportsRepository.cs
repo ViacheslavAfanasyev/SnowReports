@@ -12,6 +12,7 @@ namespace DataAccess.Repository
         public List<UniqueCase> GetAllCaseStateChanges(DateTime startDate, DateTime endDate, string assignmentGroup, int correctionDeltaHours);
         public IEnumerable<string> GetCaseStates();
         public IEnumerable<string> GetTechSupportAssignmentGroups(string filterValue, bool includeAccumulatedGroup);
+        public IEnumerable<string> GetTechSupportRegions(string filterValue);
 
     }
 }

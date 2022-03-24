@@ -37,7 +37,7 @@ const RegionsCompareReport = () => {
             </div>
             <div id={styles.RightBlock}>
                 <SnowDatePicker setDate={setDate} />
-                {/* <TicketsNumberChartByState /> */}
+                <TicketsNumberChartByState />
             </div>
         </ReportFiltersContext.Provider>
     );

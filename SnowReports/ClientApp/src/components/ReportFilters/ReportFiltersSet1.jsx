@@ -19,6 +19,12 @@ const ReportFiltersSet1 = () => {
 
     const [fetchAssigmentGroups,assigmentGroupsIsLoading,assigmentGroupsError] = useFetching(async ()=>{
         const data = await SnowServices.GetAssigmentGroups(false);
+
+        let arr = []
+        for (var key in data) {
+            arr.push(key)
+        }
+
         setAssignmentGroupsList(data);
     })
 
@@ -38,7 +44,7 @@ const ReportFiltersSet1 = () => {
         <div id={styles.FiltersBlock}>
          <ul className={styles.ReportFiltersList} >
           <li>
-            <CheckboxesList setSelectedValue={setStatesList} setAllowCombineCheckboxes={setAllowCombineCheckboxes} source={statesList} name={"States"+reportFiltersName} />
+            <CheckboxesList setSelectedValue={setStatesList} setAllowCombineCheckboxes={setAllowCombineCheckboxes} source={statesList} valuePropName="value" labelPropName="value" name={"States"+reportFiltersName} />
           </li>
           <li>
             <DropDownFilter setSelectedValue={setAssignmentGroup} source={assignmentGroupsList} name={"AssigmentGroups"+reportFiltersName} />

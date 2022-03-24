@@ -9,10 +9,6 @@ const DropDownFilter = ({setSelectedValue, source, name}) => {
 
     let storageValue = localStorage.getItem(storageKey);
 
-    if (name == "Interval") {
-        console.log("minutesIntervalListSS - " + source)
-    }
-
     useEffect(()=>{
         if (storageValue!=undefined)
         {

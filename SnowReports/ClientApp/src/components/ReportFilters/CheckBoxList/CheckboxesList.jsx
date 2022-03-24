@@ -26,7 +26,7 @@ function ApplyStyles()
     }
 }
 
-const CheckboxesList = ({setSelectedValue, setAllowCombineCheckboxes, source, name}) => {
+const CheckboxesList = ({setSelectedValue, setAllowCombineCheckboxes, source, valuePropName, labelPropName, name}) => {
 
     const storageName = name+"_checkboxesList";
     const storageV = localStorage.getItem(storageName);
@@ -41,6 +41,7 @@ const CheckboxesList = ({setSelectedValue, setAllowCombineCheckboxes, source, na
     useEffect(()=>{
         if (source!=undefined && source.length>0 && selectedCheckboxes.length>0)
         {
+
             let shallowArr = [...source];
             shallowArr.forEach((v,i)=>{
                 shallowArr[i].checked = selectedCheckboxes[i].toLowerCase() == "true"
@@ -62,12 +63,7 @@ const CheckboxesList = ({setSelectedValue, setAllowCombineCheckboxes, source, na
         return  <div></div>
     }
 
-    function OnChange(e)
-    {
-
-    }
-
-        return (
+    return (
             <div>
 
         <Checkbox CheckboxOnChange={(e)=>{setAllowCombineCheckboxes(e.target.checked); setCombinedCheckboxState(e.target.checked); ApplyStyles();}}
@@ -77,7 +73,9 @@ const CheckboxesList = ({setSelectedValue, setAllowCombineCheckboxes, source, na
 
         <ul id={name} className={styles.CheckboxesList} >
             {source.map((elem, index) => <li key={index}><Checkbox CheckboxOnChange={(e)=>
-            {let shallowArr = [...source]; shallowArr[elem.key].checked = e.target.checked;
+            {
+                let shallowArr = [...source];
+                shallowArr[elem.key].checked = e.target.checked;
 
             let storageValue = [];
             shallowArr.map((v,i)=>storageValue.push(v.checked));
@@ -85,7 +83,8 @@ const CheckboxesList = ({setSelectedValue, setAllowCombineCheckboxes, source, na
 
             setSelectedValue(shallowArr);
           }}
-            key={elem.key} value={elem.value} label={elem.value}
+            key={elem.key} value={elem[valuePropName]} label={elem[labelPropName]}
+/*            key={elem.key} value={elem.value} label={elem.value}*/
             checked={elem.checked}
             labelClass={styles.regularLabel}
             inputClass={styles.regularCheckbox}
